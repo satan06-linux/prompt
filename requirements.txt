@@ -13,3 +13,4 @@ bitsandbytes
 datasets
 accelerate
 torch>=2.0.0
+huggingface_hub[cli]
