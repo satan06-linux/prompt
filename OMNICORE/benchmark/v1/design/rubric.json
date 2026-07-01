@@ -1,0 +1,16 @@
+{
+  "rubric_profile": "Enterprise Evaluation Standard",
+  "version": "1.0",
+  "scoring": {
+    "clarity": 10,
+    "completeness": 10,
+    "structure": 10,
+    "constraint_handling": 10,
+    "creativity": 10,
+    "correctness": 10,
+    "adaptability": 10,
+    "hallucination_resistance": 10,
+    "output_quality": 20,
+    "overall": 100
+  }
+}

@@ -1,0 +1,632 @@
+[
+  {
+    "id": "FP-CREA-SHORT-STORY-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Creative",
+    "subcategory": "Short Story Writing",
+    "difficulty": "Easy",
+    "complexity": "Simple",
+    "expertise_level": "Beginner",
+    "domain": "Fiction",
+    "capability": "Creative Writing",
+    "prompt_type": "Persona Prompt",
+    "user_request": "Write a 500-word short story about a stray dog finding a loving home, told from the dog's perspective.",
+    "user_goal": "Create a heartwarming short narrative focusing on emotional resonance.",
+    "expected_output": "markdown",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 200,
+      "estimated_response_size": 600,
+      "estimated_context_tokens": 800
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": [
+      "Clear persona definition",
+      "Specific length constraint",
+      "Emotional tone guidance"
+    ],
+    "evaluation_weights": {
+      "accuracy": 15,
+      "clarity": 20,
+      "structure": 15,
+      "constraints": 20,
+      "creativity": 30
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Strong, consistent narrative voice", "Vivid sensory details from canine perspective", "Exactly meets word count constraint"],
+      "acceptable_characteristics": ["Clear beginning, middle, and end", "Basic emotional arc", "Mostly from dog's perspective"],
+      "minimum_requirements": ["About a dog finding a home", "Roughly 500 words", "First-person perspective"]
+    },
+    "common_failures": [
+      "Breaking character (using concepts a dog wouldn't understand)",
+      "Ignoring the word count constraint",
+      "Overly melodramatic tone"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Defining human objects through a dog's sensory experience"],
+    "tags": ["fiction", "animals", "heartwarming", "short-story"]
+  },
+  {
+    "id": "FP-CREA-BLOG-POST-002",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Creative",
+    "subcategory": "Blog Post",
+    "difficulty": "Easy",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Lifestyle",
+    "capability": "Content Generation",
+    "prompt_type": "Structured Prompt",
+    "user_request": "Write a conversational blog post about the top 5 indoor plants for beginners.",
+    "user_goal": "Generate an engaging, easy-to-read blog post that provides actionable advice.",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 250,
+      "estimated_response_size": 800,
+      "estimated_context_tokens": 1050
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": [
+      "Formatting instructions (H2, bullet points)",
+      "Tone specifications",
+      "Target audience definition"
+    ],
+    "evaluation_weights": {
+      "accuracy": 25,
+      "clarity": 25,
+      "structure": 25,
+      "constraints": 15,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Highly conversational and encouraging tone", "Clear formatting with headers and lists", "Accurate botanical information"],
+      "acceptable_characteristics": ["Lists 5 plants", "Readable formatting", "Generally friendly tone"],
+      "minimum_requirements": ["5 indoor plants mentioned", "Basic care instructions included"]
+    },
+    "common_failures": [
+      "Academic or overly dry tone",
+      "Recommending difficult-to-care-for plants",
+      "Poor formatting without headers"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Plants that are toxic to pets (should be mentioned)"],
+    "tags": ["blogging", "plants", "lifestyle", "listicle"]
+  },
+  {
+    "id": "FP-CREA-SOCIAL-MEDIA-003",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Creative",
+    "subcategory": "Social Media Content",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Marketing",
+    "capability": "Content Generation",
+    "prompt_type": "Few-Shot Prompt",
+    "user_request": "Create a week's worth of Twitter/X posts promoting a new sustainable coffee brand. Include hashtags and optimal posting times.",
+    "user_goal": "Develop a cohesive social media campaign with varied content types.",
+    "expected_output": "json",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 350,
+      "estimated_response_size": 500,
+      "estimated_context_tokens": 850
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": [
+      "JSON output schema definition",
+      "Character limit constraints (280 chars)",
+      "Campaign arc across multiple days"
+    ],
+    "evaluation_weights": {
+      "accuracy": 20,
+      "clarity": 20,
+      "structure": 25,
+      "constraints": 25,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Perfect JSON structure", "Engaging, varied hooks", "Strategic use of hashtags and emojis"],
+      "acceptable_characteristics": ["Valid JSON", "7 tweets provided", "Relevant to sustainable coffee"],
+      "minimum_requirements": ["7 posts", "Under 280 characters each", "Includes hashtags"]
+    },
+    "common_failures": [
+      "Invalid JSON output",
+      "Exceeding 280 characters",
+      "Repetitive post structures"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Thread creation vs individual posts"],
+    "tags": ["social-media", "marketing", "twitter", "campaign"]
+  },
+  {
+    "id": "FP-CREA-POETRY-004",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Creative",
+    "subcategory": "Poetry",
+    "difficulty": "Medium",
+    "complexity": "Advanced",
+    "expertise_level": "Professional",
+    "domain": "Literature",
+    "capability": "Creative Writing",
+    "prompt_type": "System Prompt",
+    "user_request": "Write a sonnet about the feeling of nostalgia when looking at old photographs.",
+    "user_goal": "Generate a poem that strictly adheres to the structural rules of a sonnet while maintaining emotional depth.",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 250,
+      "estimated_response_size": 200,
+      "estimated_context_tokens": 450
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": [
+      "Strict structural constraints (14 lines, ABAB CDCD EFEF GG)",
+      "Meter constraints (iambic pentameter)",
+      "Thematic focus"
+    ],
+    "evaluation_weights": {
+      "accuracy": 10,
+      "clarity": 15,
+      "structure": 40,
+      "constraints": 15,
+      "creativity": 20
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Flawless iambic pentameter", "Perfect rhyme scheme", "Evocative, non-cliché imagery"],
+      "acceptable_characteristics": ["14 lines", "Correct rhyme scheme", "Generally follows the meter"],
+      "minimum_requirements": ["14 lines", "About nostalgia/photographs"]
+    },
+    "common_failures": [
+      "Breaking iambic pentameter",
+      "Incorrect rhyme scheme (e.g., using AABB instead of ABAB)",
+      "Forced rhymes that sacrifice meaning"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Slant rhymes vs perfect rhymes in specific dialects"],
+    "tags": ["poetry", "sonnet", "literature", "structured-writing"]
+  },
+  {
+    "id": "FP-CREA-SCREENWRITING-005",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Creative",
+    "subcategory": "Screenwriting",
+    "difficulty": "Medium",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "Entertainment",
+    "capability": "Storytelling",
+    "prompt_type": "Role Prompt",
+    "user_request": "Write a 3-page opening scene for a sci-fi thriller where a detective discovers that the murder victim is an exact clone of herself.",
+    "user_goal": "Create a compelling hook with standard screenplay formatting and strong dialogue.",
+    "expected_output": "markdown",
+    "primary_target": "Gemini",
+    "optimized_for": "Gemini",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 300,
+      "estimated_response_size": 1200,
+      "estimated_context_tokens": 1500
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": [
+      "Industry-standard format instructions (Fountain or specific Markdown)",
+      "Pacing and tension guidelines",
+      "Character descriptions"
+    ],
+    "evaluation_weights": {
+      "accuracy": 10,
+      "clarity": 15,
+      "structure": 25,
+      "constraints": 25,
+      "creativity": 25
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Perfect screenplay formatting", "High tension and strong pacing", "Distinct character voices"],
+      "acceptable_characteristics": ["Recognizable script format", "Clear progression of discovery", "Competent dialogue"],
+      "minimum_requirements": ["Script format", "Includes the clone twist", "Roughly 3 pages worth of text"]
+    },
+    "common_failures": [
+      "Writing it as a prose story instead of a script",
+      "Overly expositional dialogue",
+      "Incorrect sluglines or character headings"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Handling internal monologues visually"],
+    "tags": ["screenplay", "sci-fi", "thriller", "script"]
+  },
+  {
+    "id": "FP-CREA-VIDEO-SCRIPT-006",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Creative",
+    "subcategory": "Video Script",
+    "difficulty": "Hard",
+    "complexity": "Enterprise",
+    "expertise_level": "Professional",
+    "domain": "Corporate Communications",
+    "capability": "Content Generation",
+    "prompt_type": "Structured Prompt",
+    "user_request": "Write a 2-minute promotional video script for a new B2B SaaS platform that automates HR onboarding. Use a two-column format (Audio/Visual).",
+    "user_goal": "Generate a professional, persuasive video script with clear visual directions paired with voiceover.",
+    "expected_output": "markdown",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 350,
+      "estimated_response_size": 800,
+      "estimated_context_tokens": 1150
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": [
+      "Two-column table formatting",
+      "Pacing/timing estimation (130-150 words per minute)",
+      "B2B professional tone"
+    ],
+    "evaluation_weights": {
+      "accuracy": 15,
+      "clarity": 20,
+      "structure": 30,
+      "constraints": 20,
+      "creativity": 15
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Flawless two-column markdown table", "Visuals perfectly complement audio", "Word count maps exactly to ~2 minutes (approx. 260-300 words of VO)"],
+      "acceptable_characteristics": ["Two-column layout", "Professional tone", "Clear value proposition"],
+      "minimum_requirements": ["Audio and Visual columns present", "About HR onboarding software"]
+    },
+    "common_failures": [
+      "Failing to use a table or two-column format",
+      "Script is way too long or too short for 2 minutes",
+      "Visuals are too abstract or impossible to film/animate"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Formatting tables correctly in markdown for complex multi-line text"],
+    "tags": ["video-script", "b2b", "marketing", "saas"]
+  },
+  {
+    "id": "FP-CREA-PODCAST-OUTLINE-007",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Creative",
+    "subcategory": "Podcast Outline",
+    "difficulty": "Hard",
+    "complexity": "Intermediate",
+    "expertise_level": "Senior",
+    "domain": "Media",
+    "capability": "Content Generation",
+    "prompt_type": "Chain-of-Thought Prompt",
+    "user_request": "Design a comprehensive episode outline for a true-crime comedy podcast. Include time stamps, ad breaks, banter prompts, and story beats for a 45-minute episode about the 1904 Olympic Marathon.",
+    "user_goal": "Create a highly structured yet flexible run-of-show document for podcast hosts.",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 400,
+      "estimated_response_size": 1000,
+      "estimated_context_tokens": 1400
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": [
+      "Time block allocations",
+      "Integration of specific tonal shifts (comedy vs true crime/history)",
+      "Structural elements (intro, ad reads, outro)"
+    ],
+    "evaluation_weights": {
+      "accuracy": 20,
+      "clarity": 20,
+      "structure": 25,
+      "constraints": 15,
+      "creativity": 20
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Logical flow with realistic timestamps adding up to 45 mins", "Specific, funny banter prompts", "Accurate historical beats of the 1904 marathon"],
+      "acceptable_characteristics": ["Clear sections with times", "Includes ad breaks", "Covers the main story"],
+      "minimum_requirements": ["Outline format", "Mentions 1904 marathon", "Includes intro/outro"]
+    },
+    "common_failures": [
+      "Timestamps that don't add up correctly",
+      "Missing the 'comedy' aspect in the prompts",
+      "Overly dense scripting instead of an outline"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Balancing humor with factual retelling"],
+    "tags": ["podcast", "outline", "comedy", "history"]
+  },
+  {
+    "id": "FP-CREA-BRAND-COPYWRITING-008",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Creative",
+    "subcategory": "Brand Copywriting",
+    "difficulty": "Hard",
+    "complexity": "Enterprise",
+    "expertise_level": "Expert",
+    "domain": "Advertising",
+    "capability": "Content Generation",
+    "prompt_type": "Few-Shot Prompt",
+    "user_request": "Develop a brand voice guideline document and three accompanying landing page hero copy variations (Headline, Subheadline, CTA) for a luxury pet accessories brand targeting high-net-worth millennials.",
+    "user_goal": "Establish a distinct brand identity and translate it into actionable, high-converting copy.",
+    "expected_output": "markdown",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 450,
+      "estimated_response_size": 900,
+      "estimated_context_tokens": 1350
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": [
+      "Multi-part output requirement (guidelines + copy)",
+      "Nuanced tone definition (luxury but millennial-friendly)",
+      "Conversion-focused elements (CTAs)"
+    ],
+    "evaluation_weights": {
+      "accuracy": 15,
+      "clarity": 20,
+      "structure": 20,
+      "constraints": 20,
+      "creativity": 25
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Sophisticated, non-pretentious luxury tone", "Clear do's and don'ts in guidelines", "Punchy, distinct hero copy variations"],
+      "acceptable_characteristics": ["Includes both guidelines and 3 variations", "Appropriate tone for target demographic", "Clear CTAs"],
+      "minimum_requirements": ["Brand voice section", "3 headlines, subheads, and CTAs"]
+    },
+    "common_failures": [
+      "Sounding too generic or cheap",
+      "Failing to provide exactly three variations",
+      "Missing the millennial demographic nuance (e.g., sounding too stuffy/old-money)"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Balancing 'luxury' with 'pet' which can easily veer into silly/cute"],
+    "tags": ["copywriting", "branding", "marketing", "luxury"]
+  },
+  {
+    "id": "FP-CREA-SONG-LYRICS-009",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Creative",
+    "subcategory": "Song Lyrics",
+    "difficulty": "Expert",
+    "complexity": "Advanced",
+    "expertise_level": "Expert",
+    "domain": "Music",
+    "capability": "Creative Writing",
+    "prompt_type": "Structured Prompt",
+    "user_request": "Write the lyrics for an upbeat synth-pop song about the fear of missing out (FOMO). Include a standard song structure: Verse 1, Pre-Chorus, Chorus, Verse 2, Pre-Chorus, Chorus, Bridge, Chorus, Outro. Annotate the rhythm/BPM feel.",
+    "user_goal": "Generate structurally sound, rhythmic lyrics with emotional resonance and musical annotations.",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 350,
+      "estimated_response_size": 600,
+      "estimated_context_tokens": 950
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": [
+      "Strict structural components",
+      "Thematic constraints",
+      "Rhythm/musicality annotations"
+    ],
+    "evaluation_weights": {
+      "accuracy": 10,
+      "clarity": 15,
+      "structure": 25,
+      "constraints": 20,
+      "creativity": 30
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Highly rhythmic phrasing that reads like a real song", "Strong hook in the chorus", "Creative, non-cliché lyrics about FOMO"],
+      "acceptable_characteristics": ["Follows the exact song structure", "Rhymes make sense", "Fits the synth-pop vibe"],
+      "minimum_requirements": ["Contains all requested sections", "Theme is FOMO"]
+    },
+    "common_failures": [
+      "Reading like a poem rather than lyrics (lacking rhythmic structure)",
+      "Missing sections (e.g., forgetting the Bridge)",
+      "Cheesy or overly literal phrasing"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Indicating musical pauses or drops in text format"],
+    "tags": ["music", "lyrics", "songwriting", "pop"]
+  },
+  {
+    "id": "FP-CREA-SEO-CONTENT-STRATEGY-010",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Creative",
+    "subcategory": "SEO Content Strategy",
+    "difficulty": "Expert",
+    "complexity": "Enterprise",
+    "expertise_level": "Expert",
+    "domain": "Digital Marketing",
+    "capability": "Content Generation",
+    "prompt_type": "Chain-of-Thought Prompt",
+    "user_request": "Develop a comprehensive 3-month SEO content strategy for a cybersecurity startup. Output must be a JSON object containing target keywords, monthly themes, 12 specific article titles, meta descriptions, and pillar vs. cluster designations.",
+    "user_goal": "Produce a highly structured, strategic SEO roadmap formatted perfectly in JSON.",
+    "expected_output": "json",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 400,
+      "estimated_response_size": 1500,
+      "estimated_context_tokens": 1900
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": [
+      "Complex JSON schema generation",
+      "Strategic interlinking logic (pillar/cluster)",
+      "Multi-month planning logic"
+    ],
+    "evaluation_weights": {
+      "accuracy": 25,
+      "clarity": 15,
+      "structure": 30,
+      "constraints": 20,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Perfect, deep JSON schema validation", "Highly relevant, search-intent optimized titles", "Logical progression of pillar and cluster topics"],
+      "acceptable_characteristics": ["Valid JSON output", "12 total articles", "Includes meta descriptions and keywords"],
+      "minimum_requirements": ["JSON format", "Covers cybersecurity", "3-month timeframe"]
+    },
+    "common_failures": [
+      "Invalid JSON formatting (trailing commas, unescaped quotes)",
+      "Generic or non-sensical article titles",
+      "Ignoring the pillar/cluster methodology"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Ensuring JSON structures accurately represent hierarchical data (pillar parent -> cluster children)"],
+    "tags": ["seo", "strategy", "json", "cybersecurity"]
+  }
+]

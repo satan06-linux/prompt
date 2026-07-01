@@ -1,0 +1,763 @@
+[
+  {
+    "id": "FP-RESE-LITREV-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Research",
+    "subcategory": "Literature Review",
+    "difficulty": "Easy",
+    "complexity": "Simple",
+    "expertise_level": "Beginner",
+    "domain": "Environmental Science",
+    "capability": "Summarization",
+    "prompt_type": "synthesis",
+    "user_request": "Summarize the key findings from recent literature on microplastic contamination in freshwater ecosystems, focusing on studies published between 2020 and 2025. Identify the most commonly reported sources, transport mechanisms, and ecological impacts.",
+    "user_goal": "Obtain a concise, well-organized summary of recent research on freshwater microplastic pollution to inform the introduction section of an undergraduate thesis.",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 350,
+      "estimated_response_size": 1200,
+      "estimated_context_tokens": 1550
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["structured-synthesis", "topic-bounded", "citation-aware"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 25,
+      "structure": 20,
+      "constraints": 15,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Covers all major themes: sources, transport, and ecological impacts",
+        "Organizes findings thematically with clear transitions",
+        "Identifies consensus and conflicting findings across studies",
+        "Suggests directions for future research"
+      ],
+      "acceptable_characteristics": [
+        "Addresses at least two of the three focus areas",
+        "Provides a coherent narrative structure",
+        "References general trends without excessive detail"
+      ],
+      "minimum_requirements": [
+        "Summarizes at least five distinct research themes",
+        "Maintains academic tone throughout",
+        "Stays within the 2020-2025 timeframe scope"
+      ]
+    },
+    "common_failures": [
+      "Fabricating specific citations or DOIs that do not exist",
+      "Mixing freshwater and marine microplastic research without distinction",
+      "Providing a flat bullet list instead of a synthesized narrative"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "User may expect real citations which the model cannot reliably provide",
+      "Overlap between freshwater and estuarine studies may blur scope boundaries"
+    ],
+    "tags": ["literature-review", "environmental-science", "microplastics", "freshwater", "synthesis"]
+  },
+  {
+    "id": "FP-RESE-HYPFORM-002",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Research",
+    "subcategory": "Hypothesis Formulation",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Cognitive Neuroscience",
+    "capability": "Reasoning",
+    "prompt_type": "generative-analytical",
+    "user_request": "Given the observation that bilingual individuals show delayed onset of Alzheimer's symptoms compared to monolinguals, formulate three testable hypotheses that could explain this cognitive reserve effect. For each hypothesis, specify the independent and dependent variables, propose a feasible experimental paradigm, and identify potential confounding variables.",
+    "user_goal": "Generate well-structured, falsifiable hypotheses with operationalized variables to guide the design of a neuroimaging study on bilingualism and cognitive reserve.",
+    "expected_output": "markdown",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 420,
+      "estimated_response_size": 1800,
+      "estimated_context_tokens": 2220
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["hypothesis-driven", "variable-specification", "methodological-awareness"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 20,
+      "structure": 20,
+      "constraints": 15,
+      "creativity": 15
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Hypotheses are specific, falsifiable, and grounded in existing theory",
+        "Variables are clearly operationalized with measurable indicators",
+        "Proposed paradigms are feasible with current neuroimaging technology",
+        "Confounders are thoughtfully identified with mitigation strategies"
+      ],
+      "acceptable_characteristics": [
+        "At least two hypotheses are testable and distinct",
+        "Variables are named even if not fully operationalized",
+        "Experimental paradigms are plausible but lack detail"
+      ],
+      "minimum_requirements": [
+        "Provides exactly three hypotheses",
+        "Each hypothesis includes IV and DV",
+        "Addresses the bilingualism-cognitive reserve relationship"
+      ]
+    },
+    "common_failures": [
+      "Generating vague hypotheses that are not falsifiable",
+      "Conflating correlation with causation in hypothesis framing",
+      "Ignoring socioeconomic and educational confounders"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Model may not distinguish between cognitive reserve and brain reserve theories",
+      "Hypotheses could overlap if not carefully differentiated",
+      "Feasibility constraints vary by institution and available equipment"
+    ],
+    "tags": ["hypothesis-formulation", "cognitive-neuroscience", "bilingualism", "alzheimers", "experimental-design"]
+  },
+  {
+    "id": "FP-RESE-EXPDES-003",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Research",
+    "subcategory": "Experimental Design",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "Pharmacology",
+    "capability": "Planning",
+    "prompt_type": "structured-design",
+    "user_request": "Design a phase II randomized controlled trial to evaluate the efficacy of a novel GLP-1 receptor agonist for treatment-resistant depression. Include the study population criteria, randomization strategy, blinding protocol, primary and secondary endpoints, sample size justification, interim analysis plan, and safety monitoring framework. Address ethical considerations specific to psychiatric populations.",
+    "user_goal": "Produce a comprehensive clinical trial protocol outline suitable for submission to an institutional review board and regulatory agency, demonstrating methodological rigor for a cross-disciplinary pharmacological intervention.",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 550,
+      "estimated_response_size": 3200,
+      "estimated_context_tokens": 3750
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["protocol-structured", "regulatory-aware", "ethically-sensitive", "multi-endpoint"],
+    "evaluation_weights": {
+      "accuracy": 35,
+      "clarity": 15,
+      "structure": 25,
+      "constraints": 20,
+      "creativity": 5
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Includes CONSORT-aligned trial structure with all required elements",
+        "Sample size calculation references power analysis with effect size justification",
+        "Safety monitoring plan includes DSMB composition and stopping rules",
+        "Addresses psychiatric-specific ethical issues including capacity to consent"
+      ],
+      "acceptable_characteristics": [
+        "Covers most required protocol sections with reasonable detail",
+        "Randomization and blinding strategies are appropriate",
+        "Primary endpoint is clinically meaningful and validated"
+      ],
+      "minimum_requirements": [
+        "Describes study population with inclusion/exclusion criteria",
+        "Specifies at least one primary and one secondary endpoint",
+        "Includes basic randomization and blinding plan"
+      ]
+    },
+    "common_failures": [
+      "Omitting treatment-resistant depression definition criteria",
+      "Inadequate safety monitoring for suicidality risk",
+      "Using inappropriate statistical methods for psychiatric outcome measures",
+      "Failing to address placebo response rates in depression trials"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Regulatory requirements differ between FDA and EMA frameworks",
+      "Treatment-resistant depression has multiple competing definitions",
+      "GLP-1 agonist mechanism in depression is still poorly understood"
+    ],
+    "tags": ["experimental-design", "clinical-trial", "pharmacology", "depression", "rct", "protocol"]
+  },
+  {
+    "id": "FP-RESE-DATANL-004",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Research",
+    "subcategory": "Data Analysis",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Social Sciences",
+    "capability": "Analysis",
+    "prompt_type": "methodological-guidance",
+    "user_request": "I have a dataset of 2,400 survey responses measuring job satisfaction across five dimensions (autonomy, compensation, work-life balance, career growth, team dynamics) on a 7-point Likert scale, along with demographic variables (age, gender, tenure, department). Recommend the most appropriate statistical analyses to identify which dimensions most strongly predict overall job satisfaction, test for demographic group differences, and detect latent satisfaction profiles. Justify each method choice and note assumptions to verify.",
+    "user_goal": "Receive expert guidance on selecting and sequencing appropriate multivariate statistical methods for analyzing a structured survey dataset, with enough methodological detail to implement in R or Python.",
+    "expected_output": "markdown",
+    "primary_target": "Gemini",
+    "optimized_for": "Gemma",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 400,
+      "estimated_response_size": 2000,
+      "estimated_context_tokens": 2400
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["data-aware", "method-justification", "assumption-explicit"],
+    "evaluation_weights": {
+      "accuracy": 35,
+      "clarity": 20,
+      "structure": 20,
+      "constraints": 15,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Recommends hierarchical regression for prediction with appropriate controls",
+        "Suggests MANOVA or multilevel modeling for group differences",
+        "Proposes latent profile analysis for detecting satisfaction clusters",
+        "Includes assumption-checking procedures for each method"
+      ],
+      "acceptable_characteristics": [
+        "Identifies regression and group comparison as needed analyses",
+        "Mentions at least one clustering or latent variable approach",
+        "Notes key assumptions like normality and multicollinearity"
+      ],
+      "minimum_requirements": [
+        "Recommends at least three distinct statistical methods",
+        "Addresses all three analytical objectives from the request",
+        "Provides justification for method selections"
+      ]
+    },
+    "common_failures": [
+      "Recommending parametric tests without addressing Likert scale ordinal nature",
+      "Ignoring nested data structure if departments are hierarchical",
+      "Suggesting overly complex methods without considering sample size adequacy"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Debate over treating Likert scales as interval vs ordinal data",
+      "Potential multicollinearity among satisfaction dimensions"
+    ],
+    "tags": ["data-analysis", "statistics", "survey-research", "job-satisfaction", "multivariate-analysis"]
+  },
+  {
+    "id": "FP-RESE-ACWRIT-005",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Research",
+    "subcategory": "Academic Paper Writing",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "Computer Science",
+    "capability": "Writing",
+    "prompt_type": "structured-composition",
+    "user_request": "Write the Methods and Results sections for a research paper evaluating the performance of transformer-based architectures versus graph neural networks for protein-protein interaction prediction. The study compared three models (ProtBERT, ESM-2, GAT-PPI) on two benchmark datasets (STRING v12 and HuRI) using 5-fold cross-validation. Report AUROC, AUPRC, and F1 scores. The transformer models outperformed GNNs on STRING but showed comparable results on HuRI. Include appropriate statistical tests for significance.",
+    "user_goal": "Produce publication-ready Methods and Results sections that adhere to computational biology journal standards, with properly formatted statistical reporting and clear presentation of comparative model performance.",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 480,
+      "estimated_response_size": 2800,
+      "estimated_context_tokens": 3280
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["publication-standard", "statistically-rigorous", "domain-specific", "comparative"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 20,
+      "structure": 25,
+      "constraints": 15,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Methods section includes reproducible model configuration details",
+        "Results present performance metrics in well-formatted tables",
+        "Statistical significance reported with appropriate tests and p-values",
+        "Discussion of dataset-dependent performance differences is nuanced"
+      ],
+      "acceptable_characteristics": [
+        "Methods describe model architectures and evaluation protocol",
+        "Results include all three metrics for all model-dataset combinations",
+        "At least one significance test is applied correctly"
+      ],
+      "minimum_requirements": [
+        "Both Methods and Results sections are present and distinct",
+        "Cross-validation protocol is described",
+        "Performance comparison across models is clearly stated"
+      ]
+    },
+    "common_failures": [
+      "Fabricating specific numerical results that appear authoritative but are invented",
+      "Using inappropriate statistical tests for comparing cross-validated metrics",
+      "Omitting hyperparameter details critical for reproducibility",
+      "Conflating training and evaluation datasets"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Model may generate plausible but fabricated numerical results",
+      "Journal style requirements vary significantly across venues",
+      "Benchmark dataset versions may affect reproducibility claims"
+    ],
+    "tags": ["academic-writing", "computer-science", "bioinformatics", "protein-interaction", "deep-learning"]
+  },
+  {
+    "id": "FP-RESE-GRTPRO-006",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Research",
+    "subcategory": "Grant Proposal",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Public Health",
+    "capability": "Writing",
+    "prompt_type": "persuasive-structured",
+    "user_request": "Draft a Specific Aims page for an NIH R01 grant proposal investigating the relationship between urban green space accessibility and cardiovascular health outcomes in underserved communities. The study should use a mixed-methods approach combining GIS-based spatial analysis with a prospective cohort design. Include three specific aims that build logically upon each other, with clear innovation and significance statements.",
+    "user_goal": "Create a compelling, properly formatted NIH Specific Aims page that establishes the research problem, articulates the knowledge gap, presents a coherent set of aims, and conveys the study's potential impact for health equity.",
+    "expected_output": "text",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 420,
+      "estimated_response_size": 1500,
+      "estimated_context_tokens": 1920
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["NIH-formatted", "persuasive-tone", "logically-progressive"],
+    "evaluation_weights": {
+      "accuracy": 25,
+      "clarity": 25,
+      "structure": 25,
+      "constraints": 15,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Follows NIH Specific Aims page conventions precisely",
+        "Opening paragraph hooks the reader with compelling statistics",
+        "Three aims are logically sequential and independently fundable",
+        "Innovation and significance are explicitly articulated"
+      ],
+      "acceptable_characteristics": [
+        "Contains a clear problem statement and knowledge gap",
+        "Presents three distinct and relevant aims",
+        "Maintains persuasive academic tone throughout"
+      ],
+      "minimum_requirements": [
+        "Fits approximately one page in length",
+        "Includes all three specific aims with brief descriptions",
+        "Addresses both green space and cardiovascular outcomes"
+      ]
+    },
+    "common_failures": [
+      "Exceeding the one-page convention for Specific Aims",
+      "Making aims too interdependent rather than complementary",
+      "Neglecting to articulate what is innovative about the approach"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "NIH formatting conventions may differ by institute",
+      "Mixed-methods integration is often poorly articulated in aims"
+    ],
+    "tags": ["grant-proposal", "nih-r01", "public-health", "health-equity", "urban-planning", "cardiovascular"]
+  },
+  {
+    "id": "FP-RESE-SYSREV-007",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Research",
+    "subcategory": "Systematic Review",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "Education Technology",
+    "capability": "Analysis",
+    "prompt_type": "protocol-development",
+    "user_request": "Develop a complete PRISMA-compliant systematic review protocol for investigating the effectiveness of AI-powered adaptive learning platforms on student learning outcomes in K-12 STEM education. Include the research question in PICO format, comprehensive search strategy with database-specific queries for PubMed, ERIC, and Scopus, inclusion/exclusion criteria, risk of bias assessment framework, data extraction template, and planned synthesis approach. Address heterogeneity assessment and sensitivity analysis.",
+    "user_goal": "Produce a methodologically rigorous systematic review protocol that can be registered on PROSPERO and used to guide a multi-reviewer systematic review process from search through synthesis.",
+    "expected_output": "markdown",
+    "primary_target": "Gemini",
+    "optimized_for": "Gemma",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 520,
+      "estimated_response_size": 3500,
+      "estimated_context_tokens": 4020
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["PRISMA-aligned", "database-specific", "methodologically-comprehensive", "registrable"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 15,
+      "structure": 30,
+      "constraints": 20,
+      "creativity": 5
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "PICO question is precisely formulated with all components defined",
+        "Search strategies use database-specific syntax with Boolean operators",
+        "Risk of bias tool is appropriate for included study designs",
+        "Synthesis plan addresses both narrative and quantitative integration"
+      ],
+      "acceptable_characteristics": [
+        "Research question is clear and answerable",
+        "Search strategy covers at least two databases with relevant terms",
+        "Inclusion/exclusion criteria are explicit and justified"
+      ],
+      "minimum_requirements": [
+        "Protocol follows PRISMA-P structure",
+        "Includes search strategy, eligibility criteria, and synthesis plan",
+        "PICO elements are identifiable"
+      ]
+    },
+    "common_failures": [
+      "Using identical search syntax across databases with different query languages",
+      "Selecting inappropriate risk of bias tools for mixed study designs",
+      "Omitting plans for handling missing data and publication bias",
+      "Defining overly broad or narrow eligibility criteria"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "AI-powered and adaptive learning definitions vary widely across literature",
+      "K-12 vs higher education boundary cases in included studies",
+      "Rapidly evolving field may make protocol quickly outdated"
+    ],
+    "tags": ["systematic-review", "prisma", "education-technology", "adaptive-learning", "k12", "stem"]
+  },
+  {
+    "id": "FP-RESE-METANL-008",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Research",
+    "subcategory": "Meta-Analysis",
+    "difficulty": "Expert",
+    "complexity": "Enterprise",
+    "expertise_level": "Expert",
+    "domain": "Clinical Psychology",
+    "capability": "Analysis",
+    "prompt_type": "advanced-methodological",
+    "user_request": "I am conducting a meta-analysis of 47 randomized controlled trials examining the efficacy of mindfulness-based interventions for anxiety disorders. Studies report outcomes using different scales (GAD-7, STAI, BAI, HARS) and include both active control and waitlist control comparisons. Outline the complete analytical pipeline including: effect size calculation and standardization across scales, choice between fixed-effect and random-effects models with justification, heterogeneity quantification (Q, I², τ²), moderator analysis plan, publication bias assessment methods, sensitivity analyses, and a strategy for handling studies with multiple outcome timepoints. Provide the R code framework using the metafor package.",
+    "user_goal": "Obtain a detailed, implementable meta-analytic pipeline with R code scaffolding that addresses the methodological complexities of synthesizing anxiety intervention trials with heterogeneous outcome measures and comparison conditions.",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 580,
+      "estimated_response_size": 4000,
+      "estimated_context_tokens": 4580
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["code-integrated", "statistically-advanced", "multi-scale-aware", "reproducible"],
+    "evaluation_weights": {
+      "accuracy": 35,
+      "clarity": 15,
+      "structure": 20,
+      "constraints": 20,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Correctly specifies Hedges' g for effect size standardization across scales",
+        "Provides complete metafor R code with rma() and forest() calls",
+        "Moderator analysis uses meta-regression with appropriate covariates",
+        "Addresses dependent effect sizes from multi-timepoint studies using robust variance estimation"
+      ],
+      "acceptable_characteristics": [
+        "Uses standardized mean differences as the common effect size metric",
+        "Chooses random-effects model with heterogeneity quantification",
+        "Includes at least two publication bias methods"
+      ],
+      "minimum_requirements": [
+        "Describes effect size calculation procedure",
+        "Specifies the meta-analytic model type",
+        "Includes some form of heterogeneity and bias assessment"
+      ]
+    },
+    "common_failures": [
+      "Confusing Cohen's d and Hedges' g small-sample correction",
+      "Ignoring unit-of-analysis error with multi-arm or multi-timepoint studies",
+      "Using only funnel plots for publication bias without statistical tests",
+      "Incorrect metafor syntax or deprecated function calls"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Some studies may report medians instead of means requiring estimation methods",
+      "Cluster-randomized trials need design-effect adjustments",
+      "Studies with multiple active intervention arms create dependency issues"
+    ],
+    "tags": ["meta-analysis", "clinical-psychology", "mindfulness", "anxiety", "metafor", "r-programming"]
+  },
+  {
+    "id": "FP-RESE-SURDES-009",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Research",
+    "subcategory": "Survey Design",
+    "difficulty": "Easy",
+    "complexity": "Simple",
+    "expertise_level": "Beginner",
+    "domain": "Human-Computer Interaction",
+    "capability": "Planning",
+    "prompt_type": "instrument-development",
+    "user_request": "Design a 20-item survey instrument to measure user trust in AI-powered medical diagnosis tools. The survey should cover three constructs: perceived reliability, transparency understanding, and willingness to follow AI recommendations. Include a mix of Likert-scale items, semantic differential items, and one open-ended question. Provide response anchors and basic instructions for administration.",
+    "user_goal": "Create a ready-to-pilot survey instrument with clearly worded items, appropriate response formats, and logical construct organization for studying user trust in AI diagnostic systems.",
+    "expected_output": "markdown",
+    "primary_target": "ChatGPT",
+    "optimized_for": "Qwen",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 350,
+      "estimated_response_size": 1600,
+      "estimated_context_tokens": 1950
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["construct-aligned", "psychometrically-aware", "mixed-format"],
+    "evaluation_weights": {
+      "accuracy": 25,
+      "clarity": 30,
+      "structure": 20,
+      "constraints": 15,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Items are clearly mapped to the three specified constructs",
+        "Mix of positively and negatively worded items reduces acquiescence bias",
+        "Response scales are appropriate and consistently anchored",
+        "Administration instructions are clear and include estimated completion time"
+      ],
+      "acceptable_characteristics": [
+        "Contains exactly 20 items covering all three constructs",
+        "Likert and semantic differential formats are both present",
+        "Items are clearly worded and unambiguous"
+      ],
+      "minimum_requirements": [
+        "Provides 20 survey items",
+        "Includes at least two different response formats",
+        "Addresses user trust in AI medical tools"
+      ]
+    },
+    "common_failures": [
+      "Double-barreled questions that measure two things simultaneously",
+      "All items worded in the same direction enabling response set bias",
+      "Semantic differential anchors that are not true opposites"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Trust conceptualization varies across cultural contexts",
+      "Medical AI literacy levels of respondents may affect item comprehension"
+    ],
+    "tags": ["survey-design", "hci", "ai-trust", "medical-ai", "psychometrics", "instrument-development"]
+  },
+  {
+    "id": "FP-RESE-RESGAP-010",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Research",
+    "subcategory": "Research Gap Identification",
+    "difficulty": "Expert",
+    "complexity": "Enterprise",
+    "expertise_level": "Research",
+    "domain": "Quantum Computing",
+    "capability": "Reasoning",
+    "prompt_type": "critical-synthesis",
+    "user_request": "Analyze the current state of quantum error correction research and identify the three most critical unresolved research gaps that must be addressed before fault-tolerant quantum computing becomes practical. For each gap, provide: a precise problem statement, an explanation of why existing approaches are insufficient, the theoretical and engineering barriers involved, which research communities are best positioned to address it, estimated timeline to resolution under optimistic and pessimistic scenarios, and how closing this gap would impact the broader quantum computing roadmap. Cross-reference gaps to identify potential synergies.",
+    "user_goal": "Produce a strategic research gap analysis that maps the frontier of quantum error correction, suitable for informing a national laboratory's five-year research investment strategy or a doctoral student's dissertation topic selection.",
+    "expected_output": "markdown",
+    "primary_target": "Gemini",
+    "optimized_for": "Gemma",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 500,
+      "estimated_response_size": 3800,
+      "estimated_context_tokens": 4300
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["frontier-aware", "multi-dimensional", "strategic-framing", "interdisciplinary"],
+    "evaluation_weights": {
+      "accuracy": 35,
+      "clarity": 15,
+      "structure": 20,
+      "constraints": 15,
+      "creativity": 15
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Gaps are precisely scoped and distinguishable from incremental challenges",
+        "Analysis demonstrates deep understanding of surface codes, color codes, and LDPC codes",
+        "Engineering and theoretical barriers are clearly differentiated",
+        "Cross-gap synergies reveal non-obvious interdependencies"
+      ],
+      "acceptable_characteristics": [
+        "Identifies three genuine and significant research gaps",
+        "Provides reasonable problem statements with supporting context",
+        "Connects gaps to the fault-tolerance threshold"
+      ],
+      "minimum_requirements": [
+        "Presents exactly three research gaps with problem statements",
+        "Addresses quantum error correction specifically, not quantum computing generally",
+        "Includes some assessment of current approach limitations"
+      ]
+    },
+    "common_failures": [
+      "Identifying well-known challenges rather than genuine open research gaps",
+      "Conflating engineering scaling problems with fundamental theoretical barriers",
+      "Providing timeline estimates without grounding in current progress rates",
+      "Missing the distinction between logical and physical qubit error rates"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Rapid breakthroughs may invalidate gap analysis within months",
+      "Hardware-specific vs hardware-agnostic error correction approaches have different gaps",
+      "Classification of what constitutes a 'gap' versus an 'open problem' is subjective"
+    ],
+    "tags": ["research-gaps", "quantum-computing", "error-correction", "fault-tolerance", "strategic-analysis", "frontier-research"]
+  }
+]

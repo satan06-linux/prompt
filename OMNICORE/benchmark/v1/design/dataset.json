@@ -1,0 +1,902 @@
+[
+  {
+    "id": "FP-DSGN-UI-WIREFRAME-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Design",
+    "subcategory": "UI Wireframe",
+    "difficulty": "Easy",
+    "complexity": "Simple",
+    "expertise_level": "Beginner",
+    "domain": "UI/UX",
+    "capability": "Design",
+    "prompt_type": "Structured Prompt",
+    "user_request": "Create a prompt to generate a basic mobile app login wireframe.",
+    "user_goal": "Get a prompt that outputs a login screen layout.",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "GPT",
+    "compatible_models": [
+      "Gemma",
+      "GPT",
+      "Claude",
+      "Qwen",
+      "Phi"
+    ],
+    "token_estimates": {
+      "estimated_prompt_size": 250,
+      "estimated_response_size": 600,
+      "estimated_context_tokens": 1200
+    },
+    "expected_prompt_sections": [
+      "Role",
+      "Objective",
+      "Context",
+      "Requirements",
+      "Constraints",
+      "Input",
+      "Output",
+      "Examples",
+      "Edge Cases",
+      "Success Criteria"
+    ],
+    "expected_prompt_characteristics": [
+      "Specific UI components listed",
+      "Clear hierarchy"
+    ],
+    "evaluation_weights": {
+      "accuracy": 20,
+      "clarity": 20,
+      "structure": 20,
+      "constraints": 20,
+      "creativity": 20
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Defines spacing and alignment"
+      ],
+      "acceptable_characteristics": [
+        "Lists input fields"
+      ],
+      "minimum_requirements": [
+        "Includes login button"
+      ]
+    },
+    "common_failures": [
+      "Forgetting forgot password link",
+      "No error state mentioned"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Third party SSO options"
+    ],
+    "tags": [
+      "ui",
+      "wireframe",
+      "mobile"
+    ]
+  },
+  {
+    "id": "FP-DSGN-UX-RESEARCH-002",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Design",
+    "subcategory": "UX Research",
+    "difficulty": "Easy",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "UI/UX",
+    "capability": "Analysis",
+    "prompt_type": "Role Prompt",
+    "user_request": "Generate a list of user interview questions for a food delivery app.",
+    "user_goal": "Prepare a discussion guide for generative research.",
+    "expected_output": "markdown",
+    "primary_target": "ChatGPT",
+    "optimized_for": "Claude",
+    "compatible_models": [
+      "Gemma",
+      "GPT",
+      "Claude",
+      "Qwen",
+      "Phi"
+    ],
+    "token_estimates": {
+      "estimated_prompt_size": 250,
+      "estimated_response_size": 600,
+      "estimated_context_tokens": 1200
+    },
+    "expected_prompt_sections": [
+      "Role",
+      "Objective",
+      "Context",
+      "Requirements",
+      "Constraints",
+      "Input",
+      "Output",
+      "Examples",
+      "Edge Cases",
+      "Success Criteria"
+    ],
+    "expected_prompt_characteristics": [
+      "Open-ended phrasing",
+      "Goal-oriented sections"
+    ],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 30,
+      "structure": 20,
+      "constraints": 10,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Avoids leading questions completely"
+      ],
+      "acceptable_characteristics": [
+        "Covers pain points and motivations"
+      ],
+      "minimum_requirements": [
+        "Questions are relevant to food delivery"
+      ]
+    },
+    "common_failures": [
+      "Yes/no questions",
+      "Too many questions for a standard session"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Users with dietary restrictions"
+    ],
+    "tags": [
+      "ux",
+      "research",
+      "interview"
+    ]
+  },
+  {
+    "id": "FP-DSGN-LOGO-DESIGN-003",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Design",
+    "subcategory": "Logo Design",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Graphic Design",
+    "capability": "Image Generation",
+    "prompt_type": "System Prompt",
+    "user_request": "I need a Midjourney prompt to create a minimalist, vector-style logo for an eco-friendly coffee shop called 'Green Bean'.",
+    "user_goal": "Generate a high-quality logo concept image.",
+    "expected_output": "image",
+    "primary_target": "Midjourney",
+    "optimized_for": "GPT",
+    "compatible_models": [
+      "Gemma",
+      "GPT",
+      "Claude",
+      "Qwen",
+      "Phi"
+    ],
+    "token_estimates": {
+      "estimated_prompt_size": 250,
+      "estimated_response_size": 600,
+      "estimated_context_tokens": 1200
+    },
+    "expected_prompt_sections": [
+      "Role",
+      "Objective",
+      "Context",
+      "Requirements",
+      "Constraints",
+      "Input",
+      "Output",
+      "Examples",
+      "Edge Cases",
+      "Success Criteria"
+    ],
+    "expected_prompt_characteristics": [
+      "Uses specific style keywords",
+      "Defines aspect ratio and lighting"
+    ],
+    "evaluation_weights": {
+      "accuracy": 15,
+      "clarity": 15,
+      "structure": 20,
+      "constraints": 20,
+      "creativity": 30
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Includes flat vector keywords"
+      ],
+      "acceptable_characteristics": [
+        "Mentions coffee and eco-friendly elements"
+      ],
+      "minimum_requirements": [
+        "Valid Midjourney parameters included"
+      ]
+    },
+    "common_failures": [
+      "Text rendering hallucinations",
+      "Overly complex designs"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Black and white version request"
+    ],
+    "tags": [
+      "logo",
+      "branding",
+      "midjourney"
+    ]
+  },
+  {
+    "id": "FP-DSGN-INTERIOR-SPACE-004",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Design",
+    "subcategory": "Interior Space",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Interior Design",
+    "capability": "Image Generation",
+    "prompt_type": "Structured Prompt",
+    "user_request": "Create a prompt to generate an image of a cozy, modern Scandinavian living room with large windows and a fireplace.",
+    "user_goal": "Visualize an interior space for client presentation.",
+    "expected_output": "image",
+    "primary_target": "Stable Diffusion",
+    "optimized_for": "Claude",
+    "compatible_models": [
+      "Gemma",
+      "GPT",
+      "Claude",
+      "Qwen",
+      "Phi"
+    ],
+    "token_estimates": {
+      "estimated_prompt_size": 250,
+      "estimated_response_size": 600,
+      "estimated_context_tokens": 1200
+    },
+    "expected_prompt_sections": [
+      "Role",
+      "Objective",
+      "Context",
+      "Requirements",
+      "Constraints",
+      "Input",
+      "Output",
+      "Examples",
+      "Edge Cases",
+      "Success Criteria"
+    ],
+    "expected_prompt_characteristics": [
+      "Architectural lighting defined",
+      "Material textures specified"
+    ],
+    "evaluation_weights": {
+      "accuracy": 20,
+      "clarity": 20,
+      "structure": 20,
+      "constraints": 20,
+      "creativity": 20
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Camera angle and lens specified"
+      ],
+      "acceptable_characteristics": [
+        "Mentions scandinavian style and elements"
+      ],
+      "minimum_requirements": [
+        "Includes fireplace and windows"
+      ]
+    },
+    "common_failures": [
+      "Cluttered design contrary to Scandinavian style",
+      "Unrealistic lighting"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Nighttime lighting scenario"
+    ],
+    "tags": [
+      "interior",
+      "architecture",
+      "scandinavian"
+    ]
+  },
+  {
+    "id": "FP-DSGN-PRODUCT-DESIGN-005",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Design",
+    "subcategory": "Product Design",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Industrial Design",
+    "capability": "Design",
+    "prompt_type": "JSON Prompt",
+    "user_request": "Develop a product design brief format as a JSON schema for a smart water bottle.",
+    "user_goal": "Standardize product design requirements into a structured format.",
+    "expected_output": "json",
+    "primary_target": "GPT Image",
+    "optimized_for": "GPT",
+    "compatible_models": [
+      "Gemma",
+      "GPT",
+      "Claude",
+      "Qwen",
+      "Phi"
+    ],
+    "token_estimates": {
+      "estimated_prompt_size": 250,
+      "estimated_response_size": 600,
+      "estimated_context_tokens": 1200
+    },
+    "expected_prompt_sections": [
+      "Role",
+      "Objective",
+      "Context",
+      "Requirements",
+      "Constraints",
+      "Input",
+      "Output",
+      "Examples",
+      "Edge Cases",
+      "Success Criteria"
+    ],
+    "expected_prompt_characteristics": [
+      "Valid JSON schema",
+      "Comprehensive properties"
+    ],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 20,
+      "structure": 25,
+      "constraints": 15,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Includes materials, dimensions, and electronics"
+      ],
+      "acceptable_characteristics": [
+        "Basic JSON schema structure"
+      ],
+      "minimum_requirements": [
+        "Valid JSON format"
+      ]
+    },
+    "common_failures": [
+      "Invalid JSON",
+      "Missing target demographic"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Sustainability requirements"
+    ],
+    "tags": [
+      "product",
+      "industrial",
+      "json"
+    ]
+  },
+  {
+    "id": "FP-DSGN-FASHION-BRIEF-006",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Design",
+    "subcategory": "Fashion Brief",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "Fashion Design",
+    "capability": "Planning",
+    "prompt_type": "Role Prompt",
+    "user_request": "Act as a creative director and write a detailed collection brief for a futuristic streetwear line targeting Gen Z.",
+    "user_goal": "Establish a creative direction and material requirements for a new clothing line.",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": [
+      "Gemma",
+      "GPT",
+      "Claude",
+      "Qwen",
+      "Phi"
+    ],
+    "token_estimates": {
+      "estimated_prompt_size": 250,
+      "estimated_response_size": 600,
+      "estimated_context_tokens": 1200
+    },
+    "expected_prompt_sections": [
+      "Role",
+      "Objective",
+      "Context",
+      "Requirements",
+      "Constraints",
+      "Input",
+      "Output",
+      "Examples",
+      "Edge Cases",
+      "Success Criteria"
+    ],
+    "expected_prompt_characteristics": [
+      "Strong persona adoption",
+      "Detailed material and silhouette specs"
+    ],
+    "evaluation_weights": {
+      "accuracy": 15,
+      "clarity": 20,
+      "structure": 20,
+      "constraints": 15,
+      "creativity": 30
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Defines color palettes and fabric tech"
+      ],
+      "acceptable_characteristics": [
+        "Captures streetwear aesthetic"
+      ],
+      "minimum_requirements": [
+        "Defines a fashion collection"
+      ]
+    },
+    "common_failures": [
+      "Generic descriptions without specifics",
+      "Ignoring the target audience"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Unisex or gender-neutral requirements"
+    ],
+    "tags": [
+      "fashion",
+      "brief",
+      "streetwear"
+    ]
+  },
+  {
+    "id": "FP-DSGN-ARCHITECTURE-PLAN-007",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Design",
+    "subcategory": "Architecture Plan",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "Architecture",
+    "capability": "Planning",
+    "prompt_type": "Structured Prompt",
+    "user_request": "Generate a programmatic layout algorithm for a 5,000 sq ft sustainable community center.",
+    "user_goal": "Organize spaces based on adjacency requirements and square footage allocations.",
+    "expected_output": "markdown",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": [
+      "Gemma",
+      "GPT",
+      "Claude",
+      "Qwen",
+      "Phi"
+    ],
+    "token_estimates": {
+      "estimated_prompt_size": 250,
+      "estimated_response_size": 600,
+      "estimated_context_tokens": 1200
+    },
+    "expected_prompt_sections": [
+      "Role",
+      "Objective",
+      "Context",
+      "Requirements",
+      "Constraints",
+      "Input",
+      "Output",
+      "Examples",
+      "Edge Cases",
+      "Success Criteria"
+    ],
+    "expected_prompt_characteristics": [
+      "Mathematical constraints for area",
+      "Adjacency matrix generation"
+    ],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 15,
+      "structure": 25,
+      "constraints": 20,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Areas sum exactly to 5,000"
+      ],
+      "acceptable_characteristics": [
+        "Lists standard community center rooms"
+      ],
+      "minimum_requirements": [
+        "Provides a spatial breakdown"
+      ]
+    },
+    "common_failures": [
+      "Mathematical errors in area sums",
+      "Ignoring circulation space"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Multi-level vs single-level constraints"
+    ],
+    "tags": [
+      "architecture",
+      "planning",
+      "sustainable"
+    ]
+  },
+  {
+    "id": "FP-DSGN-DASHBOARD-LAYOUT-008",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Design",
+    "subcategory": "Dashboard Layout",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "UI/UX",
+    "capability": "Design",
+    "prompt_type": "JSON Prompt",
+    "user_request": "Create a highly detailed JSON structure representing the layout, components, and data bindings for a financial analytics dashboard.",
+    "user_goal": "Provide a machine-readable UI layout that a front-end framework can render.",
+    "expected_output": "json",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": [
+      "Gemma",
+      "GPT",
+      "Claude",
+      "Qwen",
+      "Phi"
+    ],
+    "token_estimates": {
+      "estimated_prompt_size": 250,
+      "estimated_response_size": 600,
+      "estimated_context_tokens": 1200
+    },
+    "expected_prompt_sections": [
+      "Role",
+      "Objective",
+      "Context",
+      "Requirements",
+      "Constraints",
+      "Input",
+      "Output",
+      "Examples",
+      "Edge Cases",
+      "Success Criteria"
+    ],
+    "expected_prompt_characteristics": [
+      "Deeply nested JSON structure",
+      "Component-based architecture logic"
+    ],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 10,
+      "structure": 30,
+      "constraints": 20,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Defines grid coordinates and responsive behavior"
+      ],
+      "acceptable_characteristics": [
+        "Includes charts and tables"
+      ],
+      "minimum_requirements": [
+        "Valid JSON representing a UI"
+      ]
+    },
+    "common_failures": [
+      "Syntax errors in JSON",
+      "Flat structure lacking layout hierarchy"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Handling empty data states"
+    ],
+    "tags": [
+      "dashboard",
+      "ui",
+      "json"
+    ]
+  },
+  {
+    "id": "FP-DSGN-TYPOGRAPHY-SYSTEM-009",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Design",
+    "subcategory": "Typography System",
+    "difficulty": "Expert",
+    "complexity": "Enterprise",
+    "expertise_level": "Expert",
+    "domain": "Graphic Design",
+    "capability": "Planning",
+    "prompt_type": "System Prompt",
+    "user_request": "Develop a comprehensive typography scale system based on a modular ratio (1.618) with CSS variables, fallback stacks, and responsive fluid type formulas.",
+    "user_goal": "Establish a mathematical design system for typography across an enterprise app.",
+    "expected_output": "code",
+    "primary_target": "ChatGPT",
+    "optimized_for": "Claude",
+    "compatible_models": [
+      "Gemma",
+      "GPT",
+      "Claude",
+      "Qwen",
+      "Phi"
+    ],
+    "token_estimates": {
+      "estimated_prompt_size": 250,
+      "estimated_response_size": 600,
+      "estimated_context_tokens": 1200
+    },
+    "expected_prompt_sections": [
+      "Role",
+      "Objective",
+      "Context",
+      "Requirements",
+      "Constraints",
+      "Input",
+      "Output",
+      "Examples",
+      "Edge Cases",
+      "Success Criteria"
+    ],
+    "expected_prompt_characteristics": [
+      "Requires advanced CSS math (clamp)",
+      "Strict adherence to modular scale"
+    ],
+    "evaluation_weights": {
+      "accuracy": 35,
+      "clarity": 15,
+      "structure": 20,
+      "constraints": 20,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Perfect calculation of fluid clamp values"
+      ],
+      "acceptable_characteristics": [
+        "Provides a CSS variable scale"
+      ],
+      "minimum_requirements": [
+        "Outputs CSS typography code"
+      ]
+    },
+    "common_failures": [
+      "Incorrect math for the golden ratio",
+      "Static sizes instead of responsive fluid typography"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Accessibility minimum size limits"
+    ],
+    "tags": [
+      "typography",
+      "css",
+      "design-system"
+    ]
+  },
+  {
+    "id": "FP-DSGN-BRAND-GUIDELINES-010",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Design",
+    "subcategory": "Brand Guidelines",
+    "difficulty": "Expert",
+    "complexity": "Enterprise",
+    "expertise_level": "Expert",
+    "domain": "Graphic Design",
+    "capability": "Communication",
+    "prompt_type": "Structured Prompt",
+    "user_request": "Write an enterprise-level brand voice, tone, and visual identity guideline document for a global fintech company, including do's and don'ts.",
+    "user_goal": "Create a unified brand rulebook for external agencies and internal teams.",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "GPT",
+    "compatible_models": [
+      "Gemma",
+      "GPT",
+      "Claude",
+      "Qwen",
+      "Phi"
+    ],
+    "token_estimates": {
+      "estimated_prompt_size": 250,
+      "estimated_response_size": 600,
+      "estimated_context_tokens": 1200
+    },
+    "expected_prompt_sections": [
+      "Role",
+      "Objective",
+      "Context",
+      "Requirements",
+      "Constraints",
+      "Input",
+      "Output",
+      "Examples",
+      "Edge Cases",
+      "Success Criteria"
+    ],
+    "expected_prompt_characteristics": [
+      "High professional tone",
+      "Exhaustive edge case coverage for logo misuse"
+    ],
+    "evaluation_weights": {
+      "accuracy": 20,
+      "clarity": 25,
+      "structure": 25,
+      "constraints": 15,
+      "creativity": 15
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Clear distinction between voice and tone based on context"
+      ],
+      "acceptable_characteristics": [
+        "Covers logo, colors, type, and voice"
+      ],
+      "minimum_requirements": [
+        "Provides rules for brand usage"
+      ]
+    },
+    "common_failures": [
+      "Too casual or generic",
+      "Missing visual identity parameters"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Co-branding guidelines"
+    ],
+    "tags": [
+      "brand",
+      "guidelines",
+      "fintech"
+    ]
+  }
+]

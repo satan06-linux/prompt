@@ -1,0 +1,290 @@
+2026-06-25 19:19:56,749 [ERROR] [req_id=N/A] app: Streaming prompt error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "d:\Nexabuild\forge\app.py", line 739, in groq_streaming_generator
+    response = client.chat.completions.create(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\resources\chat\completions.py", line 175, in create
+    return self._post(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\_base_client.py", line 1189, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\_base_client.py", line 891, in request
+    return self._request(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\_base_client.py", line 982, in _request
+    raise self._make_status_error_from_response(err.response) from None
+groq.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-06-25 19:20:20,955 [ERROR] [req_id=N/A] app: Streaming prompt error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "d:\Nexabuild\forge\app.py", line 739, in groq_streaming_generator
+    response = client.chat.completions.create(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\resources\chat\completions.py", line 175, in create
+    return self._post(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\_base_client.py", line 1189, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\_base_client.py", line 891, in request
+    return self._request(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\_base_client.py", line 982, in _request
+    raise self._make_status_error_from_response(err.response) from None
+groq.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-06-26 06:43:40,416 [ERROR] [req_id=N/A] app: Failed to auto-clean old notifications: 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded: it is already loaded
+2026-06-26 06:43:43,495 [ERROR] [req_id=70f7a0ad-92f7-47ed-8202-34940c82f5ef] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:46,683 [ERROR] [req_id=cd419dac-3cd0-457a-a10b-aad450d18260] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:49,876 [ERROR] [req_id=9cdd1894-c5c7-4211-8e66-836e32bf3f82] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,062 [ERROR] [req_id=96b69b97-006a-42b5-8e98-14ff28c06124] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,111 [ERROR] [req_id=044c6902-5ec6-4892-b846-9a2a6bdaeb44] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,152 [ERROR] [req_id=66f24c6d-1635-4632-a6d5-17a7a11e7b06] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,193 [ERROR] [req_id=39f3df78-24a8-4277-90dd-22b67df37826] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,244 [ERROR] [req_id=a8d64629-5c47-4528-a0b1-7f45825fea5d] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,291 [ERROR] [req_id=5c8110d3-5a74-43c7-b96b-d6a227f3487c] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,341 [ERROR] [req_id=e1295029-be2a-4dc7-9ed2-86bd84b54195] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,389 [ERROR] [req_id=a01877cc-a4d8-4c2f-98f4-8d581bbc8ad3] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,446 [ERROR] [req_id=d67bca69-9445-4e31-8ccc-18d9e32ea31d] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,494 [ERROR] [req_id=d7be89c5-2892-4cf5-b97b-36e3ff5f3f2b] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,538 [ERROR] [req_id=13a67b19-30cc-45ed-98c3-c724de146d45] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:54,275 [ERROR] [req_id=b1e14440-5dce-4850-b8df-a3645fdfbe8e] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:55,844 [ERROR] [req_id=240850ae-72c8-4c84-abed-3a6315017823] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:57,542 [ERROR] [req_id=93508361-7f25-49dc-a112-4ba59733c50c] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:57,602 [ERROR] [req_id=7aad8a1a-b0a1-42b5-aaf8-89e59219aa00] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:59,282 [ERROR] [req_id=74688782-df0a-4b51-8775-6fe8501055b5] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:45:00,757 [ERROR] [req_id=N/A] app: Failed to auto-clean old notifications: 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded: it is already loaded
+2026-06-26 06:46:25,087 [ERROR] [req_id=N/A] app: Failed to auto-clean old notifications: 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded: it is already loaded
+2026-06-26 06:50:11,429 [ERROR] [req_id=N/A] app: Failed to auto-clean old notifications: 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded: it is already loaded
+2026-06-26 07:11:27,313 [ERROR] [req_id=N/A] app: Failed to auto-clean old notifications: 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded: it is already loaded
+2026-06-27 13:31:43,557 [ERROR] [req_id=N/A] app: [Prometheus Engine Startup Error] binary mode doesn't take an encoding argument
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 266, in load_prometheus_background
+    prometheus_engine.initialize()
+  File "D:\Nexabuild\forge\prometheus\engine.py", line 36, in initialize
+    from unsloth import FastLanguageModel
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\__init__.py", line 153, in <module>
+    from ._gpu_init import *
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\_gpu_init.py", line 139, in <module>
+    import unsloth_zoo
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\__init__.py", line 80, in <module>
+    has_429_exact_full_read(xet_cache / "logs") if xet_cache is not None else "1",
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\__init__.py", line 63, in has_429_exact_full_read
+    if b"429 Too Many Requests" in log_file.read_bytes():
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1050, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nexabuild\forge\app.py", line 29, in utf8_path_open
+    return real_path_open(self, mode=mode, buffering=buffering, encoding=encoding, errors=errors, newline=newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: binary mode doesn't take an encoding argument
+2026-06-27 13:31:49,212 [ERROR] [req_id=N/A] app: [Prometheus Engine Startup Error] binary mode doesn't take an encoding argument
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 266, in load_prometheus_background
+    prometheus_engine.initialize()
+  File "D:\Nexabuild\forge\prometheus\engine.py", line 36, in initialize
+    from unsloth import FastLanguageModel
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\__init__.py", line 153, in <module>
+    from ._gpu_init import *
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\_gpu_init.py", line 139, in <module>
+    import unsloth_zoo
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\__init__.py", line 80, in <module>
+    has_429_exact_full_read(xet_cache / "logs") if xet_cache is not None else "1",
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\__init__.py", line 63, in has_429_exact_full_read
+    if b"429 Too Many Requests" in log_file.read_bytes():
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1050, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nexabuild\forge\app.py", line 29, in utf8_path_open
+    return real_path_open(self, mode=mode, buffering=buffering, encoding=encoding, errors=errors, newline=newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: binary mode doesn't take an encoding argument
+2026-06-28 18:51:49,195 [ERROR] [req_id=8035306f-47fd-42cf-8d62-8278f894a02b] app: [Analytics Log Error] Failed to write event template_used: 1366 (HY000): Incorrect integer value: 'guest' for column 'user_id' at row 1
+2026-07-01 12:42:14,599 [ERROR] [req_id=N/A] app: [Prometheus Engine Startup Error] Unsloth currently only works on NVIDIA GPUs and Intel GPUs.
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 272, in load_prometheus_background
+    prometheus_engine.initialize()
+  File "D:\Nexabuild\forge\OMNICORE\engine.py", line 36, in initialize
+    from unsloth import FastLanguageModel
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\__init__.py", line 88, in <module>
+    DEVICE_TYPE : str = get_device_type()
+                        ^^^^^^^^^^^^^^^^^
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\__init__.py", line 86, in get_device_type
+    raise NotImplementedError("Unsloth currently only works on NVIDIA GPUs and Intel GPUs.")
+NotImplementedError: Unsloth currently only works on NVIDIA GPUs and Intel GPUs.
+2026-07-01 12:48:31,024 [ERROR] [req_id=N/A] app: [Prometheus Engine Startup Error] Direct module loading failed for UnslothGKDTrainer: non-default argument follows default argument (UnslothGKDTrainer.py, line 621)
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\compiler.py", line 391, in create_new_function
+    new_module, old_path = import_module(compile_folder, name)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\compiler.py", line 386, in import_module
+    new_module = importlib.import_module(name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "D:\Nexabuild\forge\unsloth_compiled_cache\UnslothGKDTrainer.py", line 621
+    sft_args,
+    ^^^^^^^^
+SyntaxError: non-default argument follows default argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\compiler.py", line 416, in create_new_function
+    spec.loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\Admin\AppData\Local\Temp\unsloth_compiled_cache\UnslothGKDTrainer.py", line 621
+    sft_args,
+    ^^^^^^^^
+SyntaxError: non-default argument follows default argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 272, in load_prometheus_background
+    prometheus_engine.initialize()
+  File "D:\Nexabuild\forge\OMNICORE\engine.py", line 36, in initialize
+    from unsloth import FastLanguageModel
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\__init__.py", line 247, in <module>
+    from .models import *
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\models\__init__.py", line 15, in <module>
+    from .llama     import FastLlamaModel
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\models\llama.py", line 2758, in <module>
+    PatchFastRL(FastLanguageModel = FastLlamaModel)
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\models\rl.py", line 742, in PatchFastRL
+    patch_trl_rl_trainers()
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\models\rl.py", line 735, in patch_trl_rl_trainers
+    _patch_trl_rl_trainers(trainer)
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\models\rl.py", line 555, in _patch_trl_rl_trainers
+    created_module = create_new_function(
+                     ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\compiler.py", line 418, in create_new_function
+    raise RuntimeError(f"Direct module loading failed for {name}: {e}")
+RuntimeError: Direct module loading failed for UnslothGKDTrainer: non-default argument follows default argument (UnslothGKDTrainer.py, line 621)

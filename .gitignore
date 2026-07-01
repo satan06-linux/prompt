@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+env/
+venv/
+.venv/
+
+# Large Model Weights (Excluded for GitHub constraints)
+*.safetensors
+*.pt
+*.bin
+*.gguf
+
+# IDEs and Caches
+.vscode/
+.idea/
+.pytest_cache/
+unsloth_compiled_cache/
+
+# Secrets
+.env

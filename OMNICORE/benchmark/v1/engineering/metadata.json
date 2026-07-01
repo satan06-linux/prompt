@@ -1,0 +1,8 @@
+{
+  "domain": "engineering",
+  "description": "Mechanical, civil, electrical, robotics, and IoT engineering benchmarks",
+  "version": "1.0",
+  "created_at": "2026-06-30T07:38:00Z",
+  "target_sample_count": 10,
+  "targeted_llms": ["Gemma", "Qwen", "Phi", "GPT", "Claude"]
+}

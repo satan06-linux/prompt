@@ -1,0 +1,764 @@
+[
+  {
+    "id": "FP-PROG-BACKEND-API-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Programming",
+    "subcategory": "Backend API",
+    "difficulty": "Easy",
+    "complexity": "Simple",
+    "expertise_level": "Beginner",
+    "domain": "Web Development",
+    "capability": "Code Generation",
+    "prompt_type": "Zero-Shot Prompt",
+    "user_request": "I need a basic REST API in Express.js that does CRUD for a todo list. Just something simple with an in-memory array, nothing fancy. I want endpoints for creating, reading, updating, and deleting todos.",
+    "user_goal": "Build a minimal but functional REST API for a todo application using Express.js with in-memory storage",
+    "expected_output": "code",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 350,
+      "estimated_response_size": 1200,
+      "estimated_context_tokens": 1550
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Clear endpoint specification", "Technology stack constraint", "Simplicity emphasis"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 25,
+      "structure": 20,
+      "constraints": 15,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "All four CRUD endpoints implemented correctly",
+        "Proper HTTP status codes returned",
+        "Input validation on request body",
+        "Clean and idiomatic Express.js patterns"
+      ],
+      "acceptable_characteristics": [
+        "All four CRUD endpoints present and functional",
+        "Basic error handling included",
+        "Code runs without modification"
+      ],
+      "minimum_requirements": [
+        "At least three CRUD endpoints work",
+        "Uses Express.js framework",
+        "In-memory storage used"
+      ]
+    },
+    "common_failures": [
+      "Missing DELETE or PATCH endpoint",
+      "No error handling for missing todo IDs",
+      "Returning wrong HTTP status codes"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Deleting a todo that does not exist",
+      "Updating with an empty request body",
+      "Creating a todo without a title field"
+    ],
+    "tags": ["express", "rest-api", "crud", "nodejs", "backend", "beginner"]
+  },
+  {
+    "id": "FP-PROG-FRONTEND-FRAMEWORKS-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Programming",
+    "subcategory": "Frontend Frameworks",
+    "difficulty": "Easy",
+    "complexity": "Simple",
+    "expertise_level": "Beginner",
+    "domain": "Frontend Development",
+    "capability": "Code Generation",
+    "prompt_type": "Few-Shot Prompt",
+    "user_request": "Can you make me a React component that shows a list of products with a search bar at the top? When I type in the search bar it should filter the products in real time. Here's roughly what a product looks like: { name, price, category, inStock }.",
+    "user_goal": "Create a React component with real-time search filtering over a product list",
+    "expected_output": "code",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 400,
+      "estimated_response_size": 1400,
+      "estimated_context_tokens": 1800
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Data shape specification", "Interactivity requirement", "Real-time behavior expectation"],
+    "evaluation_weights": {
+      "accuracy": 25,
+      "clarity": 20,
+      "structure": 25,
+      "constraints": 15,
+      "creativity": 15
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Debounced search input for performance",
+        "Filters across multiple fields (name, category)",
+        "Accessible and semantic HTML structure",
+        "Clean component decomposition"
+      ],
+      "acceptable_characteristics": [
+        "Search filters product list in real time",
+        "Correct use of React hooks (useState)",
+        "Products render with all fields visible"
+      ],
+      "minimum_requirements": [
+        "Search bar present and functional",
+        "Products render from array data",
+        "Valid React component syntax"
+      ]
+    },
+    "common_failures": [
+      "Search only filters by one field instead of multiple",
+      "Case-sensitive filtering confuses users",
+      "No empty-state message when no products match"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Empty product array renders gracefully",
+      "Special characters in search input"
+    ],
+    "tags": ["react", "frontend", "search", "filtering", "components", "hooks"]
+  },
+  {
+    "id": "FP-PROG-ASYNC-CONCURRENCY-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Programming",
+    "subcategory": "Async Concurrency",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Systems Programming",
+    "capability": "Code Generation",
+    "prompt_type": "Structured Prompt",
+    "user_request": "I'm building a web scraper in Python and I need to fetch like 500 URLs concurrently but I don't want to hammer the server. Can you write an async solution using aiohttp that limits concurrency to 20 requests at a time and has retry logic for failed requests?",
+    "user_goal": "Implement a Python async web scraper with bounded concurrency and automatic retry logic using aiohttp",
+    "expected_output": "code",
+    "primary_target": "Gemini",
+    "optimized_for": "Gemma",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 500,
+      "estimated_response_size": 1800,
+      "estimated_context_tokens": 2300
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Concurrency constraint", "Retry mechanism requirement", "Scale specification", "Library constraint"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 15,
+      "structure": 20,
+      "constraints": 25,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Uses asyncio.Semaphore for concurrency limiting",
+        "Exponential backoff retry strategy",
+        "Proper session management with context managers",
+        "Graceful error aggregation and reporting"
+      ],
+      "acceptable_characteristics": [
+        "Concurrency limited to specified bound",
+        "Basic retry logic on HTTP errors",
+        "Uses aiohttp correctly with async/await"
+      ],
+      "minimum_requirements": [
+        "Async fetching with aiohttp",
+        "Some form of concurrency limiting",
+        "Handles at least basic HTTP errors"
+      ]
+    },
+    "common_failures": [
+      "Not properly closing aiohttp sessions",
+      "Retry logic without backoff causing thundering herd",
+      "Semaphore not actually limiting concurrent requests",
+      "Missing timeout configuration"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "All 500 URLs return 503 simultaneously",
+      "DNS resolution failures mid-batch",
+      "Connection pool exhaustion"
+    ],
+    "tags": ["python", "async", "aiohttp", "concurrency", "web-scraping", "semaphore", "retry"]
+  },
+  {
+    "id": "FP-PROG-DATABASE-ARCHITECTURE-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Programming",
+    "subcategory": "Database Architecture",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Data Engineering",
+    "capability": "Architecture Design",
+    "prompt_type": "Chain-of-Thought Prompt",
+    "user_request": "We're running a multi-tenant SaaS app on PostgreSQL and our queries are getting slow with about 2 million rows per tenant. I need help designing the database schema with proper partitioning strategy and indexing. We have tenants, users, projects, and tasks tables. Can you walk me through the best approach?",
+    "user_goal": "Design an optimized PostgreSQL schema with partitioning and indexing strategies for a multi-tenant SaaS application at scale",
+    "expected_output": "code",
+    "primary_target": "Cursor",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 550,
+      "estimated_response_size": 2500,
+      "estimated_context_tokens": 3050
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Scale context provided", "Multi-table relationships", "Performance optimization focus", "Step-by-step reasoning requested"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 20,
+      "structure": 20,
+      "constraints": 20,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Row-level security policies for tenant isolation",
+        "Hash or list partitioning by tenant_id",
+        "Composite indexes aligned with common query patterns",
+        "Explanation of trade-offs between partitioning strategies"
+      ],
+      "acceptable_characteristics": [
+        "Partitioning strategy clearly defined",
+        "Indexes recommended for major query paths",
+        "Schema DDL provided and syntactically correct"
+      ],
+      "minimum_requirements": [
+        "Valid PostgreSQL schema with tenant_id on all tables",
+        "At least one partitioning approach mentioned",
+        "Basic indexing recommendations"
+      ]
+    },
+    "common_failures": [
+      "Suggesting sharding when partitioning suffices",
+      "Missing foreign key considerations across partitions",
+      "Ignoring tenant isolation and data leakage risks"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Tenant with disproportionately large data volume",
+      "Cross-tenant reporting queries"
+    ],
+    "tags": ["postgresql", "database", "partitioning", "multi-tenant", "saas", "schema-design", "indexing"]
+  },
+  {
+    "id": "FP-PROG-MICROSERVICES-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Programming",
+    "subcategory": "Microservices",
+    "difficulty": "Medium",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "Distributed Systems",
+    "capability": "Architecture Design",
+    "prompt_type": "Role Prompt",
+    "user_request": "Hey, I'm migrating our monolith e-commerce app to microservices. Right now I've got orders, inventory, payments, and notifications all tangled together. I need you to help me define the service boundaries, the communication patterns between them, and how to handle distributed transactions — especially the case where payment succeeds but inventory update fails.",
+    "user_goal": "Define microservice boundaries and inter-service communication patterns for an e-commerce system with robust distributed transaction handling",
+    "expected_output": "markdown",
+    "primary_target": "Grok",
+    "optimized_for": "Qwen",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 600,
+      "estimated_response_size": 2800,
+      "estimated_context_tokens": 3400
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Migration context", "Failure scenario specification", "Multi-service interaction", "Distributed consistency concern"],
+    "evaluation_weights": {
+      "accuracy": 25,
+      "clarity": 25,
+      "structure": 20,
+      "constraints": 15,
+      "creativity": 15
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Saga pattern with compensating transactions defined",
+        "Clear bounded contexts for each service",
+        "Event-driven communication with message broker",
+        "Idempotency keys for payment retries"
+      ],
+      "acceptable_characteristics": [
+        "Service boundaries logically separated",
+        "At least one distributed transaction pattern described",
+        "Communication approach (sync vs async) justified"
+      ],
+      "minimum_requirements": [
+        "Four services clearly defined",
+        "Basic communication pattern described",
+        "Failure scenario addressed"
+      ]
+    },
+    "common_failures": [
+      "Using two-phase commit instead of sagas for microservices",
+      "Not addressing eventual consistency implications",
+      "Overly fine-grained service decomposition",
+      "Ignoring data ownership between services"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Payment gateway timeout with ambiguous status",
+      "Inventory reserved but order cancelled by user mid-process",
+      "Notification service down during order completion"
+    ],
+    "tags": ["microservices", "distributed-systems", "saga-pattern", "e-commerce", "architecture", "event-driven"]
+  },
+  {
+    "id": "FP-PROG-DEVOPS-CICD-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Programming",
+    "subcategory": "DevOps CI/CD",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "DevOps Engineering",
+    "capability": "Code Generation",
+    "prompt_type": "Multi-Step Prompt",
+    "user_request": "I need a complete GitHub Actions CI/CD pipeline for a Node.js monorepo managed with Turborepo. It should run linting, unit tests, and e2e tests in parallel across affected packages only. Then deploy to staging on PR merge to develop, and production on release tags. Include caching for node_modules and Turborepo remote cache. Also need Slack notifications on failure.",
+    "user_goal": "Create a production-grade GitHub Actions CI/CD pipeline with selective package testing, multi-environment deployments, intelligent caching, and failure notifications for a Turborepo monorepo",
+    "expected_output": "yaml",
+    "primary_target": "GitHub Copilot",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 650,
+      "estimated_response_size": 3200,
+      "estimated_context_tokens": 3850
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Multi-stage pipeline", "Conditional deployment logic", "Caching strategy", "Notification integration"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 15,
+      "structure": 25,
+      "constraints": 25,
+      "creativity": 5
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Turborepo --filter flag for affected packages",
+        "Parallel job matrix for lint, unit, e2e",
+        "Proper GitHub Actions caching with hash keys",
+        "Environment-specific deployment with approval gates"
+      ],
+      "acceptable_characteristics": [
+        "Working YAML with lint, test, deploy stages",
+        "Caching for node_modules configured",
+        "Conditional deployment based on branch or tag"
+      ],
+      "minimum_requirements": [
+        "Valid GitHub Actions workflow YAML",
+        "At least lint and test jobs defined",
+        "One deployment target configured"
+      ]
+    },
+    "common_failures": [
+      "Cache keys not including lockfile hash",
+      "Missing permissions block for deployment",
+      "E2E tests not waiting for staging deployment",
+      "Slack notification step missing failure condition"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "No packages affected by a commit",
+      "Release tag pushed without PR merge"
+    ],
+    "tags": ["github-actions", "cicd", "turborepo", "monorepo", "devops", "caching", "deployment"]
+  },
+  {
+    "id": "FP-PROG-CLOUD-COMPUTING-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Programming",
+    "subcategory": "Cloud Computing",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "Cloud Infrastructure",
+    "capability": "Code Generation",
+    "prompt_type": "System Prompt",
+    "user_request": "Write me Terraform modules for deploying a production-ready EKS cluster on AWS. I need a VPC with public/private subnets across 3 AZs, the EKS cluster with managed node groups that autoscale between 2-10 nodes, IAM roles with least privilege, and an ALB ingress controller. Please make the modules reusable with proper variable definitions.",
+    "user_goal": "Create reusable Terraform modules for a production-grade AWS EKS deployment with networking, autoscaling, security, and ingress",
+    "expected_output": "code",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 600,
+      "estimated_response_size": 3500,
+      "estimated_context_tokens": 4100
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Infrastructure specification", "Security requirement", "Multi-component architecture", "Reusability constraint"],
+    "evaluation_weights": {
+      "accuracy": 35,
+      "clarity": 10,
+      "structure": 25,
+      "constraints": 25,
+      "creativity": 5
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Modular Terraform structure with separate VPC, EKS, IAM modules",
+        "OIDC provider for pod-level IAM roles",
+        "Cluster autoscaler and ALB controller Helm releases",
+        "Outputs for kubeconfig and cluster endpoint"
+      ],
+      "acceptable_characteristics": [
+        "VPC with public/private subnets across 3 AZs",
+        "EKS cluster with managed node group and autoscaling",
+        "IAM roles with reasonable policies",
+        "Variables and outputs defined"
+      ],
+      "minimum_requirements": [
+        "Valid Terraform HCL syntax",
+        "EKS cluster resource defined",
+        "VPC with subnets created"
+      ]
+    },
+    "common_failures": [
+      "Hardcoded values instead of variables",
+      "Overly permissive IAM policies (admin access)",
+      "Missing depends_on for resource ordering"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "AWS region with only 2 availability zones",
+      "Node group scaling to zero during off-hours"
+    ],
+    "tags": ["terraform", "aws", "eks", "kubernetes", "cloud", "infrastructure-as-code", "iam"]
+  },
+  {
+    "id": "FP-PROG-CYBERSECURITY-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Programming",
+    "subcategory": "Cybersecurity",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Expert",
+    "domain": "Application Security",
+    "capability": "Code Review",
+    "prompt_type": "Agent Prompt",
+    "user_request": "I have a Django REST API that handles user authentication and file uploads. Can you do a thorough security audit of this code? I want you to find vulnerabilities like injection flaws, broken auth, insecure file handling, CSRF issues, and anything else. For each vulnerability, explain the risk and give me the fixed code.",
+    "user_goal": "Perform a comprehensive security audit on a Django REST API identifying all vulnerabilities with risk explanations and remediated code",
+    "expected_output": "markdown",
+    "primary_target": "Gemini",
+    "optimized_for": "Gemma",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 800,
+      "estimated_response_size": 3000,
+      "estimated_context_tokens": 3800
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Code review context", "Multi-vulnerability scanning", "Risk-based analysis", "Remediation requirement"],
+    "evaluation_weights": {
+      "accuracy": 35,
+      "clarity": 20,
+      "structure": 15,
+      "constraints": 20,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "OWASP Top 10 mapped to findings",
+        "CVSS-style severity ratings per vulnerability",
+        "Before/after code for each fix",
+        "Defense-in-depth recommendations"
+      ],
+      "acceptable_characteristics": [
+        "Major vulnerabilities identified (SQLi, XSS, auth bypass)",
+        "Risk explanation for each finding",
+        "Fixed code snippets provided"
+      ],
+      "minimum_requirements": [
+        "At least 3 real vulnerabilities found",
+        "Each vulnerability has an explanation",
+        "At least one code fix provided"
+      ]
+    },
+    "common_failures": [
+      "Missing path traversal in file upload handling",
+      "Not checking for mass assignment vulnerabilities in serializers",
+      "Ignoring rate limiting on authentication endpoints",
+      "Overlooking insecure deserialization risks"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Polyglot file uploads bypassing extension checks",
+      "JWT token reuse after password change"
+    ],
+    "tags": ["security", "django", "code-review", "owasp", "authentication", "file-upload", "vulnerability"]
+  },
+  {
+    "id": "FP-PROG-MOBILE-APPS-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Programming",
+    "subcategory": "Mobile Apps",
+    "difficulty": "Expert",
+    "complexity": "Enterprise",
+    "expertise_level": "Expert",
+    "domain": "Mobile Development",
+    "capability": "Optimization",
+    "prompt_type": "Workflow Prompt",
+    "user_request": "Our React Native app has terrible performance on Android — the FlatList with 10k+ items stutters badly, images flicker when scrolling, and navigation transitions are janky. The JS thread is consistently above 80% utilization. I need you to architect a complete performance optimization strategy including virtualization tuning, image caching pipeline, navigation optimization, and native module bridging where needed. Show me the actual code changes.",
+    "user_goal": "Architect and implement a comprehensive performance optimization strategy for a React Native Android application suffering from rendering, scrolling, and navigation performance issues",
+    "expected_output": "code",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 750,
+      "estimated_response_size": 4000,
+      "estimated_context_tokens": 4750
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Performance metrics cited", "Multi-symptom diagnosis", "Platform-specific focus", "Code-level solutions required"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 15,
+      "structure": 20,
+      "constraints": 20,
+      "creativity": 15
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "FlatList optimization with getItemLayout, windowSize, maxToRenderPerBatch",
+        "FastImage or custom native image caching module",
+        "React Navigation performance settings (detachInactiveScreens, freezeOnBlur)",
+        "Hermes engine and RAM bundle recommendations"
+      ],
+      "acceptable_characteristics": [
+        "FlatList virtualization parameters tuned",
+        "Image caching solution implemented",
+        "At least two navigation optimizations applied",
+        "JS thread reduction strategies explained"
+      ],
+      "minimum_requirements": [
+        "FlatList rendering optimized",
+        "Image loading improved",
+        "Actionable code changes provided"
+      ]
+    },
+    "common_failures": [
+      "Recommending web-only solutions that don't apply to React Native",
+      "Not addressing the Android-specific rendering pipeline",
+      "Suggesting memo/useCallback without profiling justification"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Device with only 2GB RAM handling 10k list items",
+      "Offline image cache invalidation"
+    ],
+    "tags": ["react-native", "android", "performance", "optimization", "flatlist", "mobile", "native-modules"]
+  },
+  {
+    "id": "FP-PROG-SYSTEM-DESIGN-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Programming",
+    "subcategory": "System Design",
+    "difficulty": "Expert",
+    "complexity": "Enterprise",
+    "expertise_level": "Research",
+    "domain": "Distributed Systems Architecture",
+    "capability": "Architecture Design",
+    "prompt_type": "JSON Prompt",
+    "user_request": "Design a real-time collaborative document editing system like Google Docs that supports 500 concurrent editors per document with conflict-free resolution. I need the full architecture — CRDT vs OT decision with justification, WebSocket layer design, persistence strategy, cursor presence system, offline support with sync, and operational transform server. Target sub-100ms latency for character insertions. Please include code for the core CRDT/OT engine.",
+    "user_goal": "Design and partially implement a real-time collaborative editing system with conflict resolution, presence awareness, offline support, and sub-100ms latency at scale",
+    "expected_output": "markdown",
+    "primary_target": "Cursor",
+    "optimized_for": "Phi",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 900,
+      "estimated_response_size": 5000,
+      "estimated_context_tokens": 5900
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Latency SLA specified", "Scale requirement quantified", "Multi-subsystem architecture", "Algorithm selection justification needed"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 15,
+      "structure": 20,
+      "constraints": 15,
+      "creativity": 20
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Detailed CRDT vs OT comparison with justified selection",
+        "WebSocket fan-out architecture with room-based routing",
+        "Working CRDT implementation (e.g., RGA or Yjs-style)",
+        "Offline queue with vector clock synchronization"
+      ],
+      "acceptable_characteristics": [
+        "Architecture diagram or component breakdown",
+        "Conflict resolution strategy explained",
+        "Core engine code provided",
+        "Persistence and sync approach defined"
+      ],
+      "minimum_requirements": [
+        "CRDT or OT approach selected and justified",
+        "WebSocket communication layer described",
+        "Basic conflict resolution logic shown"
+      ]
+    },
+    "common_failures": [
+      "Choosing OT without addressing server bottleneck at 500 users",
+      "No strategy for cursor presence broadcasting at scale",
+      "Ignoring document size growth from tombstones in CRDTs",
+      "Missing garbage collection for CRDT metadata"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Two users editing the exact same character simultaneously",
+      "User reconnecting after 24 hours offline with large diff",
+      "Document exceeding 1 million characters"
+    ],
+    "tags": ["system-design", "crdt", "real-time", "collaboration", "websocket", "distributed", "architecture"]
+  }
+]

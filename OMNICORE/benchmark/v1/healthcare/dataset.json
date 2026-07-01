@@ -1,0 +1,775 @@
+[
+  {
+    "id": "FP-HEAL-CLINICAL-DECISION-SUPPORT-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Healthcare",
+    "subcategory": "Clinical Decision Support",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Internal Medicine",
+    "capability": "Reasoning",
+    "prompt_type": "decision-matrix",
+    "user_request": "A 58-year-old male presents with chest pain radiating to the left arm, diaphoresis, and shortness of breath. He has a history of type 2 diabetes, hypertension, and hyperlipidemia. His ECG shows ST-segment elevation in leads II, III, and aVF. Troponin levels are elevated. Generate a clinical decision support prompt that guides an AI to prioritize differential diagnoses, recommend immediate interventions, and flag contraindications based on the patient's comorbidities.",
+    "user_goal": "Obtain a structured clinical decision support framework that an AI model can use to triage acute cardiac events while accounting for patient-specific risk factors and comorbidities.",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 650,
+      "estimated_response_size": 1800,
+      "estimated_context_tokens": 2450
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["clinically-accurate", "evidence-based", "structured-reasoning"],
+    "evaluation_weights": {
+      "accuracy": 35,
+      "clarity": 20,
+      "structure": 15,
+      "constraints": 20,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Correctly identifies STEMI with inferior wall involvement",
+        "Prioritizes PCI within guideline-recommended timeframes",
+        "Flags metformin contraindication for contrast dye procedures",
+        "Includes risk stratification using TIMI or GRACE score"
+      ],
+      "acceptable_characteristics": [
+        "Identifies acute MI as primary diagnosis",
+        "Recommends standard MONA protocol",
+        "Mentions need for cardiology consultation"
+      ],
+      "minimum_requirements": [
+        "Recognizes ST-elevation as emergent finding",
+        "Recommends at least one appropriate intervention",
+        "Acknowledges patient comorbidities"
+      ]
+    },
+    "common_failures": [
+      "Ignoring drug-disease interactions with diabetes medications",
+      "Failing to recommend emergent reperfusion therapy",
+      "Not accounting for renal function before contrast administration"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Patient has documented allergy to aspirin",
+      "Recent GI bleeding within 30 days",
+      "Concurrent use of SGLT2 inhibitors affecting volume status"
+    ],
+    "tags": ["cardiology", "STEMI", "clinical-decision-support", "emergency-medicine", "comorbidity-management"]
+  },
+  {
+    "id": "FP-HEAL-PATIENT-COMMUNICATION-002",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Healthcare",
+    "subcategory": "Patient Communication",
+    "difficulty": "Easy",
+    "complexity": "Simple",
+    "expertise_level": "Beginner",
+    "domain": "Primary Care",
+    "capability": "Communication",
+    "prompt_type": "plain-language-rewrite",
+    "user_request": "Rewrite the following discharge instructions for a patient diagnosed with community-acquired pneumonia so that they are understandable by someone with a 6th-grade reading level. The original instructions include antibiotic regimen details, warning signs for readmission, follow-up scheduling, and activity restrictions.",
+    "user_goal": "Create a patient-friendly version of clinical discharge instructions that maximizes comprehension and adherence while retaining all medically necessary information.",
+    "expected_output": "text",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 400,
+      "estimated_response_size": 900,
+      "estimated_context_tokens": 1300
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["empathetic-tone", "health-literate", "actionable"],
+    "evaluation_weights": {
+      "accuracy": 25,
+      "clarity": 35,
+      "structure": 15,
+      "constraints": 15,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Uses Flesch-Kincaid grade level 6 or below",
+        "Preserves all critical safety information",
+        "Includes visual-friendly formatting with bullet points",
+        "Provides concrete examples for warning signs"
+      ],
+      "acceptable_characteristics": [
+        "Language is simplified from clinical jargon",
+        "Key medication instructions are clear",
+        "Follow-up date and contact info are prominent"
+      ],
+      "minimum_requirements": [
+        "Avoids unexplained medical terminology",
+        "Includes when to take medications",
+        "Lists at least two emergency warning signs"
+      ]
+    },
+    "common_failures": [
+      "Retaining complex medical jargon without explanation",
+      "Omitting critical warning signs for readmission",
+      "Using passive voice that obscures patient responsibilities"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Patient is non-native English speaker",
+      "Patient has visual impairment requiring large-print formatting"
+    ],
+    "tags": ["patient-education", "health-literacy", "discharge-instructions", "plain-language", "pneumonia"]
+  },
+  {
+    "id": "FP-HEAL-DRUG-INTERACTION-003",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Healthcare",
+    "subcategory": "Drug Interaction",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "Clinical Pharmacology",
+    "capability": "Analysis",
+    "prompt_type": "multi-drug-analysis",
+    "user_request": "A 72-year-old female with atrial fibrillation, chronic kidney disease (stage 3b, eGFR 38), osteoarthritis, and major depressive disorder is currently prescribed: warfarin 5mg daily, lisinopril 20mg daily, sertraline 100mg daily, naproxen 500mg BID, and amlodipine 10mg daily. Analyze all pairwise and higher-order drug interactions, classify them by severity, propose safer therapeutic alternatives where interactions are clinically significant, and provide dose adjustment recommendations based on renal function.",
+    "user_goal": "Generate a comprehensive drug interaction analysis that identifies dangerous combinations, quantifies risk, and provides actionable substitution and dosing recommendations for a polypharmacy patient with impaired renal clearance.",
+    "expected_output": "table",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 750,
+      "estimated_response_size": 2400,
+      "estimated_context_tokens": 3150
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["pharmacologically-precise", "risk-stratified", "evidence-referenced", "renal-adjusted"],
+    "evaluation_weights": {
+      "accuracy": 40,
+      "clarity": 15,
+      "structure": 15,
+      "constraints": 25,
+      "creativity": 5
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Identifies warfarin-naproxen bleeding risk as critical interaction",
+        "Flags sertraline-warfarin serotonergic and antiplatelet effects",
+        "Recommends CKD-appropriate NSAID alternatives like acetaminophen",
+        "Provides INR monitoring frequency adjustments",
+        "Calculates renal dose adjustments using Cockcroft-Gault"
+      ],
+      "acceptable_characteristics": [
+        "Identifies at least 3 major drug interactions",
+        "Recommends discontinuation of naproxen",
+        "Mentions need for renal dose adjustments"
+      ],
+      "minimum_requirements": [
+        "Identifies warfarin-NSAID interaction",
+        "Notes CKD as a factor in drug clearance",
+        "Suggests at least one medication substitution"
+      ]
+    },
+    "common_failures": [
+      "Missing the triple-whammy nephrotoxicity of NSAID + ACE inhibitor + diuretic potential",
+      "Failing to account for CYP2C9 interactions between warfarin and sertraline",
+      "Recommending COX-2 selective inhibitors without noting cardiovascular risk in AF patients",
+      "Not adjusting sertraline dose for renal impairment"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Patient is also taking OTC omeprazole affecting warfarin metabolism",
+      "Recent addition of amiodarone for rate control",
+      "Patient has a documented sulfa allergy limiting alternatives"
+    ],
+    "tags": ["polypharmacy", "drug-interactions", "CKD", "warfarin", "pharmacokinetics", "renal-dosing"]
+  },
+  {
+    "id": "FP-HEAL-MEDICAL-REPORT-SUMMARIZATION-004",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Healthcare",
+    "subcategory": "Medical Report Summarization",
+    "difficulty": "Easy",
+    "complexity": "Simple",
+    "expertise_level": "Beginner",
+    "domain": "Radiology",
+    "capability": "Summarization",
+    "prompt_type": "structured-summary",
+    "user_request": "Summarize the following chest X-ray radiology report into a concise clinical summary suitable for a referring primary care physician. The summary should highlight key findings, clinical significance, comparison with prior imaging if mentioned, and recommended follow-up actions. Keep the summary under 150 words.",
+    "user_goal": "Produce a concise, clinically actionable summary of a radiology report that enables a non-radiologist physician to quickly grasp findings and determine next steps for patient management.",
+    "expected_output": "text",
+    "primary_target": "Gemini",
+    "optimized_for": "Gemma",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 350,
+      "estimated_response_size": 400,
+      "estimated_context_tokens": 750
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["concise", "clinically-relevant", "action-oriented"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 30,
+      "structure": 20,
+      "constraints": 15,
+      "creativity": 5
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Captures all significant findings without extraneous detail",
+        "Stays within 150-word limit",
+        "Prioritizes findings by clinical urgency",
+        "Includes specific follow-up recommendations with timeframes"
+      ],
+      "acceptable_characteristics": [
+        "Identifies primary radiological findings",
+        "Provides a readable summary for non-specialists",
+        "Mentions at least one follow-up action"
+      ],
+      "minimum_requirements": [
+        "Summarizes the report in plain clinical language",
+        "Does not introduce hallucinated findings",
+        "Is shorter than the original report"
+      ]
+    },
+    "common_failures": [
+      "Exceeding the word limit while including non-essential details",
+      "Omitting incidental findings that require follow-up",
+      "Using overly technical radiological terminology without context"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Report contains ambiguous findings requiring clinical correlation",
+      "Multiple incidental findings competing for priority in a short summary"
+    ],
+    "tags": ["radiology", "report-summarization", "chest-xray", "clinical-communication", "primary-care"]
+  },
+  {
+    "id": "FP-HEAL-TELEMEDICINE-005",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Healthcare",
+    "subcategory": "Telemedicine",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Digital Health",
+    "capability": "Planning",
+    "prompt_type": "workflow-design",
+    "user_request": "Design a structured telemedicine triage workflow for a rural health clinic that serves 3,000 patients across a 200-mile radius. The workflow must handle three tiers of urgency (emergent, urgent, routine), integrate with existing EHR systems, account for low-bandwidth connectivity issues, and include escalation protocols for cases requiring in-person evaluation. Include decision points, responsible roles, and estimated time-to-resolution for each tier.",
+    "user_goal": "Create a deployable telemedicine triage workflow that optimizes patient access in underserved rural areas while maintaining clinical safety standards and accounting for technological constraints.",
+    "expected_output": "markdown",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 550,
+      "estimated_response_size": 2000,
+      "estimated_context_tokens": 2550
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["operationally-feasible", "resource-aware", "safety-first"],
+    "evaluation_weights": {
+      "accuracy": 20,
+      "clarity": 25,
+      "structure": 25,
+      "constraints": 20,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Defines clear decision trees for all three urgency tiers",
+        "Includes fallback protocols for connectivity failure",
+        "Specifies role assignments for nurses, PAs, and physicians",
+        "Provides realistic time-to-resolution benchmarks"
+      ],
+      "acceptable_characteristics": [
+        "Distinguishes between urgency levels with clear criteria",
+        "Mentions EHR integration requirements",
+        "Includes at least one escalation pathway"
+      ],
+      "minimum_requirements": [
+        "Defines at least two triage tiers",
+        "Addresses remote connectivity as a constraint",
+        "Includes a basic escalation protocol"
+      ]
+    },
+    "common_failures": [
+      "Designing workflows that assume reliable high-speed internet",
+      "Failing to include HIPAA compliance considerations for video consultations",
+      "Not addressing after-hours or weekend coverage gaps"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Patient presents with symptoms suggestive of stroke during a routine telemedicine visit",
+      "Internet connectivity drops mid-consultation during an urgent case",
+      "Non-English-speaking patient without interpreter access"
+    ],
+    "tags": ["telemedicine", "rural-health", "triage", "workflow-design", "digital-health", "EHR-integration"]
+  },
+  {
+    "id": "FP-HEAL-HEALTH-EDUCATION-006",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Healthcare",
+    "subcategory": "Health Education",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Preventive Medicine",
+    "capability": "Communication",
+    "prompt_type": "educational-content",
+    "user_request": "Create a comprehensive health education module on Type 2 diabetes self-management for newly diagnosed patients in a community health center. The module should cover blood glucose monitoring, dietary guidelines using the plate method, exercise recommendations, medication adherence strategies, and recognizing hypoglycemia and hyperglycemia symptoms. Target audience is adults aged 40-65 with varying health literacy levels. Include teach-back questions for each section.",
+    "user_goal": "Develop a patient-centered educational module that empowers newly diagnosed Type 2 diabetes patients with practical self-management skills and includes assessment mechanisms to verify comprehension.",
+    "expected_output": "markdown",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 550,
+      "estimated_response_size": 2200,
+      "estimated_context_tokens": 2750
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["culturally-sensitive", "multi-literacy-level", "interactive"],
+    "evaluation_weights": {
+      "accuracy": 25,
+      "clarity": 30,
+      "structure": 20,
+      "constraints": 10,
+      "creativity": 15
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Covers all five self-management domains comprehensively",
+        "Includes at least one teach-back question per section",
+        "Uses analogies and everyday language for complex concepts",
+        "Addresses cultural dietary considerations"
+      ],
+      "acceptable_characteristics": [
+        "Covers at least four of the five domains",
+        "Language is accessible to low-literacy audiences",
+        "Includes basic self-monitoring instructions"
+      ],
+      "minimum_requirements": [
+        "Covers blood glucose monitoring and dietary basics",
+        "Explains hypoglycemia warning signs",
+        "Uses non-technical language throughout"
+      ]
+    },
+    "common_failures": [
+      "Using clinical terminology without plain-language alternatives",
+      "Providing generic dietary advice not tailored to diverse cultural diets",
+      "Omitting teach-back or comprehension verification elements",
+      "Failing to distinguish between Type 1 and Type 2 management"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Patient has comorbid visual impairment limiting use of standard glucose monitors",
+      "Patient follows a strict vegetarian or culturally specific diet"
+    ],
+    "tags": ["diabetes", "patient-education", "self-management", "health-literacy", "preventive-medicine", "teach-back"]
+  },
+  {
+    "id": "FP-HEAL-DIAGNOSTIC-REASONING-007",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Healthcare",
+    "subcategory": "Diagnostic Reasoning",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "Neurology",
+    "capability": "Reasoning",
+    "prompt_type": "differential-diagnosis",
+    "user_request": "A 34-year-old female presents with a 3-week history of progressive bilateral lower extremity weakness, ascending paresthesias starting from the feet, and areflexia on neurological exam. She reports a viral upper respiratory infection 4 weeks ago. Lumbar puncture shows elevated protein with normal cell count (albuminocytologic dissociation). Nerve conduction studies show demyelinating pattern with prolonged distal latencies and reduced conduction velocities. Generate a structured diagnostic reasoning framework that walks through the differential diagnosis, supporting and refuting evidence for each candidate, and recommends a diagnostic and therapeutic plan.",
+    "user_goal": "Produce a rigorous diagnostic reasoning chain that demonstrates Bayesian clinical thinking, systematically evaluates differential diagnoses against available evidence, and arrives at an evidence-based management plan.",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 700,
+      "estimated_response_size": 2600,
+      "estimated_context_tokens": 3300
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["systematic-reasoning", "evidence-weighted", "clinically-rigorous", "differential-structured"],
+    "evaluation_weights": {
+      "accuracy": 40,
+      "clarity": 15,
+      "structure": 20,
+      "constraints": 20,
+      "creativity": 5
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Correctly identifies Guillain-Barré syndrome (AIDP) as most likely diagnosis",
+        "Systematically rules out transverse myelitis, CIDP, and spinal cord compression",
+        "Cites albuminocytologic dissociation as pathognomonic finding",
+        "Recommends IVIG or plasmapheresis with monitoring for respiratory failure",
+        "Includes Brighton criteria or diagnostic criteria reference"
+      ],
+      "acceptable_characteristics": [
+        "Identifies GBS as primary diagnosis",
+        "Lists at least three differential diagnoses with reasoning",
+        "Recommends appropriate first-line treatment"
+      ],
+      "minimum_requirements": [
+        "Recognizes ascending paralysis pattern",
+        "Connects preceding viral illness to autoimmune etiology",
+        "Recommends immunomodulatory therapy"
+      ]
+    },
+    "common_failures": [
+      "Confusing AIDP with CIDP based on temporal course",
+      "Failing to emphasize the urgency of respiratory monitoring",
+      "Not mentioning anti-ganglioside antibody testing",
+      "Recommending corticosteroids which are ineffective in GBS"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Patient develops autonomic dysfunction with blood pressure instability",
+      "Nerve conduction studies show axonal rather than demyelinating pattern suggesting AMAN variant",
+      "Patient is 28 weeks pregnant limiting treatment options"
+    ],
+    "tags": ["neurology", "GBS", "diagnostic-reasoning", "differential-diagnosis", "autoimmune", "emergency-neurology"]
+  },
+  {
+    "id": "FP-HEAL-TREATMENT-PROTOCOL-008",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Healthcare",
+    "subcategory": "Treatment Protocol",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Expert",
+    "domain": "Oncology",
+    "capability": "Planning",
+    "prompt_type": "protocol-design",
+    "user_request": "Design a multi-disciplinary treatment protocol for a 55-year-old male diagnosed with Stage IIIA (T3N2M0) non-small cell lung cancer (adenocarcinoma, EGFR-negative, PD-L1 TPS 60%). The protocol should cover neoadjuvant therapy options, surgical candidacy assessment, adjuvant therapy considerations, immunotherapy integration based on PD-L1 expression, radiation therapy planning, and supportive care. Include decision branch points based on treatment response, performance status changes, and genomic profiling results.",
+    "user_goal": "Create a comprehensive, guideline-concordant treatment protocol that addresses the full continuum of care for locally advanced NSCLC, incorporating precision medicine markers and multi-disciplinary decision points.",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 800,
+      "estimated_response_size": 3000,
+      "estimated_context_tokens": 3800
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["guideline-aligned", "precision-medicine", "multi-disciplinary", "branching-logic"],
+    "evaluation_weights": {
+      "accuracy": 35,
+      "clarity": 15,
+      "structure": 20,
+      "constraints": 25,
+      "creativity": 5
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Incorporates NCCN guideline-concordant recommendations for Stage IIIA NSCLC",
+        "Leverages PD-L1 TPS 60% to recommend pembrolizumab-based immunotherapy",
+        "Includes neoadjuvant chemoimmunotherapy as per CheckMate 816 / KEYNOTE-671 data",
+        "Defines surgical candidacy criteria with pulmonary function thresholds",
+        "Provides branching logic for partial response vs. progression scenarios"
+      ],
+      "acceptable_characteristics": [
+        "Recommends concurrent chemoradiation as standard approach",
+        "Mentions immunotherapy consolidation with durvalumab (PACIFIC regimen)",
+        "Includes basic supportive care recommendations"
+      ],
+      "minimum_requirements": [
+        "Identifies platinum-based chemotherapy as backbone",
+        "Acknowledges PD-L1 status in treatment selection",
+        "Includes radiation therapy in the protocol"
+      ]
+    },
+    "common_failures": [
+      "Recommending EGFR-targeted therapy despite EGFR-negative status",
+      "Omitting surgical evaluation for potentially resectable Stage IIIA",
+      "Failing to include response assessment imaging intervals",
+      "Not addressing performance status decline contingencies"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Patient develops immune-related pneumonitis during neoadjuvant immunotherapy",
+      "Post-surgical pathology reveals unexpected small cell transformation",
+      "Patient has concurrent autoimmune condition limiting immunotherapy use"
+    ],
+    "tags": ["oncology", "NSCLC", "treatment-protocol", "immunotherapy", "PD-L1", "multi-disciplinary", "precision-medicine"]
+  },
+  {
+    "id": "FP-HEAL-MENTAL-HEALTH-ASSESSMENT-009",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Healthcare",
+    "subcategory": "Mental Health Assessment",
+    "difficulty": "Expert",
+    "complexity": "Enterprise",
+    "expertise_level": "Research",
+    "domain": "Psychiatry",
+    "capability": "Analysis",
+    "prompt_type": "comprehensive-assessment",
+    "user_request": "Develop a structured AI-assisted mental health assessment framework for a 28-year-old veteran presenting with comorbid PTSD, major depressive disorder, and alcohol use disorder. The framework should integrate standardized screening instruments (PCL-5, PHQ-9, AUDIT), incorporate trauma-informed care principles, assess for suicidal ideation using the Columbia Suicide Severity Rating Scale methodology, evaluate functional impairment across social, occupational, and daily living domains, and generate a multi-axial diagnostic formulation with treatment priority recommendations. Include safety planning protocols and cultural competency considerations for military populations.",
+    "user_goal": "Build a comprehensive, trauma-informed mental health assessment framework that safely and systematically evaluates complex comorbid psychiatric presentations in veteran populations, generating actionable diagnostic formulations and prioritized treatment plans.",
+    "expected_output": "json",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 900,
+      "estimated_response_size": 3500,
+      "estimated_context_tokens": 4400
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["trauma-informed", "safety-prioritized", "culturally-competent", "multi-instrument"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 15,
+      "structure": 20,
+      "constraints": 30,
+      "creativity": 5
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Integrates PCL-5, PHQ-9, and AUDIT scoring with clinical interpretation",
+        "Applies Columbia Suicide Severity Rating Scale methodology correctly",
+        "Generates trauma-informed assessment flow avoiding retraumatization",
+        "Addresses moral injury as distinct from but related to PTSD",
+        "Includes VA/DoD CPG-aligned treatment recommendations",
+        "Provides structured safety plan template"
+      ],
+      "acceptable_characteristics": [
+        "Uses at least two standardized screening instruments",
+        "Assesses suicide risk with structured methodology",
+        "Generates a diagnostic formulation with treatment priorities",
+        "Acknowledges military cultural factors"
+      ],
+      "minimum_requirements": [
+        "Screens for all three comorbid conditions",
+        "Includes suicide risk assessment",
+        "Provides at least one treatment recommendation per diagnosis"
+      ]
+    },
+    "common_failures": [
+      "Failing to prioritize safety assessment before trauma exploration",
+      "Using civilian-centric language that alienates veteran populations",
+      "Not addressing substance use as both a comorbidity and a coping mechanism",
+      "Omitting assessment of traumatic brain injury which frequently co-occurs"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "Patient discloses active suicidal plan with access to firearms",
+      "Patient refuses to discuss trauma history due to distrust of the system",
+      "Patient is currently intoxicated during the assessment session"
+    ],
+    "tags": ["psychiatry", "PTSD", "veteran-health", "suicide-assessment", "trauma-informed", "comorbidity", "substance-use", "military-culture"]
+  },
+  {
+    "id": "FP-HEAL-PUBLIC-HEALTH-CAMPAIGN-010",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Healthcare",
+    "subcategory": "Public Health Campaign",
+    "difficulty": "Expert",
+    "complexity": "Enterprise",
+    "expertise_level": "Research",
+    "domain": "Epidemiology and Public Health",
+    "capability": "Planning",
+    "prompt_type": "campaign-strategy",
+    "user_request": "Design a comprehensive public health campaign to increase HPV vaccination rates among adolescents aged 11-17 in a demographically diverse metropolitan area with current vaccination coverage at 48% (target: 80%). The campaign must address vaccine hesitancy across different cultural, religious, and socioeconomic groups, leverage both traditional and digital media channels, include community health worker engagement strategies, propose school-based vaccination clinics with parental consent workflows, define measurable KPIs with quarterly milestones, and include a misinformation counter-messaging strategy. Budget constraint: $2.5 million over 18 months.",
+    "user_goal": "Create an evidence-based, culturally responsive public health campaign strategy that can realistically increase HPV vaccination coverage by 32 percentage points within 18 months through multi-channel engagement, community mobilization, and systematic barrier reduction.",
+    "expected_output": "markdown",
+    "primary_target": "Gemini",
+    "optimized_for": "Gemma",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 850,
+      "estimated_response_size": 3200,
+      "estimated_context_tokens": 4050
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["data-driven", "culturally-adaptive", "operationally-budgeted", "misinformation-resilient"],
+    "evaluation_weights": {
+      "accuracy": 20,
+      "clarity": 20,
+      "structure": 20,
+      "constraints": 20,
+      "creativity": 20
+    },
+    "success_criteria": {
+      "excellent_characteristics": [
+        "Segments target audience by cultural, religious, and socioeconomic factors",
+        "Proposes tailored messaging for each segment addressing specific hesitancy drivers",
+        "Includes realistic budget allocation across channels with ROI projections",
+        "Defines quarterly KPIs with specific numeric targets",
+        "Integrates community health worker training curriculum",
+        "Includes social media misinformation monitoring and rapid response protocol"
+      ],
+      "acceptable_characteristics": [
+        "Addresses vaccine hesitancy as a multi-factorial problem",
+        "Proposes at least three distinct outreach channels",
+        "Includes school-based vaccination logistics",
+        "Provides measurable success metrics"
+      ],
+      "minimum_requirements": [
+        "Identifies key barriers to HPV vaccination uptake",
+        "Proposes at least two intervention strategies",
+        "Includes a timeline with milestones",
+        "Stays within stated budget constraint"
+      ]
+    },
+    "common_failures": [
+      "Applying a one-size-fits-all messaging approach across diverse communities",
+      "Underestimating the operational complexity of school-based vaccination consent",
+      "Ignoring social media as both a misinformation vector and outreach channel",
+      "Setting unrealistic coverage targets without phased milestone planning"
+    ],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": [
+      "State legislature introduces a bill restricting school-based vaccine mandates mid-campaign",
+      "Viral misinformation campaign on social media causes sudden drop in vaccine confidence",
+      "Key community health partner organization loses funding and withdraws"
+    ],
+    "tags": ["public-health", "vaccination", "HPV", "health-campaign", "vaccine-hesitancy", "misinformation", "community-health", "epidemiology"]
+  }
+]

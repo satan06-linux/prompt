@@ -1,0 +1,786 @@
+2026-06-25 18:55:55,421 [INFO] [req_id=29545beb-2b9b-4343-9244-afa14c450fcf] app: Admin metrics fetched successfully by admin user_id 9999
+2026-06-25 18:55:56,153 [INFO] [req_id=68c8e247-cbf0-46ab-ab5b-c4f574c8ad59] app: User ratetest0@example.com registered successfully with role user [user_id=10000]
+2026-06-25 18:55:56,907 [INFO] [req_id=c5166424-9435-4b8f-a3df-54931ac5b5ca] app: User ratetest1@example.com registered successfully with role user [user_id=10001]
+2026-06-25 18:55:57,559 [INFO] [req_id=404fdb4f-7d26-4296-84d5-0c73be77a216] app: User ratetest2@example.com registered successfully with role user [user_id=10002]
+2026-06-25 19:08:06,578 [INFO] [req_id=db163e8e-0779-4122-abd8-9a751286bee2] app: Admin metrics fetched successfully by admin user_id 9999
+2026-06-25 19:19:56,749 [ERROR] [req_id=N/A] app: Streaming prompt error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "d:\Nexabuild\forge\app.py", line 739, in groq_streaming_generator
+    response = client.chat.completions.create(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\resources\chat\completions.py", line 175, in create
+    return self._post(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\_base_client.py", line 1189, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\_base_client.py", line 891, in request
+    return self._request(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\_base_client.py", line 982, in _request
+    raise self._make_status_error_from_response(err.response) from None
+groq.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-06-25 19:19:56,829 [INFO] [req_id=3acc3d02-2d2a-4f60-b69d-96f25fc1f2e9] app: Prompt saved successfully for user_id 8881 with ID 1103 (V1, Score: 95)
+2026-06-25 19:19:56,860 [INFO] [req_id=bf82a276-7964-4bec-a513-7ee2b87dcfbb] app: Prompt saved successfully for user_id 8881 with ID 1104 (V2, Score: 95)
+2026-06-25 19:19:56,965 [INFO] [req_id=1adfe1aa-0f9f-4d99-a66c-6f1626dc9c7a] app: Admin metrics fetched successfully by admin user_id 9991
+2026-06-25 19:20:20,955 [ERROR] [req_id=N/A] app: Streaming prompt error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "d:\Nexabuild\forge\app.py", line 739, in groq_streaming_generator
+    response = client.chat.completions.create(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\resources\chat\completions.py", line 175, in create
+    return self._post(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\_base_client.py", line 1189, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\_base_client.py", line 891, in request
+    return self._request(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\groq\_base_client.py", line 982, in _request
+    raise self._make_status_error_from_response(err.response) from None
+groq.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-06-25 19:20:21,025 [INFO] [req_id=ff215b08-658d-4ba5-b3a2-7d23d79b6862] app: Prompt saved successfully for user_id 8881 with ID 1105 (V1, Score: 95)
+2026-06-25 19:20:21,061 [INFO] [req_id=2aec42ea-b550-41ba-aa0a-4cfa815c2f4c] app: Prompt saved successfully for user_id 8881 with ID 1106 (V2, Score: 95)
+2026-06-25 19:20:21,223 [INFO] [req_id=eb3d87d4-61be-411f-bcb2-5bc843b57d1a] app: Admin metrics fetched successfully by admin user_id 9991
+2026-06-26 06:37:54,709 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-26 06:37:55,554 [INFO] [req_id=aa6021b4-b2b1-41ff-b337-96b8126a778d] app: User test_phase4_like_creator@example.com registered successfully with role user [user_id=10003]
+2026-06-26 06:37:56,249 [INFO] [req_id=b5e7accf-ef9b-4009-8a59-146b975f9d62] app: User test_phase4_like_user@example.com registered successfully with role user [user_id=10004]
+2026-06-26 06:37:56,982 [INFO] [req_id=b8183981-582e-4de2-b8e2-bd5387ed7ab9] app: User test_phase4_like_creator@example.com logged in successfully [user_id=10003]
+2026-06-26 06:37:57,694 [INFO] [req_id=acd5baa7-031b-43e4-9f92-41dd70232943] app: User test_phase4_like_user@example.com logged in successfully [user_id=10004]
+2026-06-26 06:37:58,459 [INFO] [req_id=46f91619-26bc-4bd3-9163-19c81ab1c6b3] app: User test_phase4_rep_c@example.com registered successfully with role user [user_id=10005]
+2026-06-26 06:37:59,149 [INFO] [req_id=dd0e2f1c-b12a-4b63-bd83-074fd847d41b] app: User test_phase4_rep_c@example.com logged in successfully [user_id=10005]
+2026-06-26 06:42:14,052 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-26 06:42:14,514 [INFO] [req_id=b9c55aed-5aae-4798-87b3-3f3728532fcb] app: User test_phase4_like_creator@example.com registered successfully with role user [user_id=10007]
+2026-06-26 06:42:14,971 [INFO] [req_id=5684d3b2-12ac-4514-afec-0ecaeb548ec7] app: User test_phase4_like_user@example.com registered successfully with role user [user_id=10008]
+2026-06-26 06:42:15,417 [INFO] [req_id=407559a6-6823-4cc8-b4d7-d5c7da410a21] app: User test_phase4_like_creator@example.com logged in successfully [user_id=10007]
+2026-06-26 06:42:15,832 [INFO] [req_id=739f281c-a6b3-4a4f-ae9b-5c3ac3c38ce0] app: User test_phase4_like_user@example.com logged in successfully [user_id=10008]
+2026-06-26 06:42:16,275 [INFO] [req_id=da59a1a4-184d-489e-89fe-60037468d255] app: User test_phase4_rep_c@example.com registered successfully with role user [user_id=10009]
+2026-06-26 06:42:16,748 [INFO] [req_id=f5ace6a6-3ea4-47e7-b12d-9947dd5e7eaf] app: User test_phase4_rep_u@example.com registered successfully with role user [user_id=10010]
+2026-06-26 06:42:17,153 [INFO] [req_id=33d63118-194f-444a-894e-ac50d81135f8] app: User test_phase4_rep_c@example.com logged in successfully [user_id=10009]
+2026-06-26 06:42:17,603 [INFO] [req_id=cceac744-4135-4b8d-9f33-4438e4a64f7b] app: User test_phase4_rep_u@example.com logged in successfully [user_id=10010]
+2026-06-26 06:42:18,083 [INFO] [req_id=6461bc4a-22d2-434c-b332-0f14302990c1] app: User test_phase4_notif_c@example.com registered successfully with role user [user_id=10011]
+2026-06-26 06:42:18,512 [INFO] [req_id=746337f0-d65a-4828-b967-5a0f1bb65e2d] app: User test_phase4_notif_u@example.com registered successfully with role user [user_id=10012]
+2026-06-26 06:42:18,932 [INFO] [req_id=0f96c531-47e5-4d3e-afce-97a4d3fafb9b] app: User test_phase4_notif_c@example.com logged in successfully [user_id=10011]
+2026-06-26 06:42:19,426 [INFO] [req_id=e66ee9f5-6894-48f4-bf09-874d85f1fa56] app: User test_phase4_notif_u@example.com logged in successfully [user_id=10012]
+2026-06-26 06:42:20,032 [INFO] [req_id=8a72cbdd-a354-405b-b227-4a1f8aff9406] app: User test_phase4_rate_limiter@example.com registered successfully with role user [user_id=10013]
+2026-06-26 06:42:20,472 [INFO] [req_id=73b909cf-5fb7-4dcd-8e4e-c991b1c14e99] app: User test_phase4_rate_limiter@example.com logged in successfully [user_id=10013]
+2026-06-26 06:42:20,945 [INFO] [req_id=47846dbf-8717-4a61-85e1-b67bd5382846] app: User test_phase4_uuid@example.com registered successfully with role user [user_id=10014]
+2026-06-26 06:42:21,407 [INFO] [req_id=44004790-7a5e-4fb0-8854-6731c2c23b2f] app: User test_phase4_uuid@example.com logged in successfully [user_id=10014]
+2026-06-26 06:42:21,853 [INFO] [req_id=3055469b-a004-4f9d-ae46-0d4e76956b57] app: User test_phase4_creator_softdelete@example.com registered successfully with role user [user_id=10015]
+2026-06-26 06:42:22,303 [INFO] [req_id=c038c866-4c6e-4cdb-88de-c40a82dcbecb] app: User test_phase4_creator_softdelete@example.com logged in successfully [user_id=10015]
+2026-06-26 06:42:22,827 [INFO] [req_id=4e3749b4-dc2a-4782-838e-482d7a9d11f1] app: User test_phase4_trend@example.com registered successfully with role user [user_id=10017]
+2026-06-26 06:42:23,244 [INFO] [req_id=13689588-3c2f-4a36-86eb-8812ee38e9b2] app: User test_phase4_trend@example.com logged in successfully [user_id=10017]
+2026-06-26 06:42:23,712 [INFO] [req_id=347f7f9f-171a-4d22-bc0a-ce366c74205a] app: User test_phase4_view_creator@example.com registered successfully with role user [user_id=10018]
+2026-06-26 06:42:24,161 [INFO] [req_id=22f4f415-d92b-471b-a331-7d6cdd75b194] app: User test_phase4_view_creator@example.com logged in successfully [user_id=10018]
+2026-06-26 06:42:24,631 [INFO] [req_id=ac0515d4-e69b-4e55-a057-aa3372613e72] app: User test_phase4_user_0@example.com registered successfully with role user [user_id=10019]
+2026-06-26 06:43:40,416 [ERROR] [req_id=N/A] app: Failed to auto-clean old notifications: 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded: it is already loaded
+2026-06-26 06:43:41,299 [INFO] [req_id=99a69ec9-574f-4b6b-9251-c5dc24685abb] app: User test_phase4_like_creator@example.com registered successfully with role user [user_id=10020]
+2026-06-26 06:43:42,026 [INFO] [req_id=fcfa6e6a-2d14-46da-9df6-c05ac2d321b1] app: User test_phase4_like_user@example.com registered successfully with role user [user_id=10021]
+2026-06-26 06:43:42,741 [INFO] [req_id=4088c473-748e-4d3e-9b22-45856d160f88] app: User test_phase4_like_creator@example.com logged in successfully [user_id=10020]
+2026-06-26 06:43:43,455 [INFO] [req_id=ac0245a2-b336-4eb2-b42e-dd3a87987cc2] app: User test_phase4_like_user@example.com logged in successfully [user_id=10021]
+2026-06-26 06:43:43,476 [INFO] [req_id=5cb40044-1ff2-487b-b80d-1fd4157edf22] app: Prompt saved successfully for user_id 10020 with ID 1110 (V1, Score: 40)
+2026-06-26 06:43:43,495 [ERROR] [req_id=70f7a0ad-92f7-47ed-8202-34940c82f5ef] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:44,334 [INFO] [req_id=402fc7f2-ae82-4fe4-9cc8-e1b254ed2fbf] app: User test_phase4_rep_c@example.com registered successfully with role user [user_id=10022]
+2026-06-26 06:43:45,139 [INFO] [req_id=546ce789-5609-4fd4-ae97-b3fc95c0ba84] app: User test_phase4_rep_u@example.com registered successfully with role user [user_id=10023]
+2026-06-26 06:43:45,839 [INFO] [req_id=9dd19148-7727-4f4d-b16d-a216fe7aedcf] app: User test_phase4_rep_c@example.com logged in successfully [user_id=10022]
+2026-06-26 06:43:46,599 [INFO] [req_id=355758ff-1500-4035-a311-d99554b6f562] app: User test_phase4_rep_u@example.com logged in successfully [user_id=10023]
+2026-06-26 06:43:46,654 [INFO] [req_id=47e789f7-4838-448f-8f97-846b556b59b1] app: Prompt saved successfully for user_id 10022 with ID 1111 (V1, Score: 40)
+2026-06-26 06:43:46,683 [ERROR] [req_id=cd419dac-3cd0-457a-a10b-aad450d18260] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:47,573 [INFO] [req_id=f9b56cb7-ca8f-4540-9b76-c4e86a583ab1] app: User test_phase4_notif_c@example.com registered successfully with role user [user_id=10024]
+2026-06-26 06:43:48,333 [INFO] [req_id=08cfd460-314d-4c08-af82-8bbb299333e9] app: User test_phase4_notif_u@example.com registered successfully with role user [user_id=10025]
+2026-06-26 06:43:49,046 [INFO] [req_id=df3cbe65-c3ee-4823-8b3d-0c7e8601efb1] app: User test_phase4_notif_c@example.com logged in successfully [user_id=10024]
+2026-06-26 06:43:49,792 [INFO] [req_id=35abd921-da4d-4ccc-88fa-fae876474f7d] app: User test_phase4_notif_u@example.com logged in successfully [user_id=10025]
+2026-06-26 06:43:49,822 [INFO] [req_id=b3020c2b-c011-4aa7-bff0-94acd1e1f840] app: Prompt saved successfully for user_id 10024 with ID 1112 (V1, Score: 40)
+2026-06-26 06:43:49,876 [ERROR] [req_id=9cdd1894-c5c7-4211-8e66-836e32bf3f82] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:50,794 [INFO] [req_id=0cbca7d3-5c1e-4a07-b9ad-7f998d6fc173] app: User test_phase4_rate_limiter@example.com registered successfully with role user [user_id=10026]
+2026-06-26 06:43:51,557 [INFO] [req_id=ff4a4549-6840-4162-9104-7e83a9615205] app: User test_phase4_rate_limiter@example.com logged in successfully [user_id=10026]
+2026-06-26 06:43:51,588 [INFO] [req_id=846776af-b0a5-4cad-b4a8-bc4a498159f2] app: Prompt saved successfully for user_id 10026 with ID 1113 (V1, Score: 40)
+2026-06-26 06:43:51,623 [INFO] [req_id=bfd3b838-a8c0-4f65-ba1f-05d7d9b4b72a] app: Prompt saved successfully for user_id 10026 with ID 1114 (V1, Score: 40)
+2026-06-26 06:43:51,668 [INFO] [req_id=abbc1c95-fdb5-40fb-932f-d18405fad8b3] app: Prompt saved successfully for user_id 10026 with ID 1115 (V1, Score: 40)
+2026-06-26 06:43:51,694 [INFO] [req_id=e9e86286-4e92-4a22-86ab-9ba34ac7ae4d] app: Prompt saved successfully for user_id 10026 with ID 1116 (V1, Score: 40)
+2026-06-26 06:43:51,733 [INFO] [req_id=20763069-0de8-402b-9cc0-3efa68db2ca0] app: Prompt saved successfully for user_id 10026 with ID 1117 (V1, Score: 40)
+2026-06-26 06:43:51,779 [INFO] [req_id=073eb305-c67e-4cd3-b83c-6831216a05a5] app: Prompt saved successfully for user_id 10026 with ID 1118 (V1, Score: 40)
+2026-06-26 06:43:51,812 [INFO] [req_id=0b5ec4d8-b537-4356-a927-b8759c37209a] app: Prompt saved successfully for user_id 10026 with ID 1119 (V1, Score: 40)
+2026-06-26 06:43:51,869 [INFO] [req_id=62ce1a69-1492-40fc-8d79-f791f4fd551a] app: Prompt saved successfully for user_id 10026 with ID 1120 (V1, Score: 40)
+2026-06-26 06:43:51,926 [INFO] [req_id=96ec8f85-d359-4700-b719-c1600da3ca2a] app: Prompt saved successfully for user_id 10026 with ID 1121 (V1, Score: 40)
+2026-06-26 06:43:51,972 [INFO] [req_id=dde212ba-2151-48c8-b6ae-8226dfe95d25] app: Prompt saved successfully for user_id 10026 with ID 1122 (V1, Score: 40)
+2026-06-26 06:43:52,015 [INFO] [req_id=03977601-7627-4d2d-84ee-ed293dd36903] app: Prompt saved successfully for user_id 10026 with ID 1123 (V1, Score: 40)
+2026-06-26 06:43:52,062 [ERROR] [req_id=96b69b97-006a-42b5-8e98-14ff28c06124] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,111 [ERROR] [req_id=044c6902-5ec6-4892-b846-9a2a6bdaeb44] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,152 [ERROR] [req_id=66f24c6d-1635-4632-a6d5-17a7a11e7b06] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,193 [ERROR] [req_id=39f3df78-24a8-4277-90dd-22b67df37826] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,244 [ERROR] [req_id=a8d64629-5c47-4528-a0b1-7f45825fea5d] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,291 [ERROR] [req_id=5c8110d3-5a74-43c7-b96b-d6a227f3487c] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,341 [ERROR] [req_id=e1295029-be2a-4dc7-9ed2-86bd84b54195] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,389 [ERROR] [req_id=a01877cc-a4d8-4c2f-98f4-8d581bbc8ad3] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,446 [ERROR] [req_id=d67bca69-9445-4e31-8ccc-18d9e32ea31d] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,494 [ERROR] [req_id=d7be89c5-2892-4cf5-b97b-36e3ff5f3f2b] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:52,538 [ERROR] [req_id=13a67b19-30cc-45ed-98c3-c724de146d45] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:53,472 [INFO] [req_id=dde359cc-66a3-4671-a098-6dcb0436cc9b] app: User test_phase4_uuid@example.com registered successfully with role user [user_id=10027]
+2026-06-26 06:43:54,183 [INFO] [req_id=29a37273-391a-455c-ad0c-f5ccc3a509cf] app: User test_phase4_uuid@example.com logged in successfully [user_id=10027]
+2026-06-26 06:43:54,226 [INFO] [req_id=8513a8b0-430c-4200-85c4-5939c0b12b76] app: Prompt saved successfully for user_id 10027 with ID 1124 (V1, Score: 40)
+2026-06-26 06:43:54,275 [ERROR] [req_id=b1e14440-5dce-4850-b8df-a3645fdfbe8e] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:55,094 [INFO] [req_id=351dbdab-a1b6-47c7-846b-3cd3068ea2be] app: User test_phase4_creator_softdelete@example.com registered successfully with role user [user_id=10028]
+2026-06-26 06:43:55,764 [INFO] [req_id=54122766-f232-4d41-8fe2-60a4e7ca8de6] app: User test_phase4_creator_softdelete@example.com logged in successfully [user_id=10028]
+2026-06-26 06:43:55,798 [INFO] [req_id=a8add261-dc24-401c-ae81-a04e983ec233] app: Prompt saved successfully for user_id 10028 with ID 1125 (V1, Score: 40)
+2026-06-26 06:43:55,844 [ERROR] [req_id=240850ae-72c8-4c84-abed-3a6315017823] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:56,684 [INFO] [req_id=516b5d94-a9b8-4d40-922f-d5748aa94c54] app: User test_phase4_trend@example.com registered successfully with role user [user_id=10030]
+2026-06-26 06:43:57,406 [INFO] [req_id=706f42e5-d02a-494f-b0a5-f0566b404412] app: User test_phase4_trend@example.com logged in successfully [user_id=10030]
+2026-06-26 06:43:57,443 [INFO] [req_id=e841876a-8f39-4c80-ae22-09c2ea18763e] app: Prompt saved successfully for user_id 10030 with ID 1126 (V1, Score: 40)
+2026-06-26 06:43:57,486 [INFO] [req_id=a452f1d2-6e15-4337-b4dc-dfd324fe3ac3] app: Prompt saved successfully for user_id 10030 with ID 1127 (V1, Score: 40)
+2026-06-26 06:43:57,542 [ERROR] [req_id=93508361-7f25-49dc-a112-4ba59733c50c] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:57,602 [ERROR] [req_id=7aad8a1a-b0a1-42b5-aaf8-89e59219aa00] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:43:58,558 [INFO] [req_id=7be0762b-dde4-4eb1-ac3e-5b74704f7c95] app: User test_phase4_view_creator@example.com registered successfully with role user [user_id=10031]
+2026-06-26 06:43:59,225 [INFO] [req_id=f777b257-ecfc-4872-9af8-43350f9fd612] app: User test_phase4_view_creator@example.com logged in successfully [user_id=10031]
+2026-06-26 06:43:59,249 [INFO] [req_id=187a6396-fa8d-4869-b5c1-1dd73d3d5c35] app: Prompt saved successfully for user_id 10031 with ID 1128 (V1, Score: 40)
+2026-06-26 06:43:59,282 [ERROR] [req_id=74688782-df0a-4b51-8775-6fe8501055b5] app: Error publishing prompt: 0
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 1682, in api_publish_prompt
+    share_code = generate_share_uuid(cursor)
+  File "D:\Nexabuild\forge\app.py", line 1535, in generate_share_uuid
+    if cursor.fetchone()[0] == 0:
+KeyError: 0
+2026-06-26 06:44:00,005 [INFO] [req_id=fd118f9f-596b-480f-841e-a2d94c105c58] app: User test_phase4_user_0@example.com registered successfully with role user [user_id=10032]
+2026-06-26 06:44:00,675 [INFO] [req_id=bf39fbd0-a59c-40e4-8098-307e2eaee15b] app: User test_phase4_user_1@example.com registered successfully with role user [user_id=10033]
+2026-06-26 06:45:00,757 [ERROR] [req_id=N/A] app: Failed to auto-clean old notifications: 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded: it is already loaded
+2026-06-26 06:45:01,313 [INFO] [req_id=5b6673ac-5d5d-41d4-a084-14b67367dfda] app: User test_phase4_like_creator@example.com registered successfully with role user [user_id=10034]
+2026-06-26 06:45:01,772 [INFO] [req_id=74c0d2f3-0c52-4636-9ce5-c4142adc2efc] app: User test_phase4_like_user@example.com registered successfully with role user [user_id=10035]
+2026-06-26 06:45:02,217 [INFO] [req_id=cfe35703-3d58-4d7b-a83f-df1ec4c56890] app: User test_phase4_like_creator@example.com logged in successfully [user_id=10034]
+2026-06-26 06:45:02,617 [INFO] [req_id=1629f473-3824-4d6d-8b95-4d3ba5569cca] app: User test_phase4_like_user@example.com logged in successfully [user_id=10035]
+2026-06-26 06:45:02,634 [INFO] [req_id=b7d4b3ce-44aa-48b6-badf-2b06fb809118] app: Prompt saved successfully for user_id 10034 with ID 1129 (V1, Score: 40)
+2026-06-26 06:45:03,187 [INFO] [req_id=b5c3a3fd-0178-4f9f-b035-3cbdf84dc7d4] app: User test_phase4_rep_c@example.com registered successfully with role user [user_id=10036]
+2026-06-26 06:45:03,632 [INFO] [req_id=bce92a7f-f4d6-4e82-b3ba-bd17b5328772] app: User test_phase4_rep_u@example.com registered successfully with role user [user_id=10037]
+2026-06-26 06:45:04,036 [INFO] [req_id=c7a9e512-727e-4663-9cf4-9b98136cdb14] app: User test_phase4_rep_c@example.com logged in successfully [user_id=10036]
+2026-06-26 06:45:04,475 [INFO] [req_id=f7dac0b1-ef61-4263-97b7-6a7b7e15f0fe] app: User test_phase4_rep_u@example.com logged in successfully [user_id=10037]
+2026-06-26 06:45:04,497 [INFO] [req_id=a23c17bb-a290-467a-9e50-c729220df119] app: Prompt saved successfully for user_id 10036 with ID 1131 (V1, Score: 40)
+2026-06-26 06:45:05,005 [INFO] [req_id=b6ea6d89-0b55-4b28-bc6b-c6f2766b1005] app: User test_phase4_notif_c@example.com registered successfully with role user [user_id=10038]
+2026-06-26 06:45:05,549 [INFO] [req_id=de2ec679-ad4d-4a42-88ff-265db75d3c0e] app: User test_phase4_notif_u@example.com registered successfully with role user [user_id=10039]
+2026-06-26 06:45:05,994 [INFO] [req_id=d6af2fcc-1b61-4d52-9f3d-f59325adcde3] app: User test_phase4_notif_c@example.com logged in successfully [user_id=10038]
+2026-06-26 06:45:06,438 [INFO] [req_id=adf4eaf0-7bc3-4368-96c3-5d4f2830421b] app: User test_phase4_notif_u@example.com logged in successfully [user_id=10039]
+2026-06-26 06:45:06,454 [INFO] [req_id=61fbe5f1-4bd3-48a5-a126-eab2296cd52e] app: Prompt saved successfully for user_id 10038 with ID 1132 (V1, Score: 40)
+2026-06-26 06:45:06,939 [INFO] [req_id=9e497cd8-de5c-4af3-b7c0-ef9bc774302a] app: User test_phase4_rate_limiter@example.com registered successfully with role user [user_id=10040]
+2026-06-26 06:45:07,440 [INFO] [req_id=f7547d9d-f74b-4dbf-8a01-bcc33d99c10b] app: User test_phase4_rate_limiter@example.com logged in successfully [user_id=10040]
+2026-06-26 06:45:07,465 [INFO] [req_id=a1764042-ad4a-438c-8e8a-ddb6893263c3] app: Prompt saved successfully for user_id 10040 with ID 1133 (V1, Score: 40)
+2026-06-26 06:45:07,503 [INFO] [req_id=a4ad32bc-198d-4172-a804-c3b2ce3f39c8] app: Prompt saved successfully for user_id 10040 with ID 1134 (V1, Score: 40)
+2026-06-26 06:45:07,540 [INFO] [req_id=91193a62-cb46-4455-bd4e-eca823889dbd] app: Prompt saved successfully for user_id 10040 with ID 1135 (V1, Score: 40)
+2026-06-26 06:45:07,584 [INFO] [req_id=aaee86b1-14de-46f5-afe5-6483f6894922] app: Prompt saved successfully for user_id 10040 with ID 1136 (V1, Score: 40)
+2026-06-26 06:45:07,621 [INFO] [req_id=269f84ef-8e15-4e5f-b9eb-e091f0ad647d] app: Prompt saved successfully for user_id 10040 with ID 1137 (V1, Score: 40)
+2026-06-26 06:45:07,663 [INFO] [req_id=6b475a1b-5657-4e0e-96b0-5acfe1cb99b2] app: Prompt saved successfully for user_id 10040 with ID 1138 (V1, Score: 40)
+2026-06-26 06:45:07,702 [INFO] [req_id=ec0cc7c9-95d7-4b37-af10-6b2fe1694847] app: Prompt saved successfully for user_id 10040 with ID 1139 (V1, Score: 40)
+2026-06-26 06:45:07,749 [INFO] [req_id=b72e0bd1-456d-4395-972d-c1211974ca13] app: Prompt saved successfully for user_id 10040 with ID 1140 (V1, Score: 40)
+2026-06-26 06:45:07,775 [INFO] [req_id=be80c75a-7731-4c29-8b51-6ef8f8b0e3b6] app: Prompt saved successfully for user_id 10040 with ID 1141 (V1, Score: 40)
+2026-06-26 06:45:07,801 [INFO] [req_id=7c749787-acb0-4a56-8d3f-5c7d8fa7c975] app: Prompt saved successfully for user_id 10040 with ID 1142 (V1, Score: 40)
+2026-06-26 06:45:07,825 [INFO] [req_id=79a5b6e4-a7dd-41bb-82d8-faf9362f7017] app: Prompt saved successfully for user_id 10040 with ID 1143 (V1, Score: 40)
+2026-06-26 06:45:08,525 [INFO] [req_id=274b0505-585a-45bc-a095-4199ac8cea35] app: User test_phase4_uuid@example.com registered successfully with role user [user_id=10041]
+2026-06-26 06:45:08,924 [INFO] [req_id=e39a47d0-e65e-483a-bb91-f732ba3e8143] app: User test_phase4_uuid@example.com logged in successfully [user_id=10041]
+2026-06-26 06:45:08,936 [INFO] [req_id=f68dc602-45f6-4b94-bb02-e25616cbfc78] app: Prompt saved successfully for user_id 10041 with ID 1144 (V1, Score: 40)
+2026-06-26 06:45:08,973 [INFO] [req_id=ae689c20-94d6-480a-9446-0690cf0b4768] app: Prompt saved successfully for user_id 10041 with ID 1145 (V1, Score: 40)
+2026-06-26 06:45:09,005 [INFO] [req_id=23f0fc31-ba12-4813-857e-3d2f3b1ec4ef] app: Prompt saved successfully for user_id 10041 with ID 1146 (V1, Score: 40)
+2026-06-26 06:45:09,035 [INFO] [req_id=a324f6b5-2f4e-4b2b-a291-99d2dfea8bfb] app: Prompt saved successfully for user_id 10041 with ID 1147 (V1, Score: 40)
+2026-06-26 06:45:09,066 [INFO] [req_id=db420bfb-ce9d-42bc-a34f-af56be3bab1b] app: Prompt saved successfully for user_id 10041 with ID 1148 (V1, Score: 40)
+2026-06-26 06:45:09,106 [INFO] [req_id=613f164a-2dd2-4158-8c0d-8da27d556ac8] app: Prompt saved successfully for user_id 10041 with ID 1149 (V1, Score: 40)
+2026-06-26 06:45:09,156 [INFO] [req_id=3de48fd2-d6c5-4aac-ad75-299743c902b7] app: Prompt saved successfully for user_id 10041 with ID 1150 (V1, Score: 40)
+2026-06-26 06:45:09,186 [INFO] [req_id=61a15d9e-cd63-42b1-ab17-32efa415242a] app: Prompt saved successfully for user_id 10041 with ID 1151 (V1, Score: 40)
+2026-06-26 06:45:09,219 [INFO] [req_id=0d7e79aa-79f5-4420-b422-71a265e12648] app: Prompt saved successfully for user_id 10041 with ID 1152 (V1, Score: 40)
+2026-06-26 06:45:09,245 [INFO] [req_id=a1b3edf2-1921-43fd-af60-7f928341fffb] app: Prompt saved successfully for user_id 10041 with ID 1153 (V1, Score: 40)
+2026-06-26 06:45:09,278 [INFO] [req_id=aa543fd4-a77e-418a-96f1-7c78cf1cd93a] app: Prompt saved successfully for user_id 10041 with ID 1154 (V1, Score: 40)
+2026-06-26 06:45:09,765 [INFO] [req_id=012aa121-ea70-4ef8-bf2a-8e46cea008fc] app: User test_phase4_creator_softdelete@example.com registered successfully with role user [user_id=10042]
+2026-06-26 06:45:10,337 [INFO] [req_id=5791b587-7120-43c6-95a6-cf1b2ea22e78] app: User test_phase4_creator_softdelete@example.com logged in successfully [user_id=10042]
+2026-06-26 06:45:10,363 [INFO] [req_id=84eb8a1e-e6de-47df-9d7a-91b3920e4603] app: Prompt saved successfully for user_id 10042 with ID 1155 (V1, Score: 40)
+2026-06-26 06:45:11,089 [INFO] [req_id=5ba349f4-6886-4bd3-86fe-8c7facc069cf] app: User test_phase4_trend@example.com registered successfully with role user [user_id=10044]
+2026-06-26 06:45:11,716 [INFO] [req_id=b19c597b-00a7-4ac3-ba50-1600d48596ad] app: User test_phase4_trend@example.com logged in successfully [user_id=10044]
+2026-06-26 06:45:11,738 [INFO] [req_id=da154748-9dd2-41f4-a143-177228afc2cf] app: Prompt saved successfully for user_id 10044 with ID 1156 (V1, Score: 40)
+2026-06-26 06:45:11,759 [INFO] [req_id=2067dd11-c9a0-4fc8-a92f-bcd4a6f90203] app: Prompt saved successfully for user_id 10044 with ID 1157 (V1, Score: 40)
+2026-06-26 06:45:12,508 [INFO] [req_id=575e1e5b-aeb0-4a6a-ad73-5d6dfe5c8b4f] app: User test_phase4_view_creator@example.com registered successfully with role user [user_id=10045]
+2026-06-26 06:45:13,146 [INFO] [req_id=c8e5198b-e550-4469-baec-7aa58ae76c46] app: User test_phase4_view_creator@example.com logged in successfully [user_id=10045]
+2026-06-26 06:45:13,170 [INFO] [req_id=c1000c11-f844-476a-945b-ef9805d47d63] app: Prompt saved successfully for user_id 10045 with ID 1158 (V1, Score: 40)
+2026-06-26 06:45:13,967 [INFO] [req_id=2c213e43-213e-41ab-8c7a-bab08f3b2d7d] app: User test_phase4_user_0@example.com registered successfully with role user [user_id=10046]
+2026-06-26 06:45:14,624 [INFO] [req_id=1c40394c-f293-4113-b441-14144ea94cbe] app: User test_phase4_user_1@example.com registered successfully with role user [user_id=10047]
+2026-06-26 06:45:15,365 [INFO] [req_id=2e929301-39a6-4527-b1a8-b38c93abea98] app: User test_phase4_user_2@example.com registered successfully with role user [user_id=10048]
+2026-06-26 06:45:16,056 [INFO] [req_id=03455260-a67a-4f03-9878-288ec8133c7b] app: User test_phase4_user_3@example.com registered successfully with role user [user_id=10049]
+2026-06-26 06:45:16,746 [INFO] [req_id=b04cf36f-8763-44c7-a548-fc7873f9cdf0] app: User test_phase4_user_4@example.com registered successfully with role user [user_id=10050]
+2026-06-26 06:45:17,470 [INFO] [req_id=f6c245a4-94f7-439c-b7eb-d25011b01105] app: User test_phase4_user_5@example.com registered successfully with role user [user_id=10051]
+2026-06-26 06:45:18,177 [INFO] [req_id=a4dd8aa0-585c-406f-8699-82d494f58005] app: User test_phase4_user_6@example.com registered successfully with role user [user_id=10052]
+2026-06-26 06:45:18,918 [INFO] [req_id=7f877541-51e5-4344-9e6d-072ef71a240a] app: User test_phase4_user_7@example.com registered successfully with role user [user_id=10053]
+2026-06-26 06:45:19,616 [INFO] [req_id=3cb6d336-e5f5-4250-b856-0b0ef025c783] app: User test_phase4_user_8@example.com registered successfully with role user [user_id=10054]
+2026-06-26 06:45:20,333 [INFO] [req_id=8b0f79ac-e06f-47c7-a6c5-84b34d593c14] app: User test_phase4_user_9@example.com registered successfully with role user [user_id=10055]
+2026-06-26 06:46:25,087 [ERROR] [req_id=N/A] app: Failed to auto-clean old notifications: 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded: it is already loaded
+2026-06-26 06:46:25,737 [INFO] [req_id=924bd382-e0e7-4708-b17e-ed3a38af864c] app: User test_phase4_like_creator@example.com registered successfully with role user [user_id=10056]
+2026-06-26 06:46:26,371 [INFO] [req_id=2e8601da-d653-4cc2-add8-199fc00e65ad] app: User test_phase4_like_user@example.com registered successfully with role user [user_id=10057]
+2026-06-26 06:46:27,043 [INFO] [req_id=49480014-c583-46f6-966e-9b8038668a7b] app: User test_phase4_like_creator@example.com logged in successfully [user_id=10056]
+2026-06-26 06:46:27,681 [INFO] [req_id=6edf8163-04e8-4f71-ae59-0f7692ab8f4e] app: User test_phase4_like_user@example.com logged in successfully [user_id=10057]
+2026-06-26 06:46:27,707 [INFO] [req_id=c56ce1b6-eeb4-4629-a196-60beb9aaf2b8] app: Prompt saved successfully for user_id 10056 with ID 1159 (V1, Score: 40)
+2026-06-26 06:46:28,438 [INFO] [req_id=b040d3d5-c664-4f4b-b438-626a6db3a377] app: User test_phase4_rep_c@example.com registered successfully with role user [user_id=10058]
+2026-06-26 06:46:29,088 [INFO] [req_id=b1ef6c84-3fbf-46de-8a3d-b3b9cb110ee7] app: User test_phase4_rep_u@example.com registered successfully with role user [user_id=10059]
+2026-06-26 06:46:29,767 [INFO] [req_id=fd5b1bfa-bd34-42eb-bb7b-983b9953ce36] app: User test_phase4_rep_c@example.com logged in successfully [user_id=10058]
+2026-06-26 06:46:30,571 [INFO] [req_id=ab0220bc-8e2e-4bc5-84c8-4c16d1e8b284] app: User test_phase4_rep_u@example.com logged in successfully [user_id=10059]
+2026-06-26 06:46:30,618 [INFO] [req_id=fcdde510-be53-4771-bba8-9a285ce61af7] app: Prompt saved successfully for user_id 10058 with ID 1160 (V1, Score: 40)
+2026-06-26 06:46:31,545 [INFO] [req_id=536ea851-a5ff-40ee-a93b-85acb4373421] app: User test_phase4_notif_c@example.com registered successfully with role user [user_id=10060]
+2026-06-26 06:46:32,266 [INFO] [req_id=49847024-31cb-4539-81d9-5d808135e3c2] app: User test_phase4_notif_u@example.com registered successfully with role user [user_id=10061]
+2026-06-26 06:46:32,966 [INFO] [req_id=77507a97-5c46-4d03-bbfc-d93001b31d44] app: User test_phase4_notif_c@example.com logged in successfully [user_id=10060]
+2026-06-26 06:46:33,836 [INFO] [req_id=6412a11b-6e00-4283-9585-5cf8bafbf7af] app: User test_phase4_notif_u@example.com logged in successfully [user_id=10061]
+2026-06-26 06:46:33,870 [INFO] [req_id=0b1f31c4-968f-4c81-bd7f-ea2e815decb9] app: Prompt saved successfully for user_id 10060 with ID 1161 (V1, Score: 40)
+2026-06-26 06:46:34,701 [INFO] [req_id=4372a8dd-0c89-4217-b9dd-e2f278f4d495] app: User test_phase4_rate_limiter@example.com registered successfully with role user [user_id=10062]
+2026-06-26 06:46:35,386 [INFO] [req_id=3491acc7-6881-4083-8d48-a1550233b350] app: User test_phase4_rate_limiter@example.com logged in successfully [user_id=10062]
+2026-06-26 06:46:35,408 [INFO] [req_id=466b010b-1501-44d8-b06f-d4b6b6436335] app: Prompt saved successfully for user_id 10062 with ID 1162 (V1, Score: 40)
+2026-06-26 06:46:35,438 [INFO] [req_id=765b358b-cdf3-4d78-a2df-b0ae03728ddc] app: Prompt saved successfully for user_id 10062 with ID 1163 (V1, Score: 40)
+2026-06-26 06:46:35,468 [INFO] [req_id=fa7c736f-a313-4207-a79e-aaa761ae40ad] app: Prompt saved successfully for user_id 10062 with ID 1164 (V1, Score: 40)
+2026-06-26 06:46:35,506 [INFO] [req_id=99a0cc66-c33e-42ad-a8de-93d8b2932607] app: Prompt saved successfully for user_id 10062 with ID 1165 (V1, Score: 40)
+2026-06-26 06:46:35,537 [INFO] [req_id=7c434240-c8f4-4dbf-92b6-03c9fce0401c] app: Prompt saved successfully for user_id 10062 with ID 1166 (V1, Score: 40)
+2026-06-26 06:46:35,576 [INFO] [req_id=eff02bd5-dd7e-459c-abef-7a5cc14e92c0] app: Prompt saved successfully for user_id 10062 with ID 1167 (V1, Score: 40)
+2026-06-26 06:46:35,611 [INFO] [req_id=a229a44d-82b0-4693-bbde-3de62aa616dc] app: Prompt saved successfully for user_id 10062 with ID 1168 (V1, Score: 40)
+2026-06-26 06:46:35,648 [INFO] [req_id=5cc9b82b-cee1-48f1-9fe0-617183ee6d72] app: Prompt saved successfully for user_id 10062 with ID 1169 (V1, Score: 40)
+2026-06-26 06:46:35,685 [INFO] [req_id=9149eac5-2116-4fc4-a034-32d12b5da2e0] app: Prompt saved successfully for user_id 10062 with ID 1170 (V1, Score: 40)
+2026-06-26 06:46:35,721 [INFO] [req_id=29b406b2-77cf-4a83-bb4e-8e5b06edbc07] app: Prompt saved successfully for user_id 10062 with ID 1171 (V1, Score: 40)
+2026-06-26 06:46:35,766 [INFO] [req_id=acee758e-57bf-45cf-ae6f-995428b8e3db] app: Prompt saved successfully for user_id 10062 with ID 1172 (V1, Score: 40)
+2026-06-26 06:46:37,056 [INFO] [req_id=4a9994be-78d4-410f-bf74-99c0bbba1e5a] app: User test_phase4_uuid@example.com registered successfully with role user [user_id=10063]
+2026-06-26 06:46:37,941 [INFO] [req_id=faabdae7-010b-4429-bb3b-3f881a3fe606] app: User test_phase4_uuid@example.com logged in successfully [user_id=10063]
+2026-06-26 06:46:37,978 [INFO] [req_id=263c18cf-fe5b-4dab-a5ae-4c99dcc8650f] app: Prompt saved successfully for user_id 10063 with ID 1173 (V1, Score: 40)
+2026-06-26 06:46:38,929 [INFO] [req_id=00782a13-de32-4655-9fb1-25e6f40422b5] app: User test_phase4_creator_softdelete@example.com registered successfully with role user [user_id=10064]
+2026-06-26 06:46:39,716 [INFO] [req_id=574da903-83ff-4902-91b6-d90b0b29d018] app: User test_phase4_creator_softdelete@example.com logged in successfully [user_id=10064]
+2026-06-26 06:46:39,761 [INFO] [req_id=7787c85c-df20-43d7-bd0f-c619108853da] app: Prompt saved successfully for user_id 10064 with ID 1174 (V1, Score: 40)
+2026-06-26 06:46:40,747 [INFO] [req_id=587b06d1-1e95-4cf5-941a-d8db4a94277d] app: User test_phase4_trend@example.com registered successfully with role user [user_id=10066]
+2026-06-26 06:46:41,385 [INFO] [req_id=36672101-ea30-4c2f-9e6d-c68812af426b] app: User test_phase4_trend@example.com logged in successfully [user_id=10066]
+2026-06-26 06:46:41,407 [INFO] [req_id=82f4567d-ba03-41f6-ac0b-8ef469022c56] app: Prompt saved successfully for user_id 10066 with ID 1175 (V1, Score: 40)
+2026-06-26 06:46:41,442 [INFO] [req_id=bc1aae36-0494-4dc5-acfe-8664c9a78b93] app: Prompt saved successfully for user_id 10066 with ID 1176 (V1, Score: 40)
+2026-06-26 06:46:42,288 [INFO] [req_id=d6bfb523-9052-4393-a533-681a59d6d339] app: User test_phase4_view_creator@example.com registered successfully with role user [user_id=10067]
+2026-06-26 06:46:43,140 [INFO] [req_id=4154ff8e-d378-41a2-9eb4-d77a211ea77e] app: User test_phase4_view_creator@example.com logged in successfully [user_id=10067]
+2026-06-26 06:46:43,177 [INFO] [req_id=d56c7563-6daa-4b53-813e-6222e103a9c3] app: Prompt saved successfully for user_id 10067 with ID 1177 (V1, Score: 40)
+2026-06-26 06:46:43,912 [INFO] [req_id=b8e23084-1eee-4dfe-88fb-94dce790df0a] app: User test_phase4_user_0@example.com registered successfully with role user [user_id=10068]
+2026-06-26 06:46:44,607 [INFO] [req_id=f35ecf25-09d4-4b5b-84ee-9f9e1bb27a67] app: User test_phase4_user_1@example.com registered successfully with role user [user_id=10069]
+2026-06-26 06:46:45,291 [INFO] [req_id=65da922e-28ad-4f34-b852-3ce322e690d3] app: User test_phase4_user_2@example.com registered successfully with role user [user_id=10070]
+2026-06-26 06:46:46,007 [INFO] [req_id=b5d931fd-cd7c-4273-97ec-df7349fb5431] app: User test_phase4_user_3@example.com registered successfully with role user [user_id=10071]
+2026-06-26 06:46:46,781 [INFO] [req_id=c181e8f7-1be8-440a-862d-51cd4e0dcfde] app: User test_phase4_user_4@example.com registered successfully with role user [user_id=10072]
+2026-06-26 06:46:47,475 [INFO] [req_id=27b5e1c5-6e52-444d-a8fd-762d384246a1] app: User test_phase4_user_5@example.com registered successfully with role user [user_id=10073]
+2026-06-26 06:46:48,195 [INFO] [req_id=599af9ae-b8f2-4ca3-a50b-42df17a15cc8] app: User test_phase4_user_6@example.com registered successfully with role user [user_id=10074]
+2026-06-26 06:46:48,987 [INFO] [req_id=045db189-1aea-4459-9b1a-9d61d81f9922] app: User test_phase4_user_7@example.com registered successfully with role user [user_id=10075]
+2026-06-26 06:46:50,056 [INFO] [req_id=5516b0fd-7c1a-483b-ba67-51d18ce6adb7] app: User test_phase4_user_8@example.com registered successfully with role user [user_id=10076]
+2026-06-26 06:46:50,914 [INFO] [req_id=1b860c90-6dcc-45df-b295-401d4145edd2] app: User test_phase4_user_9@example.com registered successfully with role user [user_id=10077]
+2026-06-26 06:49:39,182 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-26 06:49:39,915 [INFO] [req_id=cf89873d-eb4d-4867-85c0-03f2855f828c] app: User test_debug_publish@example.com registered successfully with role user [user_id=10078]
+2026-06-26 06:49:39,940 [INFO] [req_id=d324bfaf-1429-48ff-9278-2ed7815bf786] app: Prompt saved successfully for user_id 10078 with ID 1178 (V1, Score: 40)
+2026-06-26 06:50:11,429 [ERROR] [req_id=N/A] app: Failed to auto-clean old notifications: 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded: it is already loaded
+2026-06-26 06:50:12,198 [INFO] [req_id=5568e0ce-3a7c-461b-a798-139769d5b57c] app: User test_phase4_like_creator@example.com registered successfully with role user [user_id=10079]
+2026-06-26 06:50:12,987 [INFO] [req_id=ea8efaca-abe2-4342-b239-54b6bb1db236] app: User test_phase4_like_user@example.com registered successfully with role user [user_id=10080]
+2026-06-26 06:50:13,647 [INFO] [req_id=be770e33-f500-4656-9920-72206d7e6e8f] app: User test_phase4_like_creator@example.com logged in successfully [user_id=10079]
+2026-06-26 06:50:14,368 [INFO] [req_id=91df8073-68b0-4899-b774-6af393f7cee8] app: User test_phase4_like_user@example.com logged in successfully [user_id=10080]
+2026-06-26 06:50:14,395 [INFO] [req_id=e17876b1-4f11-4610-ba06-e32628a35d33] app: Prompt saved successfully for user_id 10079 with ID 1179 (V1, Score: 40)
+2026-06-26 06:50:15,269 [INFO] [req_id=6a733352-d380-41f6-945e-96879b548643] app: User test_phase4_rep_c@example.com registered successfully with role user [user_id=10081]
+2026-06-26 06:50:15,945 [INFO] [req_id=ba03187c-394b-4c83-a69e-b1e49e855628] app: User test_phase4_rep_u@example.com registered successfully with role user [user_id=10082]
+2026-06-26 06:50:16,727 [INFO] [req_id=a8cef2d3-ef3d-4367-81cd-18aa509917af] app: User test_phase4_rep_c@example.com logged in successfully [user_id=10081]
+2026-06-26 06:50:17,427 [INFO] [req_id=92fc724c-3d4a-4d1e-a931-e5cb5be19d24] app: User test_phase4_rep_u@example.com logged in successfully [user_id=10082]
+2026-06-26 06:50:17,458 [INFO] [req_id=6da2ff89-9a90-46b6-9c7c-6c948163a129] app: Prompt saved successfully for user_id 10081 with ID 1181 (V1, Score: 40)
+2026-06-26 06:50:18,266 [INFO] [req_id=33a7562a-dabe-4902-991c-0930973d446b] app: User test_phase4_notif_c@example.com registered successfully with role user [user_id=10083]
+2026-06-26 06:50:18,977 [INFO] [req_id=88613af0-55b1-46ee-b06a-9f6b6aeddf4d] app: User test_phase4_notif_u@example.com registered successfully with role user [user_id=10084]
+2026-06-26 06:50:19,646 [INFO] [req_id=8583d417-80e7-40ad-9034-ecf9f575e691] app: User test_phase4_notif_c@example.com logged in successfully [user_id=10083]
+2026-06-26 06:50:20,347 [INFO] [req_id=30ffa008-3cd1-4de4-b572-01c8ba8f6b10] app: User test_phase4_notif_u@example.com logged in successfully [user_id=10084]
+2026-06-26 06:50:20,392 [INFO] [req_id=e6e8429f-4232-4a59-a5f8-1a747940078f] app: Prompt saved successfully for user_id 10083 with ID 1182 (V1, Score: 40)
+2026-06-26 06:50:21,238 [INFO] [req_id=f7914f62-126b-4cec-becc-91b02f6a4eda] app: User test_phase4_rate_limiter@example.com registered successfully with role user [user_id=10085]
+2026-06-26 06:50:21,951 [INFO] [req_id=d5f8d619-4dac-470b-97f9-183021f285e1] app: User test_phase4_rate_limiter@example.com logged in successfully [user_id=10085]
+2026-06-26 06:50:21,979 [INFO] [req_id=df800536-9b79-42a3-bfc4-ad180ad038f5] app: Prompt saved successfully for user_id 10085 with ID 1183 (V1, Score: 40)
+2026-06-26 06:50:22,001 [INFO] [req_id=481e7e4d-16dc-4ccf-800f-da1c48ae4d7e] app: Prompt saved successfully for user_id 10085 with ID 1184 (V1, Score: 40)
+2026-06-26 06:50:22,030 [INFO] [req_id=ec0874fd-0f27-4034-bb28-2d08fae3a71a] app: Prompt saved successfully for user_id 10085 with ID 1185 (V1, Score: 40)
+2026-06-26 06:50:22,059 [INFO] [req_id=e3794fe7-4215-4522-9573-ea73995dcb48] app: Prompt saved successfully for user_id 10085 with ID 1186 (V1, Score: 40)
+2026-06-26 06:50:22,078 [INFO] [req_id=5be7907c-ae99-47bf-9088-928c12210e44] app: Prompt saved successfully for user_id 10085 with ID 1187 (V1, Score: 40)
+2026-06-26 06:50:22,119 [INFO] [req_id=6b0d13e7-4ffd-4085-9c8f-5a2f4c82bdd1] app: Prompt saved successfully for user_id 10085 with ID 1188 (V1, Score: 40)
+2026-06-26 06:50:22,147 [INFO] [req_id=d56ae671-6d9c-4c25-9dd7-d21ff433f0e1] app: Prompt saved successfully for user_id 10085 with ID 1189 (V1, Score: 40)
+2026-06-26 06:50:22,177 [INFO] [req_id=3fdb62e6-8f80-455e-a5b8-ece3bee76fc9] app: Prompt saved successfully for user_id 10085 with ID 1190 (V1, Score: 40)
+2026-06-26 06:50:22,224 [INFO] [req_id=758c1bbd-d2d5-433c-a518-92ab4305aa52] app: Prompt saved successfully for user_id 10085 with ID 1191 (V1, Score: 40)
+2026-06-26 06:50:22,259 [INFO] [req_id=82ff5422-1b77-4522-8e72-27865673581c] app: Prompt saved successfully for user_id 10085 with ID 1192 (V1, Score: 40)
+2026-06-26 06:50:22,299 [INFO] [req_id=019a6c52-4c97-40a6-a247-463a08b9e0bf] app: Prompt saved successfully for user_id 10085 with ID 1193 (V1, Score: 40)
+2026-06-26 06:50:23,457 [INFO] [req_id=f34e3837-587a-4248-8c33-60ffb574f847] app: User test_phase4_uuid@example.com registered successfully with role user [user_id=10086]
+2026-06-26 06:50:24,145 [INFO] [req_id=2bd55985-0481-40cc-8fb0-bb3dfdd6fc45] app: User test_phase4_uuid@example.com logged in successfully [user_id=10086]
+2026-06-26 06:50:24,183 [INFO] [req_id=fa38da4f-de40-4794-8a7b-a321c8ece47d] app: Prompt saved successfully for user_id 10086 with ID 1194 (V1, Score: 40)
+2026-06-26 06:50:24,256 [INFO] [req_id=728f2d32-c347-4837-849c-06f37e942d11] app: Prompt saved successfully for user_id 10086 with ID 1195 (V1, Score: 40)
+2026-06-26 06:50:24,309 [INFO] [req_id=0fa1768b-b615-43e9-8eb7-a3b11b5f41af] app: Prompt saved successfully for user_id 10086 with ID 1196 (V1, Score: 40)
+2026-06-26 06:50:24,361 [INFO] [req_id=8bdf4ff7-3fc5-42d0-9384-868b16e3a0ba] app: Prompt saved successfully for user_id 10086 with ID 1197 (V1, Score: 40)
+2026-06-26 06:50:24,432 [INFO] [req_id=0d919784-c341-4ff4-9353-8586f121c055] app: Prompt saved successfully for user_id 10086 with ID 1198 (V1, Score: 40)
+2026-06-26 06:50:24,493 [INFO] [req_id=6b974248-06d8-4450-85c4-9326a293122e] app: Prompt saved successfully for user_id 10086 with ID 1199 (V1, Score: 40)
+2026-06-26 06:50:24,549 [INFO] [req_id=45efaedc-ec0d-4660-95d4-fb9e99faf984] app: Prompt saved successfully for user_id 10086 with ID 1200 (V1, Score: 40)
+2026-06-26 06:50:24,607 [INFO] [req_id=b0bd7f9a-1826-47e5-8d14-dddf5c370143] app: Prompt saved successfully for user_id 10086 with ID 1201 (V1, Score: 40)
+2026-06-26 06:50:24,679 [INFO] [req_id=5248779a-110d-4842-874b-cf15e2de44ce] app: Prompt saved successfully for user_id 10086 with ID 1202 (V1, Score: 40)
+2026-06-26 06:50:24,741 [INFO] [req_id=6c621ea4-327c-422c-81b1-0ae42122a310] app: Prompt saved successfully for user_id 10086 with ID 1203 (V1, Score: 40)
+2026-06-26 06:50:24,806 [INFO] [req_id=c1529a88-fd7f-44a2-a673-9f92a566821b] app: Prompt saved successfully for user_id 10086 with ID 1204 (V1, Score: 40)
+2026-06-26 06:50:24,873 [INFO] [req_id=4e44feb1-481e-41c3-a44a-66d874893517] app: Prompt saved successfully for user_id 10086 with ID 1205 (V1, Score: 40)
+2026-06-26 06:50:24,950 [INFO] [req_id=9dcfabfe-1e55-4f90-8ef9-7c2c0d657afa] app: Prompt saved successfully for user_id 10086 with ID 1206 (V1, Score: 40)
+2026-06-26 06:50:25,026 [INFO] [req_id=5561f620-d693-4fcf-b884-88a10ef979e3] app: Prompt saved successfully for user_id 10086 with ID 1207 (V1, Score: 40)
+2026-06-26 06:50:25,086 [INFO] [req_id=b4cc7b16-1cde-4234-99ab-dd3681c3c49f] app: Prompt saved successfully for user_id 10086 with ID 1208 (V1, Score: 40)
+2026-06-26 06:50:25,147 [INFO] [req_id=63fde989-2bd1-43d1-88e4-d4556c62cc8b] app: Prompt saved successfully for user_id 10086 with ID 1209 (V1, Score: 40)
+2026-06-26 06:50:25,217 [INFO] [req_id=5696ac11-f561-4bd9-8bdb-6181f62ff9fe] app: Prompt saved successfully for user_id 10086 with ID 1210 (V1, Score: 40)
+2026-06-26 06:50:25,279 [INFO] [req_id=0645b255-2a4f-44a4-93b9-e73737af64ed] app: Prompt saved successfully for user_id 10086 with ID 1211 (V1, Score: 40)
+2026-06-26 06:50:25,342 [INFO] [req_id=53a9c69f-3cd6-4144-8057-28a14ee0b845] app: Prompt saved successfully for user_id 10086 with ID 1212 (V1, Score: 40)
+2026-06-26 06:50:25,408 [INFO] [req_id=3f87019f-28f7-437f-8f23-a735b3b0c259] app: Prompt saved successfully for user_id 10086 with ID 1213 (V1, Score: 40)
+2026-06-26 06:50:25,458 [INFO] [req_id=2365871b-de1b-4387-a121-5f44ea37379e] app: Prompt saved successfully for user_id 10086 with ID 1214 (V1, Score: 40)
+2026-06-26 06:50:25,518 [INFO] [req_id=7055da0f-326f-445c-b203-ba75a01e5a53] app: Prompt saved successfully for user_id 10086 with ID 1215 (V1, Score: 40)
+2026-06-26 06:50:25,584 [INFO] [req_id=c31d5475-e398-441c-9f83-f2fbac4ff859] app: Prompt saved successfully for user_id 10086 with ID 1216 (V1, Score: 40)
+2026-06-26 06:50:25,648 [INFO] [req_id=4d702830-40f5-4ab0-a9e7-200c0443a7cf] app: Prompt saved successfully for user_id 10086 with ID 1217 (V1, Score: 40)
+2026-06-26 06:50:25,718 [INFO] [req_id=31306f46-6d93-4b4a-8421-4a209bee8cb4] app: Prompt saved successfully for user_id 10086 with ID 1218 (V1, Score: 40)
+2026-06-26 06:50:25,777 [INFO] [req_id=c921bc80-5e91-4879-a7ca-82ef0eaea3e0] app: Prompt saved successfully for user_id 10086 with ID 1219 (V1, Score: 40)
+2026-06-26 06:50:25,832 [INFO] [req_id=567866ca-5733-41c2-947c-4191cbfb25de] app: Prompt saved successfully for user_id 10086 with ID 1220 (V1, Score: 40)
+2026-06-26 06:50:25,898 [INFO] [req_id=7e03246f-46c7-45b3-a42a-90e76e995153] app: Prompt saved successfully for user_id 10086 with ID 1221 (V1, Score: 40)
+2026-06-26 06:50:25,948 [INFO] [req_id=7203bc65-7095-40a2-bfb0-1f37bc41e1e1] app: Prompt saved successfully for user_id 10086 with ID 1222 (V1, Score: 40)
+2026-06-26 06:50:25,996 [INFO] [req_id=26dd90bf-0946-4d0e-ad2b-e119177f03fc] app: Prompt saved successfully for user_id 10086 with ID 1223 (V1, Score: 40)
+2026-06-26 06:50:26,056 [INFO] [req_id=8b4a6a52-88d4-4965-8aea-8da911c6cadd] app: Prompt saved successfully for user_id 10086 with ID 1224 (V1, Score: 40)
+2026-06-26 06:50:26,116 [INFO] [req_id=60638b0e-16ab-4038-b9f1-d179b1a7403d] app: Prompt saved successfully for user_id 10086 with ID 1225 (V1, Score: 40)
+2026-06-26 06:50:26,181 [INFO] [req_id=3c204ddd-5e0d-4105-829f-efb32d67e0f9] app: Prompt saved successfully for user_id 10086 with ID 1226 (V1, Score: 40)
+2026-06-26 06:50:26,238 [INFO] [req_id=c9e7cdd7-4c28-452e-9da2-fcabfe450e86] app: Prompt saved successfully for user_id 10086 with ID 1227 (V1, Score: 40)
+2026-06-26 06:50:26,316 [INFO] [req_id=0c5cf05e-2af2-4002-942a-b11c5916938e] app: Prompt saved successfully for user_id 10086 with ID 1228 (V1, Score: 40)
+2026-06-26 06:50:26,377 [INFO] [req_id=f7d70f11-e35e-4fc6-80e7-7e7fe90d1d4f] app: Prompt saved successfully for user_id 10086 with ID 1229 (V1, Score: 40)
+2026-06-26 06:50:26,442 [INFO] [req_id=0446984f-ac68-4a2b-aafe-8704cbd94408] app: Prompt saved successfully for user_id 10086 with ID 1230 (V1, Score: 40)
+2026-06-26 06:50:26,498 [INFO] [req_id=44e13508-6156-4b79-872e-70d6292c9d8b] app: Prompt saved successfully for user_id 10086 with ID 1231 (V1, Score: 40)
+2026-06-26 06:50:26,573 [INFO] [req_id=6382fd03-7898-42c6-9382-b14f18a6a9fe] app: Prompt saved successfully for user_id 10086 with ID 1232 (V1, Score: 40)
+2026-06-26 06:50:26,636 [INFO] [req_id=14a2a4ce-b058-4b82-9068-506fcb9b0a98] app: Prompt saved successfully for user_id 10086 with ID 1233 (V1, Score: 40)
+2026-06-26 06:50:26,698 [INFO] [req_id=4d6e775b-9402-4319-a08f-7015a6120b83] app: Prompt saved successfully for user_id 10086 with ID 1234 (V1, Score: 40)
+2026-06-26 06:50:26,760 [INFO] [req_id=dcbe3d92-c475-4dee-939c-81a4939882f1] app: Prompt saved successfully for user_id 10086 with ID 1235 (V1, Score: 40)
+2026-06-26 06:50:26,833 [INFO] [req_id=1a807552-27f7-4faf-bbb3-51d31fa8532e] app: Prompt saved successfully for user_id 10086 with ID 1236 (V1, Score: 40)
+2026-06-26 06:50:26,898 [INFO] [req_id=c3a7e841-2d22-4f2e-8c8d-ac443a3d444f] app: Prompt saved successfully for user_id 10086 with ID 1237 (V1, Score: 40)
+2026-06-26 06:50:26,963 [INFO] [req_id=f81c6c14-9e34-4f5d-9f38-9d5038534ab8] app: Prompt saved successfully for user_id 10086 with ID 1238 (V1, Score: 40)
+2026-06-26 06:50:27,016 [INFO] [req_id=b83d22ab-03e7-4fa2-a8aa-e0598a0a3011] app: Prompt saved successfully for user_id 10086 with ID 1239 (V1, Score: 40)
+2026-06-26 06:50:27,078 [INFO] [req_id=56f33729-a16d-404d-b06f-6b7d1a29a98a] app: Prompt saved successfully for user_id 10086 with ID 1240 (V1, Score: 40)
+2026-06-26 06:50:27,143 [INFO] [req_id=5a3a4f27-0c18-42b0-83a3-08bc2782c622] app: Prompt saved successfully for user_id 10086 with ID 1241 (V1, Score: 40)
+2026-06-26 06:50:27,197 [INFO] [req_id=456eb98b-3770-4afb-a37b-8011deaf49c3] app: Prompt saved successfully for user_id 10086 with ID 1242 (V1, Score: 40)
+2026-06-26 06:50:27,256 [INFO] [req_id=f19f8320-827e-4688-95e1-240f8c488380] app: Prompt saved successfully for user_id 10086 with ID 1243 (V1, Score: 40)
+2026-06-26 06:50:28,037 [INFO] [req_id=9a5c60d9-9738-4c6f-a132-624bd0337d42] app: User test_phase4_creator_softdelete@example.com registered successfully with role user [user_id=10087]
+2026-06-26 06:50:28,708 [INFO] [req_id=6102d3de-fc58-4787-973d-c86e3c0d8f83] app: User test_phase4_creator_softdelete@example.com logged in successfully [user_id=10087]
+2026-06-26 06:50:28,733 [INFO] [req_id=18503d7b-5ec5-47dc-aa05-206301a15997] app: Prompt saved successfully for user_id 10087 with ID 1244 (V1, Score: 40)
+2026-06-26 06:50:29,577 [INFO] [req_id=872652fa-3ab3-4456-b775-0e2b77bb3421] app: User test_phase4_trend@example.com registered successfully with role user [user_id=10089]
+2026-06-26 06:50:30,290 [INFO] [req_id=3ae6b33d-15c8-4607-9b4e-42c76a46fa34] app: User test_phase4_trend@example.com logged in successfully [user_id=10089]
+2026-06-26 06:50:30,316 [INFO] [req_id=fd9d2ec2-359f-4348-9747-905500310ff4] app: Prompt saved successfully for user_id 10089 with ID 1245 (V1, Score: 40)
+2026-06-26 06:50:30,346 [INFO] [req_id=bbc46255-2d58-4a91-b54a-e83ab65212e5] app: Prompt saved successfully for user_id 10089 with ID 1246 (V1, Score: 40)
+2026-06-26 06:50:31,184 [INFO] [req_id=f232ce48-f31a-4351-bfdd-d951a19f43b7] app: User test_phase4_view_creator@example.com registered successfully with role user [user_id=10090]
+2026-06-26 06:50:31,873 [INFO] [req_id=aff71fea-a20e-4eae-be06-2f41aabe6111] app: User test_phase4_view_creator@example.com logged in successfully [user_id=10090]
+2026-06-26 06:50:31,899 [INFO] [req_id=d4e044bc-84a5-4bff-a91f-11d7f633d177] app: Prompt saved successfully for user_id 10090 with ID 1247 (V1, Score: 40)
+2026-06-26 06:50:32,913 [INFO] [req_id=f8a40a23-c459-4927-ae24-74debb06f21b] app: User test_phase4_user_0@example.com registered successfully with role user [user_id=10091]
+2026-06-26 06:50:33,589 [INFO] [req_id=01cb499b-185c-4036-9b03-a84c2f24361d] app: User test_phase4_user_1@example.com registered successfully with role user [user_id=10092]
+2026-06-26 06:50:34,312 [INFO] [req_id=67dc3284-b720-491a-ab7f-b5c6a10170f9] app: User test_phase4_user_2@example.com registered successfully with role user [user_id=10093]
+2026-06-26 06:50:34,967 [INFO] [req_id=0422ae6f-8228-4167-add5-68d9046f8d36] app: User test_phase4_user_3@example.com registered successfully with role user [user_id=10094]
+2026-06-26 06:50:35,686 [INFO] [req_id=a13c465c-19f3-4697-8305-679acacba871] app: User test_phase4_user_4@example.com registered successfully with role user [user_id=10095]
+2026-06-26 06:50:36,366 [INFO] [req_id=c08fdb26-dea2-42e7-9d5a-46f0b95ea2f7] app: User test_phase4_user_5@example.com registered successfully with role user [user_id=10096]
+2026-06-26 06:50:37,088 [INFO] [req_id=b59bc38d-3759-4af1-b7ac-dc0d42b0361e] app: User test_phase4_user_6@example.com registered successfully with role user [user_id=10097]
+2026-06-26 06:50:37,767 [INFO] [req_id=e877f423-76fc-48be-9cea-ff12453d9692] app: User test_phase4_user_7@example.com registered successfully with role user [user_id=10098]
+2026-06-26 06:50:38,496 [INFO] [req_id=d522a8ab-bd95-45d7-852d-ae883e736489] app: User test_phase4_user_8@example.com registered successfully with role user [user_id=10099]
+2026-06-26 06:50:39,246 [INFO] [req_id=1ccb40eb-22a9-45b5-869b-0b8307b91ecb] app: User test_phase4_user_9@example.com registered successfully with role user [user_id=10100]
+2026-06-26 07:09:14,994 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-26 07:09:15,651 [INFO] [req_id=ed39a9b9-72ce-4503-80d4-310e607ab258] app: User test_phase5_u1@example.com registered successfully with role user [user_id=10101]
+2026-06-26 07:09:16,108 [INFO] [req_id=fb07bb56-2d49-414a-8e62-c172c1bac0c2] app: User test_phase5_u1@example.com logged in successfully [user_id=10101]
+2026-06-26 07:09:16,630 [INFO] [req_id=75ea7b2d-0fc5-42b5-9996-c8e63b934150] app: User test_phase5_u2@example.com registered successfully with role user [user_id=10102]
+2026-06-26 07:09:17,142 [INFO] [req_id=e2d14ed1-23ba-49c2-b884-33254302db5b] app: User test_phase5_u2@example.com logged in successfully [user_id=10102]
+2026-06-26 07:09:18,508 [INFO] [req_id=79ced03e-4128-4214-aec6-18a1fe0eaa8b] app: User test_phase5_u1@example.com registered successfully with role user [user_id=10103]
+2026-06-26 07:09:18,974 [INFO] [req_id=caab0ba7-404f-4c22-9007-ff226a799afd] app: User test_phase5_u1@example.com logged in successfully [user_id=10103]
+2026-06-26 07:09:19,398 [INFO] [req_id=0fe447a1-9387-4dfe-bdce-f95e30c44eca] app: User test_phase5_u2@example.com registered successfully with role user [user_id=10104]
+2026-06-26 07:09:19,856 [INFO] [req_id=874447ed-8611-4f19-8962-54acd012aafa] app: User test_phase5_u2@example.com logged in successfully [user_id=10104]
+2026-06-26 07:09:20,320 [INFO] [req_id=60412632-1f1a-43b4-ae27-c6068e43e64d] app: User test_phase5_u1@example.com registered successfully with role user [user_id=10105]
+2026-06-26 07:09:20,743 [INFO] [req_id=7bbbca26-6eec-452d-8db9-f927602d7e73] app: User test_phase5_u1@example.com logged in successfully [user_id=10105]
+2026-06-26 07:09:21,071 [INFO] [req_id=65daf5c7-1026-4825-b7fe-f6ea22e03b7f] app: User test_phase5_u2@example.com registered successfully with role user [user_id=10106]
+2026-06-26 07:09:21,481 [INFO] [req_id=5a5877c4-fec1-4239-a4d9-54612c45a88f] app: User test_phase5_u2@example.com logged in successfully [user_id=10106]
+2026-06-26 07:09:22,149 [INFO] [req_id=0a66831f-26d6-430b-98ff-86e7c7eb6abc] app: User test_phase5_u1@example.com registered successfully with role user [user_id=10107]
+2026-06-26 07:09:22,592 [INFO] [req_id=a03929d5-187c-4e21-86b3-8621611b0951] app: User test_phase5_u1@example.com logged in successfully [user_id=10107]
+2026-06-26 07:09:23,113 [INFO] [req_id=cc756a8a-16eb-4408-a6f9-9a064b3e68ac] app: User test_phase5_u2@example.com registered successfully with role user [user_id=10108]
+2026-06-26 07:09:23,493 [INFO] [req_id=8b3ed09c-884f-456b-b471-7a2808075ea9] app: User test_phase5_u2@example.com logged in successfully [user_id=10108]
+2026-06-26 07:09:24,289 [INFO] [req_id=031bfcb0-e303-4f5a-a5b3-aa286aef2889] app: User test_phase5_u1@example.com registered successfully with role user [user_id=10109]
+2026-06-26 07:09:24,859 [INFO] [req_id=a1ed8888-1f41-4ee9-917f-935af614cc94] app: User test_phase5_u1@example.com logged in successfully [user_id=10109]
+2026-06-26 07:09:25,451 [INFO] [req_id=d0266256-416a-4752-8e66-16f2755f86ae] app: User test_phase5_u2@example.com registered successfully with role user [user_id=10110]
+2026-06-26 07:09:25,897 [INFO] [req_id=533e33ba-ed4d-4fbd-8e9a-1177cd75d414] app: User test_phase5_u2@example.com logged in successfully [user_id=10110]
+2026-06-26 07:10:30,284 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-26 07:10:30,756 [INFO] [req_id=ddc3d5a4-70ac-44cc-8644-6f82c83a31dc] app: User test_phase5_u1@example.com registered successfully with role user [user_id=10111]
+2026-06-26 07:10:31,101 [INFO] [req_id=a9cdc7c0-ebdc-43f4-91a4-deec9397496b] app: User test_phase5_u1@example.com logged in successfully [user_id=10111]
+2026-06-26 07:10:31,476 [INFO] [req_id=847704be-9d1f-4245-b121-8d0779bd6acb] app: User test_phase5_u2@example.com registered successfully with role user [user_id=10112]
+2026-06-26 07:10:31,778 [INFO] [req_id=2a5ed9c3-f10f-40c4-88e8-4aab8d89d2f0] app: User test_phase5_u2@example.com logged in successfully [user_id=10112]
+2026-06-26 07:10:32,642 [INFO] [req_id=c59f3745-71e2-41bb-b47a-43e83f882fdb] app: User test_phase5_u1@example.com registered successfully with role user [user_id=10113]
+2026-06-26 07:10:32,954 [INFO] [req_id=df263adf-709d-4478-aaa0-4c95b376a85b] app: User test_phase5_u1@example.com logged in successfully [user_id=10113]
+2026-06-26 07:10:33,266 [INFO] [req_id=ec32eaab-759b-4bb0-92e9-73ca218ddb91] app: User test_phase5_u2@example.com registered successfully with role user [user_id=10114]
+2026-06-26 07:10:33,621 [INFO] [req_id=f16ceacf-c185-4d6e-a8c6-817768750350] app: User test_phase5_u2@example.com logged in successfully [user_id=10114]
+2026-06-26 07:10:34,056 [INFO] [req_id=d6b3de8d-f579-4298-bbcb-ee29e288da82] app: User test_phase5_u1@example.com registered successfully with role user [user_id=10115]
+2026-06-26 07:10:34,461 [INFO] [req_id=6c71d25f-83e4-4010-99d7-6b5b1e6ebdfb] app: User test_phase5_u1@example.com logged in successfully [user_id=10115]
+2026-06-26 07:10:34,822 [INFO] [req_id=da96987c-0202-4c6f-a50b-39a09807e9d9] app: User test_phase5_u2@example.com registered successfully with role user [user_id=10116]
+2026-06-26 07:10:35,153 [INFO] [req_id=f2b92ecd-f1db-41ac-b543-6042ed03d2a3] app: User test_phase5_u2@example.com logged in successfully [user_id=10116]
+2026-06-26 07:10:35,827 [INFO] [req_id=8d61bdd0-31b1-4a32-b688-19385c5ed694] app: User test_phase5_u1@example.com registered successfully with role user [user_id=10117]
+2026-06-26 07:10:36,221 [INFO] [req_id=614eb769-6849-487f-bac6-738f09cd5622] app: User test_phase5_u1@example.com logged in successfully [user_id=10117]
+2026-06-26 07:10:36,767 [INFO] [req_id=6a35e423-be36-461b-94e7-161b0b2a42c9] app: User test_phase5_u2@example.com registered successfully with role user [user_id=10118]
+2026-06-26 07:10:37,201 [INFO] [req_id=6f32d7b2-edba-468e-8ce8-80663bd687a5] app: User test_phase5_u2@example.com logged in successfully [user_id=10118]
+2026-06-26 07:10:38,007 [INFO] [req_id=d2273cc2-5d08-4591-bb12-324552ffe51b] app: User test_phase5_u1@example.com registered successfully with role user [user_id=10119]
+2026-06-26 07:10:38,422 [INFO] [req_id=eb92f230-73cd-4c20-921a-86766184da3b] app: User test_phase5_u1@example.com logged in successfully [user_id=10119]
+2026-06-26 07:10:38,775 [INFO] [req_id=83578a05-17d0-4e28-a0c4-8cf5591efab8] app: User test_phase5_u2@example.com registered successfully with role user [user_id=10120]
+2026-06-26 07:10:39,159 [INFO] [req_id=41ae57e3-d430-4143-b46b-62794fbe3904] app: User test_phase5_u2@example.com logged in successfully [user_id=10120]
+2026-06-26 07:11:27,313 [ERROR] [req_id=N/A] app: Failed to auto-clean old notifications: 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded: it is already loaded
+2026-06-26 07:11:27,731 [INFO] [req_id=a6713048-f93e-46bd-a6a2-635ced56705d] app: User test_phase5_u1@example.com registered successfully with role user [user_id=10121]
+2026-06-26 07:11:28,044 [INFO] [req_id=71208b60-6be9-4f51-b3b0-7276cf9fe0be] app: User test_phase5_u1@example.com logged in successfully [user_id=10121]
+2026-06-26 07:11:28,434 [INFO] [req_id=59d7518b-88b2-4742-bd1f-e8c8bc5da8a4] app: User test_phase5_u2@example.com registered successfully with role user [user_id=10122]
+2026-06-26 07:11:28,914 [INFO] [req_id=19fb2ee7-1978-4bdd-a5dc-9565f2d149ed] app: User test_phase5_u2@example.com logged in successfully [user_id=10122]
+2026-06-26 07:11:30,118 [INFO] [req_id=9d078339-2780-4dd3-a147-f4fc010deda0] app: User test_phase5_u1@example.com registered successfully with role user [user_id=10123]
+2026-06-26 07:11:30,433 [INFO] [req_id=65b37662-c559-4128-8d2e-c93915f9e121] app: User test_phase5_u1@example.com logged in successfully [user_id=10123]
+2026-06-26 07:11:30,854 [INFO] [req_id=9dae24f0-9d41-41d7-ba1a-b7161327e6c9] app: User test_phase5_u2@example.com registered successfully with role user [user_id=10124]
+2026-06-26 07:11:31,375 [INFO] [req_id=2203f29a-3c66-47b2-b20c-21f1272fdc35] app: User test_phase5_u2@example.com logged in successfully [user_id=10124]
+2026-06-26 07:11:31,755 [INFO] [req_id=7fcf5eb5-7924-4949-a822-3afe4461b766] app: User test_phase5_u1@example.com registered successfully with role user [user_id=10125]
+2026-06-26 07:11:32,068 [INFO] [req_id=d48e712a-fcd0-4e8a-8598-76e09cd5abd1] app: User test_phase5_u1@example.com logged in successfully [user_id=10125]
+2026-06-26 07:11:32,496 [INFO] [req_id=41c22188-7869-4b03-a114-32cfdc374b90] app: User test_phase5_u2@example.com registered successfully with role user [user_id=10126]
+2026-06-26 07:11:32,829 [INFO] [req_id=c48578ea-cfd5-4fd6-8a19-3dd69d4342d6] app: User test_phase5_u2@example.com logged in successfully [user_id=10126]
+2026-06-26 07:11:33,274 [INFO] [req_id=7426caf1-d3df-4ef5-ae49-6f1c43270aa5] app: User test_phase5_u1@example.com registered successfully with role user [user_id=10127]
+2026-06-26 07:11:33,682 [INFO] [req_id=fb86e1c2-af9e-49d2-a6dd-4b64dd55dd12] app: User test_phase5_u1@example.com logged in successfully [user_id=10127]
+2026-06-26 07:11:34,140 [INFO] [req_id=eab6fbdf-e91c-4ade-baf2-0b24b404842d] app: User test_phase5_u2@example.com registered successfully with role user [user_id=10128]
+2026-06-26 07:11:34,507 [INFO] [req_id=c36016bf-0cac-467a-8431-5a320fae314f] app: User test_phase5_u2@example.com logged in successfully [user_id=10128]
+2026-06-26 07:11:34,978 [INFO] [req_id=4c5c3efb-d081-4e2d-98a6-80482276cab1] app: User test_phase5_u1@example.com registered successfully with role user [user_id=10129]
+2026-06-26 07:11:35,294 [INFO] [req_id=b208dc1e-3c3d-417f-a6a6-4792c7079a67] app: User test_phase5_u1@example.com logged in successfully [user_id=10129]
+2026-06-26 07:11:35,603 [INFO] [req_id=edaa523b-a700-4bd4-b09c-c95fb52ebf00] app: User test_phase5_u2@example.com registered successfully with role user [user_id=10130]
+2026-06-26 07:11:35,933 [INFO] [req_id=64be1488-f01b-4813-896e-2677de74cba8] app: User test_phase5_u2@example.com logged in successfully [user_id=10130]
+2026-06-26 07:47:07,206 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-26 07:47:08,080 [INFO] [req_id=8067b642-0e32-4f64-82b2-db9ee22da110] app: User test_phase6_user@example.com registered successfully with role user [user_id=10131]
+2026-06-26 07:47:08,532 [INFO] [req_id=ccbbc0f0-5e45-4dca-8d6b-f39d491c4d15] app: User test_phase6_user@example.com logged in successfully [user_id=10131]
+2026-06-26 07:47:09,119 [INFO] [req_id=d41c2e31-4941-4fa4-a56d-f4cc3aa1af53] app: User test_phase6_user@example.com registered successfully with role user [user_id=10132]
+2026-06-26 07:47:09,618 [INFO] [req_id=c1e0816b-01ef-41ae-a111-02c22927e0bd] app: User test_phase6_user@example.com logged in successfully [user_id=10132]
+2026-06-26 07:47:10,163 [INFO] [req_id=a6619fd4-7fb8-41c9-bfa0-8c4bba027de0] app: User test_phase6_user@example.com registered successfully with role user [user_id=10133]
+2026-06-26 07:47:10,610 [INFO] [req_id=f79ddcf7-2491-4e8e-bdde-bb5b0072ca62] app: User test_phase6_user@example.com logged in successfully [user_id=10133]
+2026-06-26 07:47:10,995 [INFO] [req_id=d37ab6ea-4c1a-4111-8e4b-96e28a3f09f4] app: User test_phase6_user@example.com registered successfully with role user [user_id=10134]
+2026-06-26 07:47:11,603 [INFO] [req_id=f32c7c71-bc7d-4f6f-89df-fbc5d3f0ffe1] app: User test_phase6_user@example.com logged in successfully [user_id=10134]
+2026-06-26 07:47:12,119 [INFO] [req_id=751f9933-ce85-4096-be31-116214509528] app: User test_phase6_user@example.com registered successfully with role user [user_id=10135]
+2026-06-26 07:47:12,471 [INFO] [req_id=d9ad0844-add5-4843-8d5f-b2e396538104] app: User test_phase6_user@example.com logged in successfully [user_id=10135]
+2026-06-26 07:47:16,054 [INFO] [req_id=457044f2-1ef2-4ec6-8996-be7f9c0a02be] app: User test_phase6_user@example.com registered successfully with role user [user_id=10136]
+2026-06-26 07:47:16,399 [INFO] [req_id=91b18af7-34fa-4957-b2ae-9c9f9f5ffdf6] app: User test_phase6_user@example.com logged in successfully [user_id=10136]
+2026-06-26 07:47:16,765 [INFO] [req_id=7cd48a4e-59eb-49c0-a9a7-f76cd16245d4] app: User test_phase6_user@example.com registered successfully with role user [user_id=10137]
+2026-06-26 07:47:17,089 [INFO] [req_id=0ef04509-fe66-40fd-bec2-b56a48a05b71] app: User test_phase6_user@example.com logged in successfully [user_id=10137]
+2026-06-26 07:47:17,570 [INFO] [req_id=37d4e409-85a4-4538-9994-d05420f1aab5] app: User test_phase6_user@example.com registered successfully with role user [user_id=10138]
+2026-06-26 07:47:17,970 [INFO] [req_id=90bacaa7-9a57-48cb-844d-da1f105c706f] app: User test_phase6_user@example.com logged in successfully [user_id=10138]
+2026-06-26 07:47:18,447 [INFO] [req_id=cb335030-c68f-4e38-b13a-c9d99bdf899e] app: User test_phase6_user@example.com registered successfully with role user [user_id=10139]
+2026-06-26 07:47:19,036 [INFO] [req_id=2ea8f4c5-9994-4af7-98cc-6fe5f41003ea] app: User test_phase6_user@example.com logged in successfully [user_id=10139]
+2026-06-26 07:48:05,632 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-26 07:48:06,413 [INFO] [req_id=78189e70-667e-45dc-bbf5-6cd547f6fc00] app: User test_phase6_user@example.com registered successfully with role user [user_id=10140]
+2026-06-26 07:48:06,927 [INFO] [req_id=27a00966-1068-4370-aeaa-f06e8edcaf13] app: User test_phase6_user@example.com logged in successfully [user_id=10140]
+2026-06-26 07:48:07,373 [INFO] [req_id=4db8c6b0-3672-46cc-9752-8c0a7ab7d6c5] app: User test_phase6_user@example.com registered successfully with role user [user_id=10141]
+2026-06-26 07:48:07,769 [INFO] [req_id=9df1f1d3-3ec3-47a3-ab56-5f81d3268b77] app: User test_phase6_user@example.com logged in successfully [user_id=10141]
+2026-06-26 07:48:08,236 [INFO] [req_id=25535d06-ec8e-4349-897b-cdc7b3551409] app: User test_phase6_user@example.com registered successfully with role user [user_id=10142]
+2026-06-26 07:48:08,692 [INFO] [req_id=dc53f736-3b0d-4085-8476-aec7fb77527d] app: User test_phase6_user@example.com logged in successfully [user_id=10142]
+2026-06-26 07:48:09,223 [INFO] [req_id=1b95d2fa-cd50-4f43-a877-0712ce3b71f1] app: User test_phase6_user@example.com registered successfully with role user [user_id=10143]
+2026-06-26 07:48:09,633 [INFO] [req_id=ffb4b935-d7ad-4122-92b5-37768994fae1] app: User test_phase6_user@example.com logged in successfully [user_id=10143]
+2026-06-26 07:48:10,191 [INFO] [req_id=623a6e33-769e-4bd9-b22b-f0484ad1e61d] app: User test_phase6_user@example.com registered successfully with role user [user_id=10144]
+2026-06-26 07:48:10,600 [INFO] [req_id=959516c3-d9b8-45a2-a172-cc27cdc84c32] app: User test_phase6_user@example.com logged in successfully [user_id=10144]
+2026-06-26 07:48:13,639 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-26 07:48:18,910 [INFO] [req_id=daf6d904-6eaf-4a60-a88c-a868b3e89cbe] app: User test_phase6_user@example.com registered successfully with role user [user_id=10145]
+2026-06-26 07:48:19,490 [INFO] [req_id=353639d9-f725-4378-b538-140357b6274f] app: User test_phase6_user@example.com logged in successfully [user_id=10145]
+2026-06-26 07:48:19,909 [INFO] [req_id=abb39b49-f3e2-4f5b-b93f-d06f9eff649f] app: User test_phase6_user@example.com registered successfully with role user [user_id=10146]
+2026-06-26 07:48:20,339 [INFO] [req_id=89ee69b2-1b68-45c3-b3a9-7624f9b4cb43] app: User test_phase6_user@example.com logged in successfully [user_id=10146]
+2026-06-26 07:48:20,757 [INFO] [req_id=a2430fa5-361b-49f8-8015-50b1f8caf05e] app: User test_phase6_user@example.com registered successfully with role user [user_id=10147]
+2026-06-26 07:48:21,192 [INFO] [req_id=92837756-15d4-4949-971d-806c2f7492b9] app: User test_phase6_user@example.com logged in successfully [user_id=10147]
+2026-06-26 07:48:21,656 [INFO] [req_id=6b2f6fda-6fc2-4ae7-be9d-c320dfe67854] app: User test_phase6_user@example.com registered successfully with role user [user_id=10148]
+2026-06-26 07:48:22,187 [INFO] [req_id=d5f0ee55-0a93-4373-b450-ae855335bb13] app: User test_phase6_user@example.com logged in successfully [user_id=10148]
+2026-06-26 07:48:51,875 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-26 07:48:52,266 [INFO] [req_id=ef1b4e54-fd17-4b46-b647-379f3fccffdc] app: User test_phase6_user@example.com registered successfully with role user [user_id=10149]
+2026-06-26 07:48:52,570 [INFO] [req_id=ee2f90e9-847e-4e2c-9283-2d29103ac841] app: User test_phase6_user@example.com logged in successfully [user_id=10149]
+2026-06-26 07:48:52,921 [INFO] [req_id=846e2ad8-9b67-4b45-b09b-d2f692c9f12b] app: User test_phase6_user@example.com registered successfully with role user [user_id=10150]
+2026-06-26 07:48:53,227 [INFO] [req_id=61398c91-1272-4c1d-b3e7-4279f317e6ec] app: User test_phase6_user@example.com logged in successfully [user_id=10150]
+2026-06-26 07:48:53,705 [INFO] [req_id=422cce3f-f2f1-4223-b77c-406e1d1af742] app: User test_phase6_user@example.com registered successfully with role user [user_id=10151]
+2026-06-26 07:48:54,101 [INFO] [req_id=fe8cb4ac-a9a6-4021-9721-8e9111490d63] app: User test_phase6_user@example.com logged in successfully [user_id=10151]
+2026-06-26 07:48:54,573 [INFO] [req_id=42f1b517-9a5a-4815-b3c1-af09bcc408ad] app: User test_phase6_user@example.com registered successfully with role user [user_id=10152]
+2026-06-26 07:48:54,948 [INFO] [req_id=71278347-75c1-4513-889f-d5874cdb11a0] app: User test_phase6_user@example.com logged in successfully [user_id=10152]
+2026-06-26 07:48:55,488 [INFO] [req_id=d7b89837-0b91-4fe4-8ba0-486237737abf] app: User test_phase6_user@example.com registered successfully with role user [user_id=10153]
+2026-06-26 07:48:56,025 [INFO] [req_id=da6716df-453f-4dd4-a27c-430be61d24ad] app: User test_phase6_user@example.com logged in successfully [user_id=10153]
+2026-06-26 07:49:01,090 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-26 07:49:06,351 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-26 07:49:07,976 [INFO] [req_id=90301594-79df-4d02-9347-f21d3fbbdd49] app: User test_phase6_user@example.com registered successfully with role user [user_id=10154]
+2026-06-26 07:49:08,645 [INFO] [req_id=c2b2cd0e-b768-4153-be86-a1004cf991d3] app: User test_phase6_user@example.com logged in successfully [user_id=10154]
+2026-06-26 07:49:09,265 [INFO] [req_id=33c8b4bf-13a6-46fd-b6d8-a04457e0374f] app: User test_phase6_user@example.com registered successfully with role user [user_id=10155]
+2026-06-26 07:49:09,983 [INFO] [req_id=eb671a8d-baef-420d-a8a6-993d94fad4c7] app: User test_phase6_user@example.com logged in successfully [user_id=10155]
+2026-06-26 07:49:10,566 [INFO] [req_id=efd3386d-170b-4a9e-9759-17ae6cf6d7f5] app: User test_phase6_user@example.com registered successfully with role user [user_id=10156]
+2026-06-26 07:49:11,033 [INFO] [req_id=eb6493d6-84af-4bb8-8f40-f0269f773d0f] app: User test_phase6_user@example.com logged in successfully [user_id=10156]
+2026-06-26 07:49:11,599 [INFO] [req_id=f7e51dcb-b426-4fb2-985e-8f5357bd9aaa] app: User test_phase6_user@example.com registered successfully with role user [user_id=10157]
+2026-06-26 07:49:12,029 [INFO] [req_id=be0d376f-69a6-40e6-94a3-37a805bfcb19] app: User test_phase6_user@example.com logged in successfully [user_id=10157]
+2026-06-26 07:50:41,981 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-26 07:50:42,661 [INFO] [req_id=5fcfaf53-7fcf-4695-8e35-e86516848b76] app: User test_phase6_user@example.com registered successfully with role user [user_id=10158]
+2026-06-26 07:50:43,156 [INFO] [req_id=e1ba6648-d25e-4416-a9b2-b66143dca736] app: User test_phase6_user@example.com logged in successfully [user_id=10158]
+2026-06-26 07:50:43,617 [INFO] [req_id=42cd8069-c29f-4480-88bd-27ce46e81cdf] app: User test_phase6_user@example.com registered successfully with role user [user_id=10159]
+2026-06-26 07:50:44,135 [INFO] [req_id=617e56ec-a875-4397-9c04-72413b4887b8] app: User test_phase6_user@example.com logged in successfully [user_id=10159]
+2026-06-26 07:50:44,815 [INFO] [req_id=405ee7ed-7a03-469b-83dd-5698b430d756] app: User test_phase6_user@example.com registered successfully with role user [user_id=10160]
+2026-06-26 07:50:45,213 [INFO] [req_id=0711b54c-021e-4752-8208-9b09e9e21c9f] app: User test_phase6_user@example.com logged in successfully [user_id=10160]
+2026-06-26 07:50:45,803 [INFO] [req_id=2d7d9351-190b-45de-a73a-f744c1d0ec89] app: User test_phase6_user@example.com registered successfully with role user [user_id=10161]
+2026-06-26 07:50:46,246 [INFO] [req_id=2dcdf1e8-2aa2-4420-aafc-a69b4efc7393] app: User test_phase6_user@example.com logged in successfully [user_id=10161]
+2026-06-26 07:50:46,842 [INFO] [req_id=cd4c72ec-e1c7-4e2d-a6ec-0be5a639d5c0] app: User test_phase6_user@example.com registered successfully with role user [user_id=10162]
+2026-06-26 07:50:47,188 [INFO] [req_id=9f24b83f-e7ff-4aa6-87c8-fdcaf9238f28] app: User test_phase6_user@example.com logged in successfully [user_id=10162]
+2026-06-26 07:50:50,784 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-26 07:50:56,093 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-26 07:50:57,122 [INFO] [req_id=7848927b-bb66-4e64-85dd-97c5f00e6ba5] app: User test_phase6_user@example.com registered successfully with role user [user_id=10163]
+2026-06-26 07:50:57,511 [INFO] [req_id=70a5f3f6-6a39-40b7-aa40-a0e25a37f9e4] app: User test_phase6_user@example.com logged in successfully [user_id=10163]
+2026-06-26 07:50:58,070 [INFO] [req_id=4d5b155b-bee8-4ebd-9adc-ec33cbf74071] app: User test_phase6_user@example.com registered successfully with role user [user_id=10164]
+2026-06-26 07:50:58,691 [INFO] [req_id=d2923412-889c-41bd-a3ca-5c2804b1703e] app: User test_phase6_user@example.com logged in successfully [user_id=10164]
+2026-06-26 07:50:59,347 [INFO] [req_id=38073acb-6695-4374-91f4-a1c67d8e108d] app: User test_phase6_user@example.com registered successfully with role user [user_id=10165]
+2026-06-26 07:50:59,955 [INFO] [req_id=0fa3239b-2d22-439f-979b-4100c08a4224] app: User test_phase6_user@example.com logged in successfully [user_id=10165]
+2026-06-26 07:51:00,560 [INFO] [req_id=66319484-0272-4aaf-bb63-16fc356e9e70] app: User test_phase6_user@example.com registered successfully with role user [user_id=10166]
+2026-06-26 07:51:00,922 [INFO] [req_id=99fe4fb8-1339-4102-a2b9-629b6e942d32] app: User test_phase6_user@example.com logged in successfully [user_id=10166]
+2026-06-26 17:18:09,073 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-26 17:18:16,036 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:31:43,557 [ERROR] [req_id=N/A] app: [Prometheus Engine Startup Error] binary mode doesn't take an encoding argument
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 266, in load_prometheus_background
+    prometheus_engine.initialize()
+  File "D:\Nexabuild\forge\prometheus\engine.py", line 36, in initialize
+    from unsloth import FastLanguageModel
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\__init__.py", line 153, in <module>
+    from ._gpu_init import *
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\_gpu_init.py", line 139, in <module>
+    import unsloth_zoo
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\__init__.py", line 80, in <module>
+    has_429_exact_full_read(xet_cache / "logs") if xet_cache is not None else "1",
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\__init__.py", line 63, in has_429_exact_full_read
+    if b"429 Too Many Requests" in log_file.read_bytes():
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1050, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nexabuild\forge\app.py", line 29, in utf8_path_open
+    return real_path_open(self, mode=mode, buffering=buffering, encoding=encoding, errors=errors, newline=newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: binary mode doesn't take an encoding argument
+2026-06-27 13:31:43,778 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:31:49,145 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:31:49,212 [ERROR] [req_id=N/A] app: [Prometheus Engine Startup Error] binary mode doesn't take an encoding argument
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 266, in load_prometheus_background
+    prometheus_engine.initialize()
+  File "D:\Nexabuild\forge\prometheus\engine.py", line 36, in initialize
+    from unsloth import FastLanguageModel
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\__init__.py", line 153, in <module>
+    from ._gpu_init import *
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\_gpu_init.py", line 139, in <module>
+    import unsloth_zoo
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\__init__.py", line 80, in <module>
+    has_429_exact_full_read(xet_cache / "logs") if xet_cache is not None else "1",
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\__init__.py", line 63, in has_429_exact_full_read
+    if b"429 Too Many Requests" in log_file.read_bytes():
+                                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1050, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nexabuild\forge\app.py", line 29, in utf8_path_open
+    return real_path_open(self, mode=mode, buffering=buffering, encoding=encoding, errors=errors, newline=newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: binary mode doesn't take an encoding argument
+2026-06-27 13:31:59,267 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:32:13,336 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:32:24,958 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:32:51,954 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:33:09,705 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:33:25,185 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:33:42,207 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:33:59,644 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:34:15,047 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:34:31,112 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:34:48,022 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:35:04,712 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:35:21,339 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:35:34,798 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:35:49,836 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:36:05,490 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:36:33,277 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:36:48,469 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:37:03,522 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:37:17,885 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:37:32,873 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:37:47,662 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:38:03,515 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:38:20,367 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:38:34,862 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:38:51,251 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:39:10,697 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:39:42,901 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:40:04,403 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:41:06,024 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:42:55,741 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 13:48:57,644 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 15:39:22,427 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 15:55:16,890 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 16:00:12,855 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 16:06:36,177 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 16:25:24,400 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-27 16:33:08,824 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-28 06:54:47,244 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-28 07:20:44,782 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-28 07:24:57,404 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-28 07:29:42,299 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-28 07:39:40,119 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-28 07:44:41,030 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-28 18:48:48,916 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-06-28 18:51:49,195 [ERROR] [req_id=8035306f-47fd-42cf-8d62-8278f894a02b] app: [Analytics Log Error] Failed to write event template_used: 1366 (HY000): Incorrect integer value: 'guest' for column 'user_id' at row 1
+2026-06-29 08:16:32,018 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-07-01 12:42:14,599 [ERROR] [req_id=N/A] app: [Prometheus Engine Startup Error] Unsloth currently only works on NVIDIA GPUs and Intel GPUs.
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 272, in load_prometheus_background
+    prometheus_engine.initialize()
+  File "D:\Nexabuild\forge\OMNICORE\engine.py", line 36, in initialize
+    from unsloth import FastLanguageModel
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\__init__.py", line 88, in <module>
+    DEVICE_TYPE : str = get_device_type()
+                        ^^^^^^^^^^^^^^^^^
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\__init__.py", line 86, in get_device_type
+    raise NotImplementedError("Unsloth currently only works on NVIDIA GPUs and Intel GPUs.")
+NotImplementedError: Unsloth currently only works on NVIDIA GPUs and Intel GPUs.
+2026-07-01 12:42:15,615 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-07-01 12:48:12,466 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.
+2026-07-01 12:48:31,024 [ERROR] [req_id=N/A] app: [Prometheus Engine Startup Error] Direct module loading failed for UnslothGKDTrainer: non-default argument follows default argument (UnslothGKDTrainer.py, line 621)
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\compiler.py", line 391, in create_new_function
+    new_module, old_path = import_module(compile_folder, name)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\compiler.py", line 386, in import_module
+    new_module = importlib.import_module(name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "D:\Nexabuild\forge\unsloth_compiled_cache\UnslothGKDTrainer.py", line 621
+    sft_args,
+    ^^^^^^^^
+SyntaxError: non-default argument follows default argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\compiler.py", line 416, in create_new_function
+    spec.loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\Admin\AppData\Local\Temp\unsloth_compiled_cache\UnslothGKDTrainer.py", line 621
+    sft_args,
+    ^^^^^^^^
+SyntaxError: non-default argument follows default argument
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Nexabuild\forge\app.py", line 272, in load_prometheus_background
+    prometheus_engine.initialize()
+  File "D:\Nexabuild\forge\OMNICORE\engine.py", line 36, in initialize
+    from unsloth import FastLanguageModel
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\__init__.py", line 247, in <module>
+    from .models import *
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\models\__init__.py", line 15, in <module>
+    from .llama     import FastLlamaModel
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\models\llama.py", line 2758, in <module>
+    PatchFastRL(FastLanguageModel = FastLlamaModel)
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\models\rl.py", line 742, in PatchFastRL
+    patch_trl_rl_trainers()
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\models\rl.py", line 735, in patch_trl_rl_trainers
+    _patch_trl_rl_trainers(trainer)
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth\models\rl.py", line 555, in _patch_trl_rl_trainers
+    created_module = create_new_function(
+                     ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Nexabuild\forge\env\Lib\site-packages\unsloth_zoo\compiler.py", line 418, in create_new_function
+    raise RuntimeError(f"Direct module loading failed for {name}: {e}")
+RuntimeError: Direct module loading failed for UnslothGKDTrainer: non-default argument follows default argument (UnslothGKDTrainer.py, line 621)
+2026-07-01 12:50:01,505 [INFO] [req_id=N/A] app: Auto-cleaned notifications older than 90 days.

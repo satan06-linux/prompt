@@ -1,0 +1,21 @@
+{
+  "model_id": "gemini-2.5-flash",
+  "timestamp": "20260630_0227",
+  "provider": {
+    "provider": "OpenRouter",
+    "model": "google/gemini-2.5-flash",
+    "type": "remote"
+  },
+  "domains_evaluated": [
+    "ai_ml",
+    "business",
+    "creative",
+    "design",
+    "education",
+    "engineering",
+    "finance",
+    "healthcare",
+    "programming",
+    "research"
+  ]
+}

@@ -1,0 +1,552 @@
+[
+  {
+    "id": "FP-ENGR-MECHANICAL-DESIGN-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Engineering",
+    "subcategory": "Mechanical Design",
+    "difficulty": "Easy",
+    "complexity": "Simple",
+    "expertise_level": "Beginner",
+    "domain": "Mechanical Engineering",
+    "capability": "Design",
+    "prompt_type": "instructional",
+    "user_request": "Generate a parametric design specification for a simple spur gear pair, including module, number of teeth, pitch diameter, and center distance calculations for a 3:1 reduction ratio with a 2mm module.",
+    "user_goal": "Obtain a complete parametric spur gear specification with all dimensional outputs suitable for CAD modeling",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 350,
+      "estimated_response_size": 900,
+      "estimated_context_tokens": 1250
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["technically precise", "parameter-driven", "calculation-oriented"],
+    "evaluation_weights": {
+      "accuracy": 35,
+      "clarity": 20,
+      "structure": 20,
+      "constraints": 15,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["All gear parameters correctly calculated", "Includes interference check", "Provides material recommendation", "CAD-ready dimensional table"],
+      "acceptable_characteristics": ["Core gear dimensions correct", "Proper reduction ratio achieved", "Readable output format"],
+      "minimum_requirements": ["Correct pitch diameters", "Valid center distance", "3:1 ratio maintained"]
+    },
+    "common_failures": ["Incorrect pitch diameter formula", "Missing addendum/dedendum values", "Wrong center distance calculation"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Non-standard module values", "Undercutting with low tooth counts"],
+    "tags": ["gear-design", "parametric", "mechanical", "spur-gear", "CAD"]
+  },
+  {
+    "id": "FP-ENGR-CIVIL-STRUCTURE-002",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Engineering",
+    "subcategory": "Civil Structure",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Civil Engineering",
+    "capability": "Analysis",
+    "prompt_type": "analytical",
+    "user_request": "Perform a structural load analysis for a simply supported reinforced concrete beam spanning 6 meters, subjected to a uniformly distributed load of 25 kN/m. Calculate bending moment, shear force, and recommend rebar sizing per ACI 318 standards.",
+    "user_goal": "Receive a complete structural analysis with moment/shear diagrams, rebar selection, and code-compliant design verification",
+    "expected_output": "markdown",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 500,
+      "estimated_response_size": 1400,
+      "estimated_context_tokens": 1900
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["code-referenced", "calculation-heavy", "standards-compliant", "tabular-output"],
+    "evaluation_weights": {
+      "accuracy": 40,
+      "clarity": 15,
+      "structure": 15,
+      "constraints": 25,
+      "creativity": 5
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Correct moment and shear calculations", "ACI 318 compliant rebar selection", "Includes crack width check", "Deflection verification provided"],
+      "acceptable_characteristics": ["Bending moment correctly computed", "Appropriate rebar size selected", "References ACI standards"],
+      "minimum_requirements": ["Maximum moment calculated", "Shear force at supports", "Rebar recommendation given"]
+    },
+    "common_failures": ["Incorrect moment formula for UDL", "Ignoring minimum reinforcement ratio", "Missing shear reinforcement check", "Wrong load factor application"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Beam near maximum span-to-depth ratio", "High seismic zone requirements", "Aggressive exposure conditions"],
+    "tags": ["structural-analysis", "reinforced-concrete", "ACI-318", "beam-design", "civil"]
+  },
+  {
+    "id": "FP-ENGR-ELECTRICAL-CIRCUIT-003",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Engineering",
+    "subcategory": "Electrical Circuit",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Electrical Engineering",
+    "capability": "Design",
+    "prompt_type": "design-specification",
+    "user_request": "Design a buck converter circuit to step down 24V DC to 5V DC at 2A output current. Specify component values for the inductor, capacitor, MOSFET, and diode. Include switching frequency selection, duty cycle calculation, and ripple voltage analysis.",
+    "user_goal": "Get a complete buck converter design with component specifications, calculations, and a schematic description suitable for PCB layout",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 480,
+      "estimated_response_size": 1300,
+      "estimated_context_tokens": 1780
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["component-level detail", "formula-driven", "practical-engineering"],
+    "evaluation_weights": {
+      "accuracy": 35,
+      "clarity": 15,
+      "structure": 20,
+      "constraints": 20,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Correct duty cycle D=Vout/Vin", "Proper inductor sizing for CCM operation", "Ripple within 1% specification", "Thermal considerations addressed"],
+      "acceptable_characteristics": ["Duty cycle correctly calculated", "Inductor and capacitor values specified", "Switching frequency justified"],
+      "minimum_requirements": ["Correct voltage conversion ratio", "Basic component list provided", "Duty cycle formula applied"]
+    },
+    "common_failures": ["Forgetting inductor current ripple in sizing", "Ignoring ESR in capacitor ripple", "Wrong duty cycle for non-ideal converter"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Light-load DCM operation", "High ambient temperature derating"],
+    "tags": ["power-electronics", "buck-converter", "DC-DC", "circuit-design", "electrical"]
+  },
+  {
+    "id": "FP-ENGR-ROBOTICS-CONTROL-004",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Engineering",
+    "subcategory": "Robotics Control",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "Robotics Engineering",
+    "capability": "Simulation",
+    "prompt_type": "code-generation",
+    "user_request": "Write a Python ROS2 node that implements a PID controller for a differential-drive robot to follow a predefined waypoint path. Include odometry subscription, velocity command publishing, waypoint management, and tunable PID gains. The robot should smoothly navigate between at least 5 waypoints with configurable look-ahead distance.",
+    "user_goal": "Obtain a production-ready ROS2 PID waypoint follower node with clean architecture, parameter handling, and robust path tracking",
+    "expected_output": "code",
+    "primary_target": "Cursor",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 600,
+      "estimated_response_size": 2200,
+      "estimated_context_tokens": 2800
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["ROS2-specific", "control-theory", "real-time constraints", "modular-architecture"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 15,
+      "structure": 25,
+      "constraints": 20,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Correct PID implementation with anti-windup", "Proper ROS2 lifecycle management", "Configurable parameters via launch file", "Smooth trajectory between waypoints"],
+      "acceptable_characteristics": ["Functional PID control loop", "Publishes cmd_vel correctly", "Subscribes to odometry", "Reaches all waypoints"],
+      "minimum_requirements": ["Valid ROS2 node structure", "PID gains applied to heading error", "Velocity commands published"]
+    },
+    "common_failures": ["Missing integral windup protection", "Incorrect angular wrapping causing oscillation", "No waypoint arrival threshold logic", "Blocking callbacks in ROS2 executor"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Robot starts facing away from first waypoint", "Waypoints very close together causing overshoot", "Odometry drift accumulation"],
+    "tags": ["ROS2", "PID-control", "waypoint-following", "differential-drive", "robotics", "Python"]
+  },
+  {
+    "id": "FP-ENGR-IOT-ARCHITECTURE-005",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Engineering",
+    "subcategory": "IoT Architecture",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "Internet of Things",
+    "capability": "Planning",
+    "prompt_type": "architecture-design",
+    "user_request": "Design a complete IoT architecture for a smart greenhouse monitoring system that tracks temperature, humidity, soil moisture, and light intensity across 50 sensor nodes. Include MQTT broker topology, edge computing layer, cloud ingestion pipeline, data storage strategy, and a real-time alerting system. Provide the architecture as a structured YAML specification.",
+    "user_goal": "Receive a comprehensive IoT system architecture document in YAML format covering all layers from sensor to cloud with scalability and reliability considerations",
+    "expected_output": "yaml",
+    "primary_target": "Gemini",
+    "optimized_for": "Gemma",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 550,
+      "estimated_response_size": 1800,
+      "estimated_context_tokens": 2350
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["systems-thinking", "multi-layer", "scalability-focused"],
+    "evaluation_weights": {
+      "accuracy": 25,
+      "clarity": 20,
+      "structure": 25,
+      "constraints": 15,
+      "creativity": 15
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Complete edge-to-cloud pipeline", "MQTT QoS levels justified per data type", "Failover and redundancy addressed", "Data retention policy defined"],
+      "acceptable_characteristics": ["All four sensor types covered", "MQTT broker configuration specified", "Cloud storage solution chosen", "Alert thresholds defined"],
+      "minimum_requirements": ["Sensor-to-cloud data flow described", "MQTT topic hierarchy defined", "Basic alerting mechanism included"]
+    },
+    "common_failures": ["Ignoring network bandwidth constraints for 50 nodes", "No offline/edge buffering strategy", "Missing security layer for MQTT"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Network partition between edge and cloud", "Sensor node battery depletion mid-transmission", "Sudden spike in all 50 sensors simultaneously"],
+    "tags": ["IoT", "MQTT", "smart-agriculture", "edge-computing", "cloud-architecture", "greenhouse"]
+  },
+  {
+    "id": "FP-ENGR-MANUFACTURING-PROCESS-006",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Engineering",
+    "subcategory": "Manufacturing Process",
+    "difficulty": "Easy",
+    "complexity": "Simple",
+    "expertise_level": "Beginner",
+    "domain": "Manufacturing Engineering",
+    "capability": "Planning",
+    "prompt_type": "process-specification",
+    "user_request": "Create a step-by-step CNC milling process plan for machining a simple aluminum 6061-T6 bracket from rectangular bar stock. Include tool selection, spindle speeds, feed rates, depth of cut, and machining sequence for facing, pocketing, drilling, and contouring operations.",
+    "user_goal": "Obtain a complete CNC process sheet with specific cutting parameters that a machinist can directly use for setup and operation",
+    "expected_output": "markdown",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 400,
+      "estimated_response_size": 1100,
+      "estimated_context_tokens": 1500
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["practical-shop-floor", "parameter-specific", "sequential-process"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 25,
+      "structure": 25,
+      "constraints": 15,
+      "creativity": 5
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Correct SFM for aluminum with each tool", "Proper chip load calculations", "Coolant strategy specified", "Work-holding method described"],
+      "acceptable_characteristics": ["Reasonable spindle speeds for Al 6061", "Logical machining sequence", "Tool types correctly matched to operations"],
+      "minimum_requirements": ["All four operations covered", "Spindle speed and feed rate for each", "Tool type specified per operation"]
+    },
+    "common_failures": ["Spindle speeds too low for aluminum", "Missing roughing vs finishing passes", "No mention of work-holding or fixturing"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Thin-wall sections prone to chatter", "Deep pockets requiring pecking strategy"],
+    "tags": ["CNC", "milling", "aluminum", "process-planning", "manufacturing", "machining"]
+  },
+  {
+    "id": "FP-ENGR-CAD-SPECS-007",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Engineering",
+    "subcategory": "CAD Specs",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Computer-Aided Design",
+    "capability": "Design",
+    "prompt_type": "specification-generation",
+    "user_request": "Generate a detailed CAD specification document in JSON format for a flanged pipe coupling assembly. Include GD&T callouts (flatness, concentricity, perpendicularity), material specs (ASTM A105), bolt circle dimensions, gasket groove geometry, pressure rating (ANSI 300), and tolerance stack-up analysis for the mating surfaces.",
+    "user_goal": "Receive a machine-readable CAD specification with complete GD&T definitions and tolerance analysis that can be imported into a PLM system",
+    "expected_output": "json",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 520,
+      "estimated_response_size": 1600,
+      "estimated_context_tokens": 2120
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["standards-compliant", "dimensionally-precise", "GD&T-focused", "PLM-compatible"],
+    "evaluation_weights": {
+      "accuracy": 35,
+      "clarity": 15,
+      "structure": 25,
+      "constraints": 20,
+      "creativity": 5
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Complete GD&T feature control frames", "Correct ANSI 300 pressure dimensions", "Tolerance stack-up with statistical analysis", "ASTM A105 material properties referenced"],
+      "acceptable_characteristics": ["Major dimensions correct for ANSI 300", "GD&T symbols properly applied", "Bolt circle correctly specified", "Valid JSON structure"],
+      "minimum_requirements": ["Flange dimensions provided", "At least 3 GD&T callouts", "Material specified", "Pressure rating noted"]
+    },
+    "common_failures": ["Incorrect bolt circle diameter for ANSI 300", "GD&T datums not properly established", "Missing gasket groove dimensions", "Tolerance stack-up arithmetic errors"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["High-temperature service requiring creep consideration", "Mismatched flange ratings at joint"],
+    "tags": ["CAD", "GD&T", "flange-design", "ANSI-300", "tolerance-analysis", "pipe-coupling"]
+  },
+  {
+    "id": "FP-ENGR-MATERIAL-SELECTION-008",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Engineering",
+    "subcategory": "Material Selection",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Expert",
+    "domain": "Materials Engineering",
+    "capability": "Analysis",
+    "prompt_type": "comparative-analysis",
+    "user_request": "Perform an Ashby-method material selection analysis for a lightweight drone frame that must withstand 15G impact loads, operate in -20°C to 60°C temperature range, resist UV degradation, and weigh under 400g. Compare at least 5 candidate materials (carbon fiber composites, titanium alloys, aluminum alloys, magnesium alloys, engineering polymers) using performance indices for stiffness-to-weight and strength-to-weight ratios. Present results as a decision matrix.",
+    "user_goal": "Receive a rigorous material selection analysis with quantified performance indices, ranked decision matrix, and justified final recommendation",
+    "expected_output": "markdown",
+    "primary_target": "Gemini",
+    "optimized_for": "Gemma",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 580,
+      "estimated_response_size": 1900,
+      "estimated_context_tokens": 2480
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["data-driven", "multi-criteria", "Ashby-methodology", "quantitative-comparison"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 20,
+      "structure": 20,
+      "constraints": 15,
+      "creativity": 15
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Correct Ashby performance indices calculated", "All 5 materials quantitatively compared", "Environmental factors weighted", "Cost-performance trade-off discussed"],
+      "acceptable_characteristics": ["Performance indices for E/ρ and σ/ρ computed", "Decision matrix with weighted scores", "Clear winner identified with justification"],
+      "minimum_requirements": ["At least 5 materials compared", "Stiffness and strength ratios provided", "Temperature and UV requirements addressed"]
+    },
+    "common_failures": ["Using wrong material property values", "Ignoring anisotropy of composites", "Not accounting for manufacturing constraints"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Composite layup orientation sensitivity", "Galvanic corrosion with mixed materials", "Fatigue behavior under cyclic impact loads"],
+    "tags": ["material-selection", "Ashby-method", "drone", "lightweight-design", "composites", "decision-matrix"]
+  },
+  {
+    "id": "FP-ENGR-SAFETY-ANALYSIS-009",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Engineering",
+    "subcategory": "Safety Analysis",
+    "difficulty": "Expert",
+    "complexity": "Enterprise",
+    "expertise_level": "Expert",
+    "domain": "Safety Engineering",
+    "capability": "Analysis",
+    "prompt_type": "risk-assessment",
+    "user_request": "Conduct a comprehensive FMEA (Failure Mode and Effects Analysis) for an autonomous warehouse robot's battery management system (BMS). Cover at least 12 failure modes across cell balancing, thermal management, state-of-charge estimation, overcurrent protection, and communication interfaces. Calculate RPN (Risk Priority Number) for each mode, propose mitigation actions, and generate a residual risk assessment after mitigations are applied. Output the complete FMEA table and a risk heat map description.",
+    "user_goal": "Obtain an IEC 61508-compliant FMEA document with complete failure mode enumeration, RPN calculations, and actionable mitigation strategies for regulatory submission",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 700,
+      "estimated_response_size": 3200,
+      "estimated_context_tokens": 3900
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["regulatory-compliant", "systematic-enumeration", "risk-quantification", "mitigation-focused"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 15,
+      "structure": 25,
+      "constraints": 25,
+      "creativity": 5
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["12+ failure modes with correct severity/occurrence/detection ratings", "RPN correctly computed for all modes", "Residual RPN after mitigations shown", "IEC 61508 SIL levels referenced"],
+      "acceptable_characteristics": ["All 5 BMS subsystems covered", "RPN values logically consistent", "Mitigation actions are actionable", "FMEA table properly formatted"],
+      "minimum_requirements": ["At least 12 failure modes listed", "Severity, Occurrence, Detection rated 1-10", "RPN = S × O × D calculated"]
+    },
+    "common_failures": ["Inconsistent severity ratings across similar failure modes", "Mitigations that don't actually reduce the targeted RPN factor", "Missing common-cause failures", "No distinction between hardware and software failure modes"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Cascading thermal runaway across cells", "Silent firmware corruption in BMS MCU", "Simultaneous sensor and communication failure"],
+    "tags": ["FMEA", "safety-analysis", "BMS", "autonomous-robot", "IEC-61508", "risk-assessment", "RPN"]
+  },
+  {
+    "id": "FP-ENGR-EMBEDDED-SYSTEMS-010",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Engineering",
+    "subcategory": "Embedded Systems",
+    "difficulty": "Expert",
+    "complexity": "Enterprise",
+    "expertise_level": "Research",
+    "domain": "Embedded Systems Engineering",
+    "capability": "Optimization",
+    "prompt_type": "code-optimization",
+    "user_request": "Design and implement a real-time embedded control system in C for an STM32F4 microcontroller that manages a 3-phase BLDC motor using Field-Oriented Control (FOC). Include Clarke and Park transforms, space vector PWM generation, PI current controllers for d-q axes, speed estimation via back-EMF observer, and a state machine for startup sequencing. The code must execute within a 50μs ISR budget at 168MHz clock. Provide the complete implementation with CMSIS-DSP optimizations.",
+    "user_goal": "Receive a production-grade FOC motor control implementation for STM32F4 with real-time performance guarantees and hardware abstraction",
+    "expected_output": "code",
+    "primary_target": "Cursor",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 750,
+      "estimated_response_size": 3800,
+      "estimated_context_tokens": 4550
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["real-time-constrained", "hardware-specific", "DSP-optimized", "safety-critical"],
+    "evaluation_weights": {
+      "accuracy": 35,
+      "clarity": 10,
+      "structure": 20,
+      "constraints": 30,
+      "creativity": 5
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Correct Clarke/Park transform implementations", "SVPWM sector logic correct", "PI controllers with anti-windup", "Back-EMF observer converges", "ISR fits within 50μs budget"],
+      "acceptable_characteristics": ["FOC pipeline mathematically correct", "CMSIS-DSP functions used for transforms", "State machine handles startup to run transition", "PWM outputs correctly mapped"],
+      "minimum_requirements": ["Clarke and Park transforms implemented", "PI controllers for Id and Iq", "SVPWM duty cycle computation", "Basic state machine structure"]
+    },
+    "common_failures": ["Incorrect Park transform angle convention", "SVPWM sector determination errors", "Missing current sampling synchronization with PWM", "Stack overflow in ISR from excessive computation"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Motor stall detection and recovery", "DC bus voltage sag during acceleration", "Hall sensor failure fallback to sensorless"],
+    "tags": ["embedded", "STM32", "FOC", "BLDC-motor", "real-time", "CMSIS-DSP", "SVPWM", "motor-control"]
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "domain": "design",
+  "description": "UI/UX, graphic design, interior design, architecture, and product design benchmarks",
+  "version": "1.0",
+  "created_at": "2026-06-30T07:38:00Z",
+  "target_sample_count": 10,
+  "targeted_llms": ["Gemma", "Qwen", "Phi", "GPT", "Claude"]
+}

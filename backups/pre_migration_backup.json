@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-06-25 19:02:02",
+  "users": [
+    {
+      "id": 1,
+      "name": "rakshith",
+      "email": "linux5246337@gmail.com",
+      "password_hash": "$2b$12$9l2uI932T/h5mpSeDDp9/OOg7tmgKVJWGS0d8HX8MctUr0kUsGpMS",
+      "prompts_used": 0,
+      "created_at": "2026-05-26 16:03:24",
+      "role": "user"
+    },
+    {
+      "id": 10000,
+      "name": "Rate Test 0",
+      "email": "ratetest0@example.com",
+      "password_hash": "$2b$12$nNiG/XqwlaSLl9/PSdhGJeKDFIuviRWDFbInrZoGHR1Zf0ehrZu26",
+      "prompts_used": 0,
+      "created_at": "2026-06-25 18:55:56",
+      "role": "user"
+    },
+    {
+      "id": 10001,
+      "name": "Rate Test 1",
+      "email": "ratetest1@example.com",
+      "password_hash": "$2b$12$RJNzr65TbHY9lTEkeW4OWeWds3Xgr7LdicqgwB5IU9HY3O.TOSya2",
+      "prompts_used": 0,
+      "created_at": "2026-06-25 18:55:56",
+      "role": "user"
+    },
+    {
+      "id": 10002,
+      "name": "Rate Test 2",
+      "email": "ratetest2@example.com",
+      "password_hash": "$2b$12$JIkI6059A1FAzeBFE8E9ouFNE296v/pTANsP1cpgsrPYSpb/5OKYW",
+      "prompts_used": 0,
+      "created_at": "2026-06-25 18:55:57",
+      "role": "user"
+    }
+  ],
+  "prompts": []
+}

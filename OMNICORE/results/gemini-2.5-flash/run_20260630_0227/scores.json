@@ -1,0 +1,589 @@
+{
+  "ai_ml": [
+    {
+      "final_score": 42.0,
+      "max_score": 100.0,
+      "breakdown": {
+        "structural": {
+          "score": 0.0,
+          "max_score": 20.0,
+          "feedback": [
+            "Missing markdown structural indicators.",
+            "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria"
+          ],
+          "missing_sections": [
+            "Role",
+            "Objective",
+            "Context",
+            "Requirements",
+            "Constraints",
+            "Input",
+            "Output",
+            "Examples",
+            "Edge Cases",
+            "Success Criteria"
+          ]
+        },
+        "rule": {
+          "score": 0.0,
+          "max_score": 20.0,
+          "feedback": [
+            "Rule violations found: 3"
+          ],
+          "violations": [
+            "Failed min requirement: Includes train/test split",
+            "Missed characteristic: Step-by-step logic",
+            "Missed characteristic: Clear headings"
+          ]
+        },
+        "llm_judge": {
+          "score": 42.0,
+          "max_score": 60.0,
+          "breakdown": {},
+          "feedback": [
+            "LLM Judge failed, applied 70% fallback score."
+          ]
+        }
+      },
+      "feedback": [
+        "Missing markdown structural indicators.",
+        "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria",
+        "Rule violations found: 3",
+        "LLM Judge failed, applied 70% fallback score."
+      ],
+      "task_id": "FP-AIML-ML-PIPELINE-01",
+      "latency": 7.40432071685791,
+      "output_file": "D:\\Nexabuild\\forge\\prometheus\\outputs\\FP-AIML-ML-PIPELINE-01_20260630_0227.md"
+    }
+  ],
+  "business": [
+    {
+      "final_score": 42.0,
+      "max_score": 100.0,
+      "breakdown": {
+        "structural": {
+          "score": 0.0,
+          "max_score": 25.0,
+          "feedback": [
+            "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria"
+          ],
+          "missing_sections": [
+            "Role",
+            "Objective",
+            "Context",
+            "Requirements",
+            "Constraints",
+            "Input",
+            "Output",
+            "Examples",
+            "Edge Cases",
+            "Success Criteria"
+          ]
+        },
+        "rule": {
+          "score": 0.0,
+          "max_score": 15.0,
+          "feedback": [
+            "Rule violations found: 6"
+          ],
+          "violations": [
+            "Failed min requirement: Covers key partners, value proposition, and revenue streams",
+            "Failed min requirement: Output is in a structured table format",
+            "Failed min requirement: Content is relevant to a dog-walking marketplace",
+            "Missed characteristic: Clear business context",
+            "Missed characteristic: Actionable framework",
+            "Missed characteristic: Structured canvas format"
+          ]
+        },
+        "llm_judge": {
+          "score": 42.0,
+          "max_score": 60.0,
+          "breakdown": {},
+          "feedback": [
+            "LLM Judge failed, applied 70% fallback score."
+          ]
+        }
+      },
+      "feedback": [
+        "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria",
+        "Rule violations found: 6",
+        "LLM Judge failed, applied 70% fallback score."
+      ],
+      "task_id": "FP-BUSI-STARTUP-STRATEGY-001",
+      "latency": 6.69663667678833,
+      "output_file": "D:\\Nexabuild\\forge\\prometheus\\outputs\\FP-BUSI-STARTUP-STRATEGY-001_20260630_0227.md"
+    }
+  ],
+  "creative": [
+    {
+      "final_score": 45.5,
+      "max_score": 100.0,
+      "breakdown": {
+        "structural": {
+          "score": 0.0,
+          "max_score": 15.0,
+          "feedback": [
+            "Missing markdown structural indicators.",
+            "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria"
+          ],
+          "missing_sections": [
+            "Role",
+            "Objective",
+            "Context",
+            "Requirements",
+            "Constraints",
+            "Input",
+            "Output",
+            "Examples",
+            "Edge Cases",
+            "Success Criteria"
+          ]
+        },
+        "rule": {
+          "score": 0.0,
+          "max_score": 20.0,
+          "feedback": [
+            "Rule violations found: 6"
+          ],
+          "violations": [
+            "Failed min requirement: About a dog finding a home",
+            "Failed min requirement: Roughly 500 words",
+            "Failed min requirement: First-person perspective",
+            "Missed characteristic: Clear persona definition",
+            "Missed characteristic: Specific length constraint",
+            "Missed characteristic: Emotional tone guidance"
+          ]
+        },
+        "llm_judge": {
+          "score": 45.5,
+          "max_score": 65.0,
+          "breakdown": {},
+          "feedback": [
+            "LLM Judge failed, applied 70% fallback score."
+          ]
+        }
+      },
+      "feedback": [
+        "Missing markdown structural indicators.",
+        "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria",
+        "Rule violations found: 6",
+        "LLM Judge failed, applied 70% fallback score."
+      ],
+      "task_id": "FP-CREA-SHORT-STORY-001",
+      "latency": 6.553744077682495,
+      "output_file": "D:\\Nexabuild\\forge\\prometheus\\outputs\\FP-CREA-SHORT-STORY-001_20260630_0227.md"
+    }
+  ],
+  "design": [
+    {
+      "final_score": 42.0,
+      "max_score": 100.0,
+      "breakdown": {
+        "structural": {
+          "score": 0.0,
+          "max_score": 20.0,
+          "feedback": [
+            "Missing markdown structural indicators.",
+            "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria"
+          ],
+          "missing_sections": [
+            "Role",
+            "Objective",
+            "Context",
+            "Requirements",
+            "Constraints",
+            "Input",
+            "Output",
+            "Examples",
+            "Edge Cases",
+            "Success Criteria"
+          ]
+        },
+        "rule": {
+          "score": 0.0,
+          "max_score": 20.0,
+          "feedback": [
+            "Rule violations found: 3"
+          ],
+          "violations": [
+            "Failed min requirement: Includes login button",
+            "Missed characteristic: Specific UI components listed",
+            "Missed characteristic: Clear hierarchy"
+          ]
+        },
+        "llm_judge": {
+          "score": 42.0,
+          "max_score": 60.0,
+          "breakdown": {},
+          "feedback": [
+            "LLM Judge failed, applied 70% fallback score."
+          ]
+        }
+      },
+      "feedback": [
+        "Missing markdown structural indicators.",
+        "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria",
+        "Rule violations found: 3",
+        "LLM Judge failed, applied 70% fallback score."
+      ],
+      "task_id": "FP-DSGN-UI-WIREFRAME-001",
+      "latency": 6.263651371002197,
+      "output_file": "D:\\Nexabuild\\forge\\prometheus\\outputs\\FP-DSGN-UI-WIREFRAME-001_20260630_0227.md"
+    }
+  ],
+  "education": [
+    {
+      "final_score": 42.0,
+      "max_score": 100.0,
+      "breakdown": {
+        "structural": {
+          "score": 0.0,
+          "max_score": 25.0,
+          "feedback": [
+            "Missing markdown structural indicators.",
+            "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria"
+          ],
+          "missing_sections": [
+            "Role",
+            "Objective",
+            "Context",
+            "Requirements",
+            "Constraints",
+            "Input",
+            "Output",
+            "Examples",
+            "Edge Cases",
+            "Success Criteria"
+          ]
+        },
+        "rule": {
+          "score": 0.0,
+          "max_score": 15.0,
+          "feedback": [
+            "Rule violations found: 6"
+          ],
+          "violations": [
+            "Failed min requirement: Covers all Algebra I topics",
+            "Failed min requirement: Logical unit sequencing",
+            "Failed min requirement: Some form of assessment integration",
+            "Missed characteristic: standards_alignment",
+            "Missed characteristic: temporal_sequencing",
+            "Missed characteristic: cross_curricular_integration"
+          ]
+        },
+        "llm_judge": {
+          "score": 42.0,
+          "max_score": 60.0,
+          "breakdown": {},
+          "feedback": [
+            "LLM Judge failed, applied 70% fallback score."
+          ]
+        }
+      },
+      "feedback": [
+        "Missing markdown structural indicators.",
+        "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria",
+        "Rule violations found: 6",
+        "LLM Judge failed, applied 70% fallback score."
+      ],
+      "task_id": "FP-EDUC-CURR-001",
+      "latency": 6.28730320930481,
+      "output_file": "D:\\Nexabuild\\forge\\prometheus\\outputs\\FP-EDUC-CURR-001_20260630_0227.md"
+    }
+  ],
+  "engineering": [
+    {
+      "final_score": 45.5,
+      "max_score": 100.0,
+      "breakdown": {
+        "structural": {
+          "score": 0.0,
+          "max_score": 20.0,
+          "feedback": [
+            "Missing markdown structural indicators.",
+            "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria"
+          ],
+          "missing_sections": [
+            "Role",
+            "Objective",
+            "Context",
+            "Requirements",
+            "Constraints",
+            "Input",
+            "Output",
+            "Examples",
+            "Edge Cases",
+            "Success Criteria"
+          ]
+        },
+        "rule": {
+          "score": 0.0,
+          "max_score": 15.0,
+          "feedback": [
+            "Rule violations found: 6"
+          ],
+          "violations": [
+            "Failed min requirement: Correct pitch diameters",
+            "Failed min requirement: Valid center distance",
+            "Failed min requirement: 3:1 ratio maintained",
+            "Missed characteristic: technically precise",
+            "Missed characteristic: parameter-driven",
+            "Missed characteristic: calculation-oriented"
+          ]
+        },
+        "llm_judge": {
+          "score": 45.5,
+          "max_score": 65.0,
+          "breakdown": {},
+          "feedback": [
+            "LLM Judge failed, applied 70% fallback score."
+          ]
+        }
+      },
+      "feedback": [
+        "Missing markdown structural indicators.",
+        "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria",
+        "Rule violations found: 6",
+        "LLM Judge failed, applied 70% fallback score."
+      ],
+      "task_id": "FP-ENGR-MECHANICAL-DESIGN-001",
+      "latency": 6.2094361782073975,
+      "output_file": "D:\\Nexabuild\\forge\\prometheus\\outputs\\FP-ENGR-MECHANICAL-DESIGN-001_20260630_0227.md"
+    }
+  ],
+  "finance": [
+    {
+      "final_score": 42.0,
+      "max_score": 100.0,
+      "breakdown": {
+        "structural": {
+          "score": 0.0,
+          "max_score": 20.0,
+          "feedback": [
+            "Missing markdown structural indicators.",
+            "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria"
+          ],
+          "missing_sections": [
+            "Role",
+            "Objective",
+            "Context",
+            "Requirements",
+            "Constraints",
+            "Input",
+            "Output",
+            "Examples",
+            "Edge Cases",
+            "Success Criteria"
+          ]
+        },
+        "rule": {
+          "score": 0.0,
+          "max_score": 20.0,
+          "feedback": [
+            "Rule violations found: 3"
+          ],
+          "violations": [
+            "Failed min requirement: Mentions WACC and Cash Flows",
+            "Missed characteristic: Clear instructions",
+            "Missed characteristic: Step-by-step formatting"
+          ]
+        },
+        "llm_judge": {
+          "score": 42.0,
+          "max_score": 60.0,
+          "breakdown": {},
+          "feedback": [
+            "LLM Judge failed, applied 70% fallback score."
+          ]
+        }
+      },
+      "feedback": [
+        "Missing markdown structural indicators.",
+        "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria",
+        "Rule violations found: 3",
+        "LLM Judge failed, applied 70% fallback score."
+      ],
+      "task_id": "FP-FINA-FINMOD-001",
+      "latency": 6.284677267074585,
+      "output_file": "D:\\Nexabuild\\forge\\prometheus\\outputs\\FP-FINA-FINMOD-001_20260630_0227.md"
+    }
+  ],
+  "healthcare": [
+    {
+      "final_score": 45.5,
+      "max_score": 100.0,
+      "breakdown": {
+        "structural": {
+          "score": 0.0,
+          "max_score": 15.0,
+          "feedback": [
+            "Missing markdown structural indicators.",
+            "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria"
+          ],
+          "missing_sections": [
+            "Role",
+            "Objective",
+            "Context",
+            "Requirements",
+            "Constraints",
+            "Input",
+            "Output",
+            "Examples",
+            "Edge Cases",
+            "Success Criteria"
+          ]
+        },
+        "rule": {
+          "score": 0.0,
+          "max_score": 20.0,
+          "feedback": [
+            "Rule violations found: 6"
+          ],
+          "violations": [
+            "Failed min requirement: Recognizes ST-elevation as emergent finding",
+            "Failed min requirement: Recommends at least one appropriate intervention",
+            "Failed min requirement: Acknowledges patient comorbidities",
+            "Missed characteristic: clinically-accurate",
+            "Missed characteristic: evidence-based",
+            "Missed characteristic: structured-reasoning"
+          ]
+        },
+        "llm_judge": {
+          "score": 45.5,
+          "max_score": 65.0,
+          "breakdown": {},
+          "feedback": [
+            "LLM Judge failed, applied 70% fallback score."
+          ]
+        }
+      },
+      "feedback": [
+        "Missing markdown structural indicators.",
+        "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria",
+        "Rule violations found: 6",
+        "LLM Judge failed, applied 70% fallback score."
+      ],
+      "task_id": "FP-HEAL-CLINICAL-DECISION-SUPPORT-001",
+      "latency": 6.410073518753052,
+      "output_file": "D:\\Nexabuild\\forge\\prometheus\\outputs\\FP-HEAL-CLINICAL-DECISION-SUPPORT-001_20260630_0227.md"
+    }
+  ],
+  "programming": [
+    {
+      "final_score": 45.5,
+      "max_score": 100.0,
+      "breakdown": {
+        "structural": {
+          "score": 0.0,
+          "max_score": 20.0,
+          "feedback": [
+            "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria"
+          ],
+          "missing_sections": [
+            "Role",
+            "Objective",
+            "Context",
+            "Requirements",
+            "Constraints",
+            "Input",
+            "Output",
+            "Examples",
+            "Edge Cases",
+            "Success Criteria"
+          ]
+        },
+        "rule": {
+          "score": 0.0,
+          "max_score": 15.0,
+          "feedback": [
+            "Rule violations found: 6"
+          ],
+          "violations": [
+            "Failed min requirement: At least three CRUD endpoints work",
+            "Failed min requirement: Uses Express.js framework",
+            "Failed min requirement: In-memory storage used",
+            "Missed characteristic: Clear endpoint specification",
+            "Missed characteristic: Technology stack constraint",
+            "Missed characteristic: Simplicity emphasis"
+          ]
+        },
+        "llm_judge": {
+          "score": 45.5,
+          "max_score": 65.0,
+          "breakdown": {},
+          "feedback": [
+            "LLM Judge failed, applied 70% fallback score."
+          ]
+        }
+      },
+      "feedback": [
+        "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria",
+        "Rule violations found: 6",
+        "LLM Judge failed, applied 70% fallback score."
+      ],
+      "task_id": "FP-PROG-BACKEND-API-001",
+      "latency": 6.372437000274658,
+      "output_file": "D:\\Nexabuild\\forge\\prometheus\\outputs\\FP-PROG-BACKEND-API-001_20260630_0227.md"
+    }
+  ],
+  "research": [
+    {
+      "final_score": 45.5,
+      "max_score": 100.0,
+      "breakdown": {
+        "structural": {
+          "score": 0.0,
+          "max_score": 20.0,
+          "feedback": [
+            "Missing markdown structural indicators.",
+            "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria"
+          ],
+          "missing_sections": [
+            "Role",
+            "Objective",
+            "Context",
+            "Requirements",
+            "Constraints",
+            "Input",
+            "Output",
+            "Examples",
+            "Edge Cases",
+            "Success Criteria"
+          ]
+        },
+        "rule": {
+          "score": 0.0,
+          "max_score": 15.0,
+          "feedback": [
+            "Rule violations found: 6"
+          ],
+          "violations": [
+            "Failed min requirement: Summarizes at least five distinct research themes",
+            "Failed min requirement: Maintains academic tone throughout",
+            "Failed min requirement: Stays within the 2020-2025 timeframe scope",
+            "Missed characteristic: structured-synthesis",
+            "Missed characteristic: topic-bounded",
+            "Missed characteristic: citation-aware"
+          ]
+        },
+        "llm_judge": {
+          "score": 45.5,
+          "max_score": 65.0,
+          "breakdown": {},
+          "feedback": [
+            "LLM Judge failed, applied 70% fallback score."
+          ]
+        }
+      },
+      "feedback": [
+        "Missing markdown structural indicators.",
+        "Missing sections: Role, Objective, Context, Requirements, Constraints, Input, Output, Examples, Edge Cases, Success Criteria",
+        "Rule violations found: 6",
+        "LLM Judge failed, applied 70% fallback score."
+      ],
+      "task_id": "FP-RESE-LITREV-001",
+      "latency": 7.533204793930054,
+      "output_file": "D:\\Nexabuild\\forge\\prometheus\\outputs\\FP-RESE-LITREV-001_20260630_0227.md"
+    }
+  ]
+}

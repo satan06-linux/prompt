@@ -1,0 +1,552 @@
+[
+  {
+    "id": "FP-BUSI-STARTUP-STRATEGY-001",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Business",
+    "subcategory": "Startup Strategy",
+    "difficulty": "Easy",
+    "complexity": "Simple",
+    "expertise_level": "Beginner",
+    "domain": "Entrepreneurship & Venture Planning",
+    "capability": "Planning",
+    "prompt_type": "Zero-Shot Prompt",
+    "user_request": "I have an idea for a mobile app that connects local freelance dog walkers with pet owners. Help me create a lean canvas business model for this startup, including key partners, value propositions, revenue streams, and cost structure.",
+    "user_goal": "Generate a complete lean canvas business model for a dog-walking marketplace app startup",
+    "expected_output": "table",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 350,
+      "estimated_response_size": 1200,
+      "estimated_context_tokens": 1550
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Clear business context", "Actionable framework", "Structured canvas format"],
+    "evaluation_weights": {
+      "accuracy": 25,
+      "clarity": 25,
+      "structure": 25,
+      "constraints": 15,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["All 9 lean canvas blocks fully addressed", "Revenue model is realistic and quantified", "Unique value proposition clearly differentiates from competitors"],
+      "acceptable_characteristics": ["At least 7 lean canvas blocks addressed", "Revenue streams identified but not quantified", "Basic value proposition stated"],
+      "minimum_requirements": ["Covers key partners, value proposition, and revenue streams", "Output is in a structured table format", "Content is relevant to a dog-walking marketplace"]
+    },
+    "common_failures": ["Missing cost structure details", "Generic value propositions not specific to pet services", "Ignoring regulatory or insurance considerations"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["User operates in a rural area with few freelancers", "Regulatory restrictions on gig-economy workers in certain jurisdictions"],
+    "tags": ["startup", "lean-canvas", "marketplace", "pet-services", "business-model"]
+  },
+  {
+    "id": "FP-BUSI-MARKETING-002",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Business",
+    "subcategory": "Marketing",
+    "difficulty": "Easy",
+    "complexity": "Simple",
+    "expertise_level": "Beginner",
+    "domain": "Digital Marketing & Content Strategy",
+    "capability": "Communication",
+    "prompt_type": "Role Prompt",
+    "user_request": "Act as a digital marketing strategist for a small bakery that just opened in downtown Portland. Create a 30-day social media content calendar for Instagram and TikTok, including post types, captions, hashtags, and optimal posting times.",
+    "user_goal": "Receive a ready-to-execute 30-day social media content calendar tailored to a local bakery",
+    "expected_output": "table",
+    "primary_target": "Gemini",
+    "optimized_for": "Gemma",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 400,
+      "estimated_response_size": 2800,
+      "estimated_context_tokens": 3200
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Role-based persona assignment", "Detailed scheduling requirements", "Platform-specific guidance"],
+    "evaluation_weights": {
+      "accuracy": 20,
+      "clarity": 20,
+      "structure": 30,
+      "constraints": 15,
+      "creativity": 15
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Full 30-day calendar with daily entries for both platforms", "Platform-specific content strategies for Instagram vs TikTok", "Hashtag sets tailored to Portland food scene"],
+      "acceptable_characteristics": ["At least 20 days covered with content ideas", "General social media best practices applied", "Some hashtag suggestions included"],
+      "minimum_requirements": ["Calendar covers at least 2 weeks", "Distinguishes between Instagram and TikTok content", "Includes post types and basic captions"]
+    },
+    "common_failures": ["Generic content not tailored to bakery niche", "Ignoring platform algorithm differences between Instagram and TikTok", "Missing local Portland-specific engagement hooks"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Bakery has zero existing followers", "Holiday or seasonal events falling within the 30-day window"],
+    "tags": ["marketing", "social-media", "content-calendar", "local-business", "instagram", "tiktok"]
+  },
+  {
+    "id": "FP-BUSI-SALES-FUNNELS-003",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Business",
+    "subcategory": "Sales Funnels",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "B2B SaaS Sales & Revenue Operations",
+    "capability": "Strategy",
+    "prompt_type": "Structured Prompt",
+    "user_request": "Design a complete B2B SaaS sales funnel for a project management tool targeting mid-market companies (200-2000 employees). Include each funnel stage from awareness to closed-won, with specific tactics, conversion rate benchmarks, lead scoring criteria, and email nurture sequences for each stage.",
+    "user_goal": "Obtain a detailed, stage-by-stage B2B SaaS sales funnel with actionable tactics and measurable KPIs",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 500,
+      "estimated_response_size": 3500,
+      "estimated_context_tokens": 4000
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Multi-stage funnel architecture", "Quantitative benchmarks", "Email sequence templates", "Lead scoring rubric"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 20,
+      "structure": 25,
+      "constraints": 15,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["All funnel stages defined with conversion rate benchmarks", "Lead scoring model with weighted criteria", "At least 3 email templates per nurture stage", "Integration points with CRM and marketing automation"],
+      "acceptable_characteristics": ["Major funnel stages covered with general tactics", "Basic lead scoring criteria listed", "At least 1 email template per stage"],
+      "minimum_requirements": ["Minimum 4 funnel stages defined", "Tactics listed for each stage", "Output is well-structured in markdown"]
+    },
+    "common_failures": ["Using B2C tactics for a B2B context", "Unrealistic conversion rate benchmarks", "Missing the mid-market segment nuances versus SMB or enterprise"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Prospect company has an existing competing tool with high switching costs", "Multi-stakeholder buying committee with conflicting priorities", "Long enterprise sales cycles exceeding 6 months"],
+    "tags": ["sales-funnel", "b2b-saas", "lead-scoring", "email-nurture", "mid-market", "conversion-optimization"]
+  },
+  {
+    "id": "FP-BUSI-BRAND-IDENTITY-004",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Business",
+    "subcategory": "Brand Identity",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Professional",
+    "domain": "Brand Strategy & Visual Identity",
+    "capability": "Communication",
+    "prompt_type": "Persona Prompt",
+    "user_request": "You are a senior brand strategist at a top-tier agency with 15 years of experience building iconic consumer brands. A sustainable fashion startup called 'Verdant Threads' needs a complete brand identity guide. Develop brand archetypes, tone of voice guidelines, messaging pillars, a tagline, and a visual identity direction including color palette rationale and typography recommendations.",
+    "user_goal": "Create a comprehensive brand identity guide for a sustainable fashion startup that can be handed off to a design team",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 480,
+      "estimated_response_size": 3000,
+      "estimated_context_tokens": 3480
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Expert persona framing", "Multi-deliverable output", "Creative and strategic balance"],
+    "evaluation_weights": {
+      "accuracy": 20,
+      "clarity": 20,
+      "structure": 20,
+      "constraints": 15,
+      "creativity": 25
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Clearly defined brand archetype with rationale", "Tone of voice with do/don't examples", "3-5 messaging pillars with supporting copy", "Color palette with hex codes and psychological rationale", "Typography pairing with usage guidelines"],
+      "acceptable_characteristics": ["Brand archetype identified", "General tone guidelines provided", "Basic color and typography suggestions", "At least one tagline option"],
+      "minimum_requirements": ["Tagline provided", "Tone of voice described", "Visual direction includes color and typography mentions"]
+    },
+    "common_failures": ["Generic sustainability messaging without brand differentiation", "Color palette choices that don't align with brand archetype", "Missing the connection between brand values and visual identity"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Brand needs to appeal to both eco-conscious millennials and luxury shoppers", "Competitor brands already dominate green/earth-tone color spaces"],
+    "tags": ["brand-identity", "sustainable-fashion", "tone-of-voice", "visual-identity", "brand-strategy", "creative"]
+  },
+  {
+    "id": "FP-BUSI-HR-005",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Business",
+    "subcategory": "HR",
+    "difficulty": "Medium",
+    "complexity": "Intermediate",
+    "expertise_level": "Senior",
+    "domain": "Human Resources & Talent Management",
+    "capability": "Planning",
+    "prompt_type": "Multi-Step Prompt",
+    "user_request": "Step 1: Analyze the current challenges in remote-first tech company hiring for senior engineering roles. Step 2: Design a structured interview process with exactly 5 rounds, including evaluation rubrics for each round. Step 3: Create an onboarding plan for the first 90 days that ensures cultural integration and technical ramp-up. Step 4: Propose retention strategies with measurable KPIs for the first year.",
+    "user_goal": "Build an end-to-end hiring pipeline from interview design through onboarding and retention for senior remote engineers",
+    "expected_output": "markdown",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 450,
+      "estimated_response_size": 4000,
+      "estimated_context_tokens": 4450
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Sequential multi-step structure", "Evaluation rubrics required", "Quantitative KPIs expected", "Comprehensive lifecycle coverage"],
+    "evaluation_weights": {
+      "accuracy": 25,
+      "clarity": 20,
+      "structure": 30,
+      "constraints": 15,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["All 4 steps addressed comprehensively", "5-round interview process with scoring rubrics", "90-day onboarding plan with weekly milestones", "Retention KPIs with specific targets and measurement methods"],
+      "acceptable_characteristics": ["All 4 steps addressed at a high level", "Interview process defined but rubrics are basic", "Onboarding plan covers 90 days without weekly detail", "Retention strategies listed without specific KPIs"],
+      "minimum_requirements": ["All 4 steps are present in the output", "Interview process has at least 4 rounds", "Onboarding plan mentioned", "At least 2 retention strategies proposed"]
+    },
+    "common_failures": ["Treating remote hiring identically to in-office hiring", "Interview rubrics that are too subjective to be actionable", "Onboarding plans that neglect cultural integration for remote workers", "Retention KPIs that are lagging indicators only"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Candidates spread across 8+ time zones", "Company has no established engineering culture documentation"],
+    "tags": ["hr", "remote-hiring", "interview-design", "onboarding", "retention", "talent-management"]
+  },
+  {
+    "id": "FP-BUSI-CUSTOMER-SUPPORT-006",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Business",
+    "subcategory": "Customer Support",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "Customer Experience & Support Operations",
+    "capability": "Optimization",
+    "prompt_type": "Agent Prompt",
+    "user_request": "You are an AI-powered customer support operations agent. A fintech company processing 50,000 support tickets per month is experiencing a 35% customer churn rate linked to poor support experiences. Analyze the root causes, design a tiered support architecture (L1/L2/L3) with AI-assisted triage, create escalation matrices, define SLA frameworks with penalty structures, and build a quality assurance scoring system. Output must include implementation timeline and projected ROI.",
+    "user_goal": "Transform a failing customer support operation into a world-class tiered support system with measurable improvements",
+    "expected_output": "markdown",
+    "primary_target": "Gemini",
+    "optimized_for": "Gemma",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 550,
+      "estimated_response_size": 5000,
+      "estimated_context_tokens": 5550
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Agentic task execution framing", "Data-driven root cause analysis", "Multi-system architecture design", "ROI projection required"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 15,
+      "structure": 25,
+      "constraints": 20,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Root cause analysis identifies at least 5 contributing factors", "L1/L2/L3 tiers clearly defined with staffing ratios", "AI triage logic with category-based routing rules", "SLA framework with response and resolution time targets", "QA scoring system with weighted criteria", "12-month implementation timeline with milestones", "ROI projection with assumptions stated"],
+      "acceptable_characteristics": ["Root causes identified at a high level", "Tiered support model defined", "Basic SLA targets set", "QA framework outlined", "General ROI estimate provided"],
+      "minimum_requirements": ["Tiered support architecture present", "SLA targets defined", "At least a basic QA scoring approach", "Some implementation timeline"]
+    },
+    "common_failures": ["Ignoring the AI triage component", "SLA targets that don't account for ticket complexity variance", "QA scoring that is entirely subjective", "ROI projections without stated assumptions"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Regulatory compliance requirements for fintech support interactions", "Multilingual support needs across 10+ languages", "Peak volume spikes during market volatility events"],
+    "tags": ["customer-support", "fintech", "tiered-support", "sla", "ai-triage", "quality-assurance", "operations"]
+  },
+  {
+    "id": "FP-BUSI-SUPPLY-CHAIN-007",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Business",
+    "subcategory": "Supply Chain",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Senior",
+    "domain": "Supply Chain Management & Logistics",
+    "capability": "Optimization",
+    "prompt_type": "System Prompt",
+    "user_request": "You are a supply chain optimization system. An e-commerce company ships 200,000 packages monthly from 3 warehouses across the US (New Jersey, Texas, California). Current shipping costs are $2.8M/month with a 4.2-day average delivery time. Design an optimized fulfillment strategy including inventory allocation algorithms, carrier selection matrices, zone-skipping strategies, last-mile optimization, and demand forecasting integration. Provide the analysis as structured data with projected cost savings and delivery time improvements.",
+    "user_goal": "Receive a data-driven supply chain optimization plan that reduces shipping costs and delivery times across a multi-warehouse network",
+    "expected_output": "json",
+    "primary_target": "Grok",
+    "optimized_for": "Qwen",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 520,
+      "estimated_response_size": 4500,
+      "estimated_context_tokens": 5020
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["System-level directive framing", "Quantitative input parameters", "Algorithmic output expected", "Multi-variable optimization"],
+    "evaluation_weights": {
+      "accuracy": 35,
+      "clarity": 10,
+      "structure": 25,
+      "constraints": 20,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Inventory allocation model considering demand velocity per warehouse zone", "Carrier selection matrix with cost/speed/reliability scoring", "Zone-skipping strategies with specific lane recommendations", "Last-mile optimization with regional carrier partnerships", "Demand forecasting methodology integrated with inventory planning", "Projected savings quantified with confidence intervals"],
+      "acceptable_characteristics": ["Inventory allocation recommendations per warehouse", "Carrier comparison provided", "General zone-skipping concept applied", "Cost saving estimates provided"],
+      "minimum_requirements": ["Addresses all 3 warehouse locations", "Provides carrier selection guidance", "Includes cost saving projections", "Output is valid JSON structure"]
+    },
+    "common_failures": ["Ignoring seasonal demand variability", "Not accounting for carrier rate negotiations and volume discounts", "Zone-skipping recommendations without cost-benefit analysis", "Demand forecasting disconnected from inventory allocation"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Holiday season volume surge of 300% above baseline", "Single warehouse going offline due to natural disaster", "New tariff regulations affecting cross-border shipments"],
+    "tags": ["supply-chain", "logistics", "fulfillment", "warehouse-optimization", "carrier-selection", "demand-forecasting"]
+  },
+  {
+    "id": "FP-BUSI-COMPETITIVE-ANALYSIS-008",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Business",
+    "subcategory": "Competitive Analysis",
+    "difficulty": "Hard",
+    "complexity": "Advanced",
+    "expertise_level": "Expert",
+    "domain": "Strategic Intelligence & Market Analysis",
+    "capability": "Analysis",
+    "prompt_type": "Few-Shot Prompt",
+    "user_request": "Conduct a competitive analysis of the cloud kitchen industry in Southeast Asia. Here are two examples of how I want competitors profiled:\n\nExample 1: 'GrabKitchen — Market Position: Leader in Singapore/Malaysia. Strengths: Integrated with GrabFood ecosystem, high brand trust. Weaknesses: High commission rates (30-35%), limited menu customization. Moat: Super-app network effects.'\n\nExample 2: 'CloudEats — Market Position: Challenger in Philippines. Strengths: Own-brand virtual restaurants, data-driven menu engineering. Weaknesses: Limited geographic coverage, capital intensive. Moat: Proprietary demand prediction algorithms.'\n\nNow profile 8 additional competitors, then create a competitive positioning map, identify market gaps, and recommend a differentiated entry strategy for a new player with $5M seed funding.",
+    "user_goal": "Get a thorough competitive landscape analysis with competitor profiles, positioning map, gap analysis, and market entry strategy",
+    "expected_output": "markdown",
+    "primary_target": "ChatGPT",
+    "optimized_for": "GPT",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 600,
+      "estimated_response_size": 5500,
+      "estimated_context_tokens": 6100
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Few-shot example format provided", "Regional market specificity", "Multi-deliverable analysis", "Strategic recommendation required"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 15,
+      "structure": 20,
+      "constraints": 15,
+      "creativity": 20
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["8 additional competitor profiles following the example format exactly", "Competitive positioning map on 2 meaningful axes", "At least 3 distinct market gaps identified with evidence", "Entry strategy aligned with $5M budget with phased deployment", "Regional nuances across SE Asian markets addressed"],
+      "acceptable_characteristics": ["At least 6 competitor profiles in similar format", "Positioning analysis provided in some form", "Market gaps identified", "Entry strategy proposed"],
+      "minimum_requirements": ["At least 5 competitor profiles", "Some competitive comparison structure", "At least one market entry recommendation", "Content specific to SE Asian cloud kitchen market"]
+    },
+    "common_failures": ["Profiles not following the few-shot format consistently", "Positioning map axes that don't reveal strategic insights", "Entry strategy that exceeds $5M budget constraints", "Treating Southeast Asia as a monolithic market"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Competitor data is sparse for emerging markets like Myanmar or Cambodia", "Rapid market consolidation through M&A activity", "Regulatory fragmentation across ASEAN nations"],
+    "tags": ["competitive-analysis", "cloud-kitchen", "southeast-asia", "market-entry", "positioning-map", "few-shot"]
+  },
+  {
+    "id": "FP-BUSI-PRODUCT-LAUNCH-009",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Business",
+    "subcategory": "Product Launch",
+    "difficulty": "Expert",
+    "complexity": "Enterprise",
+    "expertise_level": "Expert",
+    "domain": "Product Management & Go-to-Market Strategy",
+    "capability": "Strategy",
+    "prompt_type": "Workflow Prompt",
+    "user_request": "Design an end-to-end product launch workflow for a B2B enterprise AI analytics platform entering the healthcare vertical. The workflow must cover: (1) Market validation with ICPs and buyer personas, (2) Regulatory compliance mapping for HIPAA and SOC2, (3) Beta program design with success metrics, (4) Go-to-market strategy including channel partnerships, analyst relations, and account-based marketing, (5) Sales enablement with battlecards, objection handling scripts, and ROI calculators, (6) Launch day orchestration checklist, (7) Post-launch 90-day measurement framework. Each phase must include owners, dependencies, timelines, and gate criteria for progression.",
+    "user_goal": "Obtain a complete, executable product launch workflow with phase gates and cross-functional dependencies for a regulated industry",
+    "expected_output": "markdown",
+    "primary_target": "Claude",
+    "optimized_for": "Claude",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 650,
+      "estimated_response_size": 6500,
+      "estimated_context_tokens": 7150
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["Sequential workflow phases", "Cross-functional dependency mapping", "Regulatory compliance integration", "Gate-based progression model"],
+    "evaluation_weights": {
+      "accuracy": 30,
+      "clarity": 15,
+      "structure": 30,
+      "constraints": 15,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["All 7 phases fully detailed with sub-tasks", "RACI or ownership matrix for each phase", "Dependency graph showing cross-phase blockers", "HIPAA and SOC2 compliance checkpoints embedded throughout", "Gate criteria with measurable thresholds for each phase transition", "Battlecard templates and objection handling frameworks included", "90-day post-launch dashboard with leading and lagging indicators"],
+      "acceptable_characteristics": ["All 7 phases addressed with varying depth", "Ownership mentioned for most phases", "Compliance considerations noted", "Basic gate criteria defined", "Sales enablement materials outlined"],
+      "minimum_requirements": ["All 7 phases present", "Timeline estimates for each phase", "HIPAA compliance mentioned", "Some form of measurement framework"]
+    },
+    "common_failures": ["Treating healthcare GTM like a generic B2B launch", "Compliance as an afterthought rather than integrated checkpoint", "Missing dependencies between sales enablement and product readiness", "No differentiation between launch metrics and business metrics"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Product requires FDA clearance in addition to HIPAA compliance", "Key channel partner drops out 2 weeks before launch", "Healthcare buyer committee requires 12-month evaluation cycles"],
+    "tags": ["product-launch", "healthcare", "b2b-enterprise", "go-to-market", "compliance", "workflow", "sales-enablement"]
+  },
+  {
+    "id": "FP-BUSI-PRICING-STRATEGY-010",
+    "metadata": {
+      "created_by": "antigravity",
+      "created_at": "2026-06-30T07:43:00Z",
+      "version": "1.0",
+      "generator_model": "Claude Opus 4.6",
+      "reviewed": false
+    },
+    "category": "Business",
+    "subcategory": "Pricing Strategy",
+    "difficulty": "Expert",
+    "complexity": "Enterprise",
+    "expertise_level": "Research",
+    "domain": "Revenue Strategy & Pricing Economics",
+    "capability": "Analysis",
+    "prompt_type": "JSON Prompt",
+    "user_request": "Respond in JSON format. Design a dynamic pricing strategy for a multi-product B2B SaaS platform offering data integration, analytics, and ML ops modules. The platform serves 3 segments: SMB (1-200 employees), Mid-Market (201-2000), and Enterprise (2000+). Include: value metric analysis for each module, pricing model comparison (per-seat vs usage-based vs hybrid), price sensitivity modeling with Van Westendorp methodology, competitive price anchoring against 5 named competitors, bundling and unbundling strategies with cannibalization analysis, international pricing with purchasing power parity adjustments for 10 markets, discount governance framework, and a pricing experimentation roadmap with A/B test designs. All outputs must be structured JSON with nested objects.",
+    "user_goal": "Receive an exhaustive, research-grade dynamic pricing strategy as structured JSON covering all segments, modules, and international markets",
+    "expected_output": "json",
+    "primary_target": "Cursor",
+    "optimized_for": "Phi",
+    "compatible_models": ["Gemma", "GPT", "Claude", "Qwen", "Phi"],
+    "token_estimates": {
+      "estimated_prompt_size": 700,
+      "estimated_response_size": 8000,
+      "estimated_context_tokens": 8700
+    },
+    "expected_prompt_sections": ["Role", "Objective", "Context", "Requirements", "Constraints", "Input", "Output", "Examples", "Edge Cases", "Success Criteria"],
+    "expected_prompt_characteristics": ["JSON-enforced output format", "Multi-dimensional pricing matrix", "Research methodology integration", "International market complexity"],
+    "evaluation_weights": {
+      "accuracy": 35,
+      "clarity": 10,
+      "structure": 25,
+      "constraints": 20,
+      "creativity": 10
+    },
+    "success_criteria": {
+      "excellent_characteristics": ["Valid nested JSON structure throughout", "Value metrics identified per module with justification", "All 3 pricing models compared with pros/cons per segment", "Van Westendorp price points calculated per segment", "5 named competitors with price anchoring data", "Bundle/unbundle strategies with cannibalization risk scores", "PPP-adjusted pricing for all 10 markets", "Discount governance with approval tiers and maximum thresholds", "A/B test designs with sample size and duration calculations"],
+      "acceptable_characteristics": ["Valid JSON output", "Value metrics and pricing models compared", "Some competitive anchoring provided", "Bundling strategies outlined", "International pricing addressed for at least 5 markets"],
+      "minimum_requirements": ["Output is valid JSON", "Pricing for all 3 segments addressed", "At least 2 pricing models compared", "Some competitive reference points", "At least one bundling strategy"]
+    },
+    "common_failures": ["Invalid JSON structure with syntax errors", "Pricing models not differentiated by segment", "Van Westendorp methodology incorrectly applied", "PPP adjustments using outdated or incorrect multipliers", "Discount governance that allows margin-destroying exceptions"],
+    "reference_prompts": {
+      "human": null,
+      "gemma": null,
+      "qwen": null,
+      "phi": null,
+      "gpt": null,
+      "claude": null
+    },
+    "results": {},
+    "edge_cases": ["Customer wanting to downgrade from Enterprise to Mid-Market tier", "Competitor launches a free tier disrupting the market", "Currency volatility in emerging markets exceeding 20% annually"],
+    "tags": ["pricing-strategy", "dynamic-pricing", "b2b-saas", "van-westendorp", "international-pricing", "bundling", "json-output", "revenue-optimization"]
+  }
+]
