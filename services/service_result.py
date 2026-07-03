@@ -1,7 +1,7 @@
 ﻿# ForgePrompt Phase 7 — ServiceResult
 from __future__ import annotations
 from dataclasses import dataclass, field
-from typing import Any, Optional
+from typing import Any, Optional, Union
 
 from services.errors import ForgeError
 
@@ -68,26 +68,59 @@ class ServiceResult:
         )
 
     @classmethod
-    def fail(
+    def success(
         cls,
-        error: ForgeError,
+        data: Any = None,
         trace_id: Optional[str] = None,
         duration_ms: int = 0,
         **metadata,
     ) -> "ServiceResult":
         """
-        Build a failed ServiceResult from a ForgeError.
+        Alias for ``ok()``.  Kept for backward compatibility with callers
+        that use ``ServiceResult.success(data=...)``.
+        """
+        return cls.ok(data=data, trace_id=trace_id, duration_ms=duration_ms, **metadata)
+
+    @classmethod
+    def fail(
+        cls,
+        error: Union[ForgeError, None] = None,
+        trace_id: Optional[str] = None,
+        duration_ms: int = 0,
+        # Convenience kwargs — used by callers that pass error_code/message
+        # directly instead of constructing a ForgeError first.
+        error_code: Optional[str] = None,
+        message: Optional[str] = None,
+        retryable: bool = False,
+        **metadata,
+    ) -> "ServiceResult":
+        """
+        Build a failed ServiceResult.
+
+        Accepts either a pre-built ``ForgeError`` as the first positional
+        argument, or individual ``error_code`` / ``message`` / ``retryable``
+        keyword arguments for a lightweight inline failure path.
 
         Args:
-            error       : The ForgeError that caused the failure.
+            error       : A ForgeError instance (takes precedence if supplied).
             trace_id    : Optional distributed trace ID.
             duration_ms : Optional elapsed time in milliseconds.
+            error_code  : Short error identifier (used when ``error`` is None).
+            message     : Human-readable error description (used when ``error`` is None).
+            retryable   : Whether the caller may safely retry (used when ``error`` is None).
             **metadata  : Any additional key/value pairs stored in metadata.
 
         Returns:
-            ServiceResult with success=False, retryable and error_code
-            sourced from the supplied ForgeError.
+            ServiceResult with success=False.
         """
+        if error is None:
+            # Build a minimal ForgeError from the convenience kwargs.
+            error = ForgeError(
+                message=message or "An error occurred.",
+                error_code=error_code or "FORGE_ERROR",
+                retryable=retryable,
+            )
+
         merged_meta = {**error.metadata, **metadata}
         return cls(
             success=False,
@@ -108,6 +141,24 @@ class ServiceResult:
     def is_error(self) -> bool:
         """True when the result represents a failure."""
         return not self.success
+
+    @property
+    def is_success(self) -> bool:
+        """True when the result represents a success.  Alias for ``self.success``."""
+        return self.success
+
+    @property
+    def error_message(self) -> Optional[str]:
+        """
+        Convenience accessor for the human-readable error message.
+        Returns None on success so callers can do ``res.error_message or ''``.
+        """
+        return self.error.message if self.error else None
+
+    @property
+    def value(self) -> Any:
+        """Alias for ``self.data`` — used by callers that prefer ``res.value``."""
+        return self.data
 
     def unwrap(self) -> Any:
         """

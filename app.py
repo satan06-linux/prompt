@@ -1,33 +1,23 @@
 import os
 import sys
-import builtins
-import pathlib
 
-# Force UTF-8 encoding for Windows terminal prints
-sys.stdout.reconfigure(encoding='utf-8') if hasattr(sys.stdout, 'reconfigure') else None
-
-# Global Windows UTF-8 Monkeypatch to prevent tokenizer / Pathlib crashes on startup
-real_open = builtins.open
-def utf8_open(*args, **kwargs):
-    mode = kwargs.get('mode', '')
-    if len(args) > 1:
-        mode = args[1]
-    if 'encoding' not in kwargs and 'b' not in mode:
-        kwargs['encoding'] = 'utf-8'
-    return real_open(*args, **kwargs)
-builtins.open = utf8_open
-
-real_read_text = pathlib.Path.read_text
-def utf8_read_text(self, encoding=None, errors=None):
-    return real_read_text(self, encoding=encoding or 'utf-8', errors=errors)
-pathlib.Path.read_text = utf8_read_text
-
-real_path_open = pathlib.Path.open
-def utf8_path_open(self, mode='r', buffering=-1, encoding=None, errors=None, newline=None):
-    if 'r' in mode and 'b' not in mode and encoding is None:
-        encoding = 'utf-8'
-    return real_path_open(self, mode=mode, buffering=buffering, encoding=encoding, errors=errors, newline=newline)
-pathlib.Path.open = utf8_path_open
+# ---------------------------------------------------------------------------
+# Windows UTF-8 fix — set env vars BEFORE any library is imported so that
+# the standard library, tokenizers, and pathlib all pick up UTF-8 natively.
+# This avoids the fragile builtins.open / pathlib monkeypatch that could
+# silently break binary I/O in third-party libraries.
+# ---------------------------------------------------------------------------
+if sys.platform == "win32":
+    # Tell Python's io layer to default to UTF-8 for text streams.
+    os.environ.setdefault("PYTHONUTF8", "1")
+    os.environ.setdefault("PYTHONIOENCODING", "utf-8")
+    # Reconfigure stdout/stderr if already open (handles interactive sessions).
+    for _stream in (sys.stdout, sys.stderr):
+        if hasattr(_stream, "reconfigure"):
+            try:
+                _stream.reconfigure(encoding="utf-8", errors="replace")
+            except Exception:
+                pass
 
 # Clear proxy-related environment variables to prevent the Groq/httpx proxies initialization bug
 for key in ["HTTP_PROXY", "HTTPS_PROXY", "http_proxy", "https_proxy", "ALL_PROXY", "all_proxy"]:
@@ -2826,10 +2816,11 @@ class WorkflowRunner:
             
             if self.org_id:
                 cursor.execute("SELECT name, encrypted_value FROM organization_secrets WHERE organization_id = %s", (self.org_id,))
+                from services.secret_service import decrypt_secret
                 for s in cursor.fetchall():
                     try:
-                        self.secrets[s["name"]] = base64.b64decode(s["encrypted_value"].encode()).decode()
-                    except:
+                        self.secrets[s["name"]] = decrypt_secret(s["encrypted_value"])
+                    except Exception:
                         self.secrets[s["name"]] = s["encrypted_value"]
             
             cursor.execute("SELECT * FROM workflow_nodes WHERE workflow_id = %s", (wf_id,))
@@ -3672,8 +3663,9 @@ def api_add_org_secret(org_id):
     val = request.json.get("value", "").strip()
     if not name or not val: return jsonify({"success": False, "error": "Secret name and value required"}), 400
     
-    # Encrypt secret using simple symmetric base64 encoding to mask value
-    enc_val = base64.b64encode(val.encode()).decode()
+    # Encrypt the secret value at rest using Fernet symmetric encryption.
+    from services.secret_service import encrypt_secret
+    enc_val = encrypt_secret(val)
     conn = None
     cursor = None
     try:
